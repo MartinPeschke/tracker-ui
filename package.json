@@ -1,0 +1,20 @@
+{
+  "name": "hnc-tracker-ui",
+  "title": "hnc tracking ui package",
+  "description": "tracker ui",
+  "version": "0.0.1",
+  "homepage": "https://github.com/MartinPeschke/tracker-ui",
+  "author": {
+    "name": "Martin Peschke",
+    "email": "martin@hackandcraft.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MartinPeschke/tracker-ui.git"
+  },
+  "dependencies": {
+    "azure": "~0.7",
+    "nimble": "~0.0.2"
+  },
+  "devDependencies": {}
+}
