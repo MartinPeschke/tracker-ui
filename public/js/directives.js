@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('mean.directives')
-     .directive('d3Circles', ['d3', 'underscore', 'color', function(d3, _, color) {
+     .directive('d3Circles', ['d3', 'underscore', 'color', 'Point2D', 'Intersection', function(d3, _, color, Point2D, Intersection) {
         return {
             restrict: 'EA',
             scope: {
@@ -39,35 +39,127 @@ angular.module('mean.directives')
                         height = 500,
                         fSize = 20,
                         total_width = d3.select(iElement[0])[0][0].offsetWidth,
-                        center = {x:total_width/2, y:200, r: scope.intersect},
+                        center = {x:total_width/4, y:200, r: scope.intersect},
                         getX = function(d, i){
                             return center.x + center.r * Math.cos(2*Math.PI * i/data.length);
                         },
                         getY = function(d, i){
                             return center.y + center.r * Math.sin(2*Math.PI * i/data.length);
+                        },
+                        getIntersect = function(i){
+                            var x1 = getX(null, i), y1 = getY(null, i)
+                            , x2 = getX(null, i+1), y2 = getY(null, i+1)
+                            , dX = x2 - x1
+                            , dY = y2 - y1
+                            , alpha = Math.atan(dX/dY)
+                            , distance = Math.sqrt(dX*dX + dY*dY)
+                            , b = Math.sqrt(std_rad*std_rad - distance*distance/4);
+                            return Intersection.intersectCircleCircle(
+                                    new Point2D(x1,y1), std_rad
+                                    , new Point2D(x2,y2), std_rad
+                                );
+                        }
+                        , getIntersectX = function(d, i){
+                            return getIntersect(d,i).points[1].x;
+                        }
+                        , getIntersectY = function(d, i){
+                            return getIntersect(d,i).points[1].y;
                         };
 
                     svg.attr('height', height);
 
-                    svg.selectAll('circle')
-                        .data(data)
-                        .enter()
-                        .append('circle')
-                        .attr('fill', function(d,i){
-                            return color('#00FF00').shiftHue(i*90).toCSS();
-                        })
-                        .attr('fill-opacity', '.5')
-                        .attr('r', std_rad)
-                        .attr('id', Math.random())
-                        .attr('cx', getX)
-                        .attr('cy', getY)
-                        .on('mouseover', function(d){
-                            svg.selectAll("circle").sort(function (a, b) {
-                                  if (a.id != d.id) return -1; else return 1;
-                              });
-                        }).on('mouseout', function(d){
-                            var nodeSelection = d3.select(this).style('fill-opacity', '.5');
+                    var circles = svg.selectAll('circle').data(data).enter();
+
+
+                    var
+                        centers = _.map([0,1,2], function(k,i){return new Point2D(getX(data[k], i), getY(data[k], i));})
+                        , ip = _.map(data, function(d, i){return getIntersect(i).points;})
+                        , allIntersects = _.flatten(ip)
+                        , less = function(a, b){
+                            if (a.x-center.x >= 0 && b.x-center.x < 0)
+                                return true;
+                            if (a.x-center.x == 0 && b.x-center.x == 0) {
+                                if (a.y-center.y >= 0 || b.y-center.y >= 0)
+                                    return a.y > b.y;
+                                return b.y > a.y;
+                            }
+                            // compute the cross product of vectors (center -> a) x (center -> b)
+                            var det = (a.x-center.x) * (b.y-center.y) - (b.x - center.x) * (a.y - center.y);
+                            return det < 0;
+                        }
+                        , segments = [];
+
+                    _.each(centers, function(cur_ctr, cur_idx, list){
+                        var others = _.without(list, cur_ctr), tri={outers:[]};
+
+                        _.each(allIntersects, function(el, idx){
+                            var outsideOthers = _.reduce(others, function(memo, other){
+                                return memo || (other.distanceFrom(el) - std_rad > 0.1);
+                            }, false);
+
+                            if(std_rad - cur_ctr.distanceFrom(el) > 0.1) tri.inner = el;
+                            else if(Math.abs(std_rad - cur_ctr.distanceFrom(el))<0.1&&outsideOthers)tri.outers.push(el);
                         });
+                        if(less(tri.outers[1], tri.outers[0]))tri.outers.reverse();
+                        segments.push(tri)
+                    });
+
+                    var segment_1 = function (tri, i) {
+                        return "M"+tri.outers[0].x+","+tri.outers[0].y +
+                              "A"+std_rad+","+std_rad+",0,1,0,"+tri.outers[1].x+","+tri.outers[1].y +
+                              "A"+std_rad+","+std_rad+",0,0,1,"+tri.inner.x+","+tri.inner.y +
+                              "A"+std_rad+","+std_rad+",0,0,1,"+tri.outers[0].x+","+tri.outers[0].y
+                    }
+                    , segment_2 = function(tri, i){
+                        var path = "M"+tri.outers[0].x+","+tri.outers[0].y
+                            , others = _.without(segments, tri);
+
+                            _.each(others, function(d, i){
+                              path += "A"+std_rad+","+std_rad+",0,0,"+(i%2) +","+d.inner.x+","+ d.inner.y;
+                            });
+                           path += "A"+std_rad+","+std_rad+",0,0,0,"+tri.outers[0].x+","+tri.outers[0].y;
+                            console.log(tri, path);
+                        return path;
+                    }
+                    , last = _.last(segments),
+                        segment_3 = "M"+last.inner.x+","+last.inner.y;
+                        _.each(segments, function(tri, i){
+                            segment_3 += "A"+std_rad+","+std_rad+",0,0,1,"+tri.inner.x+","+tri.inner.y;
+                        });
+
+                    // paint segments 1, the outer sections
+
+                    var paths = svg.selectAll("path").data(segments).enter();
+                    paths.append("path")
+                        .attr("d", segment_2)
+                        .attr("stroke", "#000000")
+                        .attr("stroke-width", 2)
+                        .attr("fill", function(d, i){
+                            return color('#00FF00').shiftHue(0 + i*50).toCSS();
+                        });
+                    console.log("---------------");
+
+                    paths.append("path")
+                        .attr("d", segment_1)
+                        .attr("stroke", "#000000")
+                        .attr("stroke-width", 2)
+                        .attr("fill", function(d, i){
+                            return color('#00FF00').shiftHue(0 + i*50).toCSS();
+                        });
+
+//                    // paint bulls eye
+//
+//                    svg.append("path")
+//                        .attr("d", segment_3)
+//                        .attr("stroke", "#000000")
+//                        .attr("stroke-width", 2)
+//                        .attr("fill", function(d, i){
+//                            return color('#00FF00').shiftHue(150 + i*50).toCSS();
+//                        });
+//
+
+
+
 
                     var texts = svg.selectAll('text').data(data).enter();
 
@@ -95,7 +187,6 @@ angular.module('mean.directives')
                         })
                         .text(function(d){return d.score;});
 
-
                     texts.append('text')
                         .attr('color', '#000000')
                         .attr('text-anchor', 'middle')
@@ -115,7 +206,6 @@ angular.module('mean.directives')
                         .attr('y', center.y + fSize/2)
                         .attr('x', center.x)
                         .text(function(d){return 100;});
-
 
                 };
             }
