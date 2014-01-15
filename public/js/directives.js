@@ -64,12 +64,17 @@ angular.module('mean.directives')
                         }
                         , getIntersectY = function(d, i){
                             return getIntersect(d,i).points[1].y;
+                        }
+                        , simpleCircle = function(p, color){
+                            svg.append("circle")
+                                .attr("r", 5)
+                                .attr('cx', p.x)
+                                .attr('cy', p.y)
+                                .attr("fill", color);
+
                         };
 
                     svg.attr('height', height);
-
-                    var circles = svg.selectAll('circle').data(data).enter();
-
 
                     var
                         centers = _.map([0,1,2], function(k,i){return new Point2D(getX(data[k], i), getY(data[k], i));})
@@ -111,33 +116,22 @@ angular.module('mean.directives')
                               "A"+std_rad+","+std_rad+",0,0,1,"+tri.outers[0].x+","+tri.outers[0].y
                     }
                     , segment_2 = function(tri, i){
-                        var path = "M"+tri.outers[0].x+","+tri.outers[0].y
-                            , others = _.without(segments, tri);
-
-                            _.each(others, function(d, i){
-                              path += "A"+std_rad+","+std_rad+",0,0,"+(i%2) +","+d.inner.x+","+ d.inner.y;
-                            });
-                           path += "A"+std_rad+","+std_rad+",0,0,0,"+tri.outers[0].x+","+tri.outers[0].y;
-                            console.log(tri, path);
+                        var next = segments[(i+1)%segments.length],
+                            path = "M"+tri.outers[0].x+","+tri.outers[0].y +
+                                   "A"+std_rad+","+std_rad+",0,0,1,"+next.inner.x+","+ next.inner.y +
+                                    "A"+std_rad+","+std_rad+",0,0,0,"+tri.inner.x+","+ tri.inner.y +
+                                   "A"+std_rad+","+std_rad+",0,0,1,"+tri.outers[0].x+","+tri.outers[0].y;
                         return path;
                     }
-                    , last = _.last(segments),
-                        segment_3 = "M"+last.inner.x+","+last.inner.y;
-                        _.each(segments, function(tri, i){
-                            segment_3 += "A"+std_rad+","+std_rad+",0,0,1,"+tri.inner.x+","+tri.inner.y;
-                        });
+                    , last = _.last(segments)
+                    , segment_3 = "M"+last.inner.x+","+last.inner.y
+                                + _.map(segments, function(tri, i){
+                                    segment_3 += "A"+std_rad+","+std_rad+",0,0,1,"+tri.inner.x+","+tri.inner.y;
+                                }).join("");
 
                     // paint segments 1, the outer sections
 
                     var paths = svg.selectAll("path").data(segments).enter();
-                    paths.append("path")
-                        .attr("d", segment_2)
-                        .attr("stroke", "#000000")
-                        .attr("stroke-width", 2)
-                        .attr("fill", function(d, i){
-                            return color('#00FF00').shiftHue(0 + i*50).toCSS();
-                        });
-                    console.log("---------------");
 
                     paths.append("path")
                         .attr("d", segment_1)
@@ -145,18 +139,36 @@ angular.module('mean.directives')
                         .attr("stroke-width", 2)
                         .attr("fill", function(d, i){
                             return color('#00FF00').shiftHue(0 + i*50).toCSS();
+                        })
+                        .attr("fill-opacity", '0.5')
+                        .on('mouseover', function(d){
+                            var nodeSelection = d3.select(this).style('fill-opacity', '.8');
+                        }).on('mouseout', function(d){
+                            var nodeSelection = d3.select(this).style('fill-opacity', '.5');
                         });
 
-//                    // paint bulls eye
-//
-//                    svg.append("path")
-//                        .attr("d", segment_3)
-//                        .attr("stroke", "#000000")
-//                        .attr("stroke-width", 2)
-//                        .attr("fill", function(d, i){
-//                            return color('#00FF00').shiftHue(150 + i*50).toCSS();
-//                        });
-//
+                    paths.append("path")
+                        .attr("d", segment_2)
+                        .attr("stroke", "#000000")
+                        .attr("stroke-width", 2)
+                        .attr("fill", function(d, i){
+                            return color('#00FF00').shiftHue(150 + i*50).toCSS();
+                        })
+                        .attr("fill-opacity", '0.5')
+                        .on('mouseover', function(d){
+                            var nodeSelection = d3.select(this).style('fill-opacity', '.8');
+                        }).on('mouseout', function(d){
+                            var nodeSelection = d3.select(this).style('fill-opacity', '.5');
+                        });
+
+                    // paint bulls eye
+
+                    svg.append("path")
+                        .attr("d", segment_3)
+                        .attr("stroke", "#000000")
+                        .attr("stroke-width", 2)
+                        .attr("fill", "#ffffff");
+
 
 
 
