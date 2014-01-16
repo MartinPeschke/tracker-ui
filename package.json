@@ -1,12 +1,12 @@
 {
-    "name": "mean",
-    "description": "MEAN - A Modern Stack: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).",
-    "version": "0.1.2",
+    "name": "tracker-ui",
+    "description": "tracker-ui for visualizing things",
+    "version": "0.0.1",
     "private": false,
-    "author": "Amos Haviv",
+    "author": "Martin Peschke",
     "repository": {
         "type": "git",
-        "url": "https://github.com/linnovate/mean.git"
+        "url": "git@github.com:MartinPeschke/tracker-ui.git"
     },
     "engines": {
         "node": "0.10.x",
@@ -20,16 +20,6 @@
     "dependencies": {
         "express": "latest",
         "jade": "latest",
-        "mongoose": "latest",
-        "connect-mongo": "latest",
-        "connect-flash": "latest",
-        "crypto": "latest",
-        "passport": "latest",
-        "passport-local": "latest",
-        "passport-facebook": "latest",
-        "passport-twitter": "latest",
-        "passport-github": "latest",
-        "passport-google-oauth": "latest",
         "lodash": "latest",
         "view-helpers": "latest",
         "mean-logger": "latest",
