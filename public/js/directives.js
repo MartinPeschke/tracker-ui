@@ -76,8 +76,7 @@ angular.module('mean.directives')
 
                     svg.attr('height', height);
 
-                    var
-                        centers = _.map([0,1,2], function(k,i){return new Point2D(getX(data[k], i), getY(data[k], i));})
+                    var centers = _.map([0,1,2], function(k,i){return new Point2D(getX(data[k], i), getY(data[k], i));})
                         , ip = _.map(data, function(d, i){return getIntersect(i).points;})
                         , allIntersects = _.flatten(ip)
                         , less = function(a, b){
@@ -92,102 +91,65 @@ angular.module('mean.directives')
                             var det = (a.x-center.x) * (b.y-center.y) - (b.x - center.x) * (a.y - center.y);
                             return det < 0;
                         }
-                        , segments = [];
+                        , segments = _.map(centers, function(center, cur_idx, list){
+                            var others = _.without(list, center), tri={outers:[]};
 
-                    _.each(centers, function(cur_ctr, cur_idx, list){
-                        var others = _.without(list, cur_ctr), tri={outers:[]};
+                            _.each(allIntersects, function(el, idx){
+                                var outsideOthers = _.reduce(others, function(memo, other){
+                                    return memo || (other.distanceFrom(el) - std_rad > 0.1);
+                                }, false);
 
-                        _.each(allIntersects, function(el, idx){
-                            var outsideOthers = _.reduce(others, function(memo, other){
-                                return memo || (other.distanceFrom(el) - std_rad > 0.1);
-                            }, false);
-
-                            if(std_rad - cur_ctr.distanceFrom(el) > 0.1) tri.inner = el;
-                            else if(Math.abs(std_rad - cur_ctr.distanceFrom(el))<0.1&&outsideOthers)tri.outers.push(el);
+                                if(std_rad - center.distanceFrom(el) > 0.1) tri.inner = el;
+                                else if(Math.abs(std_rad - center.distanceFrom(el))<0.1&&outsideOthers)tri.outers.push(el);
+                            });
+                            if(less(tri.outers[1], tri.outers[0]))tri.outers.reverse();
+                            return tri;
                         });
-                        if(less(tri.outers[1], tri.outers[0]))tri.outers.reverse();
-                        segments.push(tri)
-                    });
 
-                    var segment_1 = function (tri, i) {
+                    var segment_1 = function (d, i) {
+                        var tri = segments[i];
                         return "M"+tri.outers[0].x+","+tri.outers[0].y +
                               "A"+std_rad+","+std_rad+",0,1,0,"+tri.outers[1].x+","+tri.outers[1].y +
                               "A"+std_rad+","+std_rad+",0,0,1,"+tri.inner.x+","+tri.inner.y +
                               "A"+std_rad+","+std_rad+",0,0,1,"+tri.outers[0].x+","+tri.outers[0].y
                     }
-                    , segment_2 = function(tri, i){
-                        var next = segments[(i+1)%segments.length],
-                            path = "M"+tri.outers[0].x+","+tri.outers[0].y +
+                    , segment_2 = function(d, i){
+                        var tri = segments[i],
+                            next = segments[(i+1)%segments.length];
+                        return "M"+tri.outers[0].x+","+tri.outers[0].y +
                                    "A"+std_rad+","+std_rad+",0,0,1,"+next.inner.x+","+ next.inner.y +
                                     "A"+std_rad+","+std_rad+",0,0,0,"+tri.inner.x+","+ tri.inner.y +
                                    "A"+std_rad+","+std_rad+",0,0,1,"+tri.outers[0].x+","+tri.outers[0].y;
-                        return path;
                     }
                     , last = _.last(segments)
                     , segment_3 = "M"+last.inner.x+","+last.inner.y
                                 + _.map(segments, function(tri, i){
-                                    segment_3 += "A"+std_rad+","+std_rad+",0,0,1,"+tri.inner.x+","+tri.inner.y;
+                                    return "A"+std_rad+","+std_rad+",0,0,1,"+tri.inner.x+","+tri.inner.y;
                                 }).join("");
 
-                    // paint segments 1, the outer sections
-
-                    var paths = svg.selectAll("path").data(segments).enter();
-
-                    paths.append("path")
-                        .attr("d", segment_1)
-                        .attr("stroke", "#000000")
-                        .attr("stroke-width", 2)
-                        .attr("fill", function(d, i){
-                            return color('#00FF00').shiftHue(0 + i*50).toCSS();
-                        })
-                        .attr("fill-opacity", '0.5')
-                        .on('mouseover', function(d){
-                            var nodeSelection = d3.select(this).style('fill-opacity', '.8');
-                        }).on('mouseout', function(d){
-                            var nodeSelection = d3.select(this).style('fill-opacity', '.5');
-                        });
-
-                    paths.append("path")
-                        .attr("d", segment_2)
-                        .attr("stroke", "#000000")
-                        .attr("stroke-width", 2)
-                        .attr("fill", function(d, i){
-                            return color('#00FF00').shiftHue(150 + i*50).toCSS();
-                        })
-                        .attr("fill-opacity", '0.5')
-                        .on('mouseover', function(d){
-                            var nodeSelection = d3.select(this).style('fill-opacity', '.8');
-                        }).on('mouseout', function(d){
-                            var nodeSelection = d3.select(this).style('fill-opacity', '.5');
-                        });
-
-                    // paint bulls eye
-
-                    svg.append("path")
-                        .attr("d", segment_3)
-                        .attr("stroke", "#000000")
-                        .attr("stroke-width", 2)
-                        .attr("fill", "#ffffff");
-
-
-
-
-
-                    var texts = svg.selectAll('text').data(data).enter();
-
-                    texts.append('text')
-                        .attr('color', '#000000')
-                        .attr('text-anchor', 'middle')
-                        .attr('font-size', fSize/2+'px')
-                        .attr('y', function(d,i){
-                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length) * 1.8 - .5 * fSize;
-                        })
-                        .attr('x', function(d, i){
-                            return center.x + center.r * Math.cos(2*Math.PI * i/data.length) * 1.8;
-                        })
-                        .text(function(d){return d.title;});
-
-                    texts.append('text')
+                    var groups = svg.selectAll("g").data(data).enter();
+// ================ paint segments 1, the outer sections
+                    var segment_1_groups = groups.append('g');
+                    segment_1_groups.append("path")
+                            .attr("d", segment_1)
+                            .attr("stroke", "#000000")
+                            .attr("stroke-width", 2)
+                            .attr("fill", function(d, i){
+                                return color('#00FF00').shiftHue(0 + i*50).toCSS();
+                            })
+                            .attr("fill-opacity", '0.5')
+                    segment_1_groups.append('text')
+                            .attr('color', '#000000')
+                            .attr('text-anchor', 'middle')
+                            .attr('font-size', fSize/2+'px')
+                            .attr('y', function(d,i){
+                                return center.y + center.r * Math.sin(2*Math.PI * i/data.length) * 1.8 - .5 * fSize;
+                            })
+                            .attr('x', function(d, i){
+                                return center.x + center.r * Math.cos(2*Math.PI * i/data.length) * 1.8;
+                            })
+                            .text(function(d){return d.title;})
+                    segment_1_groups.append('text')
                         .attr('color', '#000000')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
@@ -198,8 +160,24 @@ angular.module('mean.directives')
                             return center.x + center.r * Math.cos(2*Math.PI * i/data.length) * 1.8;
                         })
                         .text(function(d){return d.score;});
+                    segment_1_groups.on('mouseover', function(d){
+                            var nodeSelection = d3.select(this).selectAll('path').style('fill-opacity', '.8');
+                        }).on('mouseout', function(d){
+                            var nodeSelection = d3.select(this).selectAll('path').style('fill-opacity', '.5');
+                        });
 
-                    texts.append('text')
+
+// ================ paint segments 2, the 2-circle intersections
+                    var segment_2_groups = groups.append('g');
+                    segment_2_groups.append("path")
+                        .attr("d", segment_2)
+                        .attr("stroke", "#000000")
+                        .attr("stroke-width", 2)
+                        .attr("fill", function(d, i){
+                            return color('#00FF00').shiftHue(150 + i*50).toCSS();
+                        })
+                        .attr("fill-opacity", '0.5')
+                    segment_2_groups.append('text')
                         .attr('color', '#000000')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
@@ -210,14 +188,31 @@ angular.module('mean.directives')
                             return center.x + center.r/2 * Math.cos(2*Math.PI * i/data.length + Math.PI/3) * 1.8;
                         })
                         .text(function(d){return d.intersect;});
+                    segment_2_groups.on('mouseover', function(d){
+                            var nodeSelection = d3.select(this).selectAll('path').style('fill-opacity', '.8');
+                        }).on('mouseout', function(d){
+                            var nodeSelection = d3.select(this).selectAll('path').style('fill-opacity', '.5');
+                        });
 
-                    svg.append('text')
+// ================ paint bulls eye
+                    var bullsEyeGroup = svg.append("g");
+                    bullsEyeGroup.append("path")
+                        .attr("d", segment_3)
+                        .attr("stroke", "#000000")
+                        .attr("stroke-width", 2)
+                        .attr("fill", "#ffffff");
+                    bullsEyeGroup.append('text')
                         .attr('color', '#000000')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
-                        .attr('y', center.y + fSize/2)
                         .attr('x', center.x)
+                        .attr('y', center.y + fSize/2)
                         .text(function(d){return 100;});
+                    bullsEyeGroup.on('mouseover', function(d){
+                        var nodeSelection = d3.select(this).selectAll('path').style('fill', '#dddddd');
+                    }).on('mouseout', function(d){
+                        var nodeSelection = d3.select(this).selectAll('path').style('fill', '#ffffff');
+                    });
 
                 };
             }
