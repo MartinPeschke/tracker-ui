@@ -121,7 +121,7 @@ angular.module('mean.directives')
                             .attr('text-anchor', 'middle')
                             .attr('font-size', fSize/2+'px')
                             .attr('y', function(d,i){
-                                return center.y + center.r * Math.sin(2*Math.PI * i/data.length) * 1.8 - 0.5 * fSize;
+                                return center.y + center.r * Math.sin(2*Math.PI * i/data.length) * 1.8 - fSize/2;
                             })
                             .attr('x', function(d, i){
                                 return center.x + center.r * Math.cos(2*Math.PI * i/data.length) * 1.8;
@@ -132,7 +132,7 @@ angular.module('mean.directives')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
                         .attr('y', function(d,i){
-                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length) * 1.8 + 0.5 * fSize;
+                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length) * 1.8 + fSize/2;
                         })
                         .attr('x', function(d, i){
                             return center.x + center.r * Math.cos(2*Math.PI * i/data.length) * 1.8;
@@ -160,7 +160,7 @@ angular.module('mean.directives')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
                         .attr('y', function(d,i){
-                            return center.y + center.r/2 * Math.sin(2*Math.PI * i/data.length + Math.PI/3) * 1.8 + 0.5 * fSize;
+                            return center.y + center.r/2 * Math.sin(2*Math.PI * i/data.length + Math.PI/3) * 1.8 + fSize/2;
                         })
                         .attr('x', function(d, i){
                             return center.x + center.r/2 * Math.cos(2*Math.PI * i/data.length + Math.PI/3) * 1.8;
