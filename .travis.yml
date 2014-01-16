@@ -4,4 +4,3 @@ node_js:
 env:
   - NODE_ENV=travis
 services:
-  - mongodb
