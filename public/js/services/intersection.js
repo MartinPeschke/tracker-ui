@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('Intersection')
-    .factory('Intersection',['Point2D', function(Point2D){
+    .factory('Intersection',['Point2D', 'Polynomial', function(Point2D, Polynomial){
             /*****
             *
             *   Intersection.js
@@ -403,6 +403,7 @@ angular.module('Intersection')
                 var min = a1.min(a2); // used to determine if point is on line segment
                 var max = a1.max(a2); // used to determine if point is on line segment
                 var result = new Intersection("No Intersection");
+                var roots;
 
                 a = p2.multiply(-2);
                 c2 = p1.add(a.add(p3));
@@ -914,6 +915,7 @@ angular.module('Intersection')
                 var min = a1.min(a2); // used to determine if point is on line segment
                 var max = a1.max(a2); // used to determine if point is on line segment
                 var result = new Intersection("No Intersection");
+                var roots;
 
                 // Start with Bezier using Bernstein polynomials for weighting functions:
                 //     (1-t^3)P1 + 3t(1-t)^2P2 + 3t^2(1-t)P3 + t^3P4

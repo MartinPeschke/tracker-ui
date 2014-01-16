@@ -1,1 +1,4 @@
 public/js/services/d3.js
+public/js/services/intersection.js
+public/js/services/point2d.js
+public/js/services/polynomial.js
