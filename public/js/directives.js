@@ -7,13 +7,17 @@ angular.module('mean.directives')
             scope: {
                 data: '=',
                 intersect: '=',
+                stdrad: '=',
                 label: '@',
                 onClick: '&'
             },
             link: function(scope, iElement) {
                 var svg = d3.select(iElement[0])
                     .append('svg')
-                    .attr('width', '100%');
+                    .attr('width', '100%'),
+                    rerender = function(){
+                        return scope.render(scope.data, scope.intersect, scope.stdrad);
+                    };
 
                 // on window resize, re-render d3 canvas
                 window.onresize = function() {
@@ -21,25 +25,21 @@ angular.module('mean.directives')
                 };
                 scope.$watch(function(){
                         return angular.element(window)[0].innerWidth;
-                    }, function(){
-                        return scope.render(scope.data);
-                    }
-                );
-
-                // watch for data changes and re-render
-                scope.$watch('data', function(newVals) {
-                    return scope.render(newVals);
-                }, true);
+                    }, rerender);
+                scope.$watch('intersect', rerender);
+                scope.$watch('stdrad', rerender);
 
                 // define render function
-                scope.render = function(data){
+                scope.render = function(data, intersection, stdrad){
+
+                    if(intersection >= stdrad) {return;}
+
                     svg.selectAll('*').remove();
 
-                    var std_rad = 100,
-                        height = 500,
+                    var height = 500,
                         fSize = 20,
                         total_width = d3.select(iElement[0])[0][0].offsetWidth,
-                        center = {x:total_width/4, y:200, r: scope.intersect},
+                        center = {x:total_width/4, y:200, r: intersection},
                         getX = function(d, i){
                             return center.x + center.r * Math.cos(2*Math.PI * i/data.length);
                         },
@@ -49,12 +49,13 @@ angular.module('mean.directives')
                         getIntersect = function(i){
                             var x1 = getX(null, i), y1 = getY(null, i),
                                 x2 = getX(null, i+1), y2 = getY(null, i+1);
-                            return Intersection.intersectCircleCircle(new Point2D(x1,y1), std_rad, new Point2D(x2,y2), std_rad);
+                            return Intersection.intersectCircleCircle(new Point2D(x1,y1), stdrad, new Point2D(x2,y2), stdrad);
                         };
 
                     svg.attr('height', height);
 
-                    var centers = _.map([0,1,2], function(k,i){return new Point2D(getX(data[k], i), getY(data[k], i));}),
+                    var svg_center = new Point2D( center.x, center.y),
+                        centers = _.map([0,1,2], function(k,i){return new Point2D(getX(data[k], i), getY(data[k], i));}),
                         ip = _.map(data, function(d, i){return getIntersect(i).points;}),
                         allIntersects = _.flatten(ip),
                         less = function(a, b){
@@ -74,38 +75,43 @@ angular.module('mean.directives')
 
                             _.each(allIntersects, function(el){
                                 var outsideOthers = _.reduce(others, function(memo, other){
-                                    return memo || (other.distanceFrom(el) - std_rad > 0.1);
+                                    return memo || (other.distanceFrom(el) - stdrad > 0.1);
                                 }, false);
 
-                                if(std_rad - center.distanceFrom(el) > 0.1) tri.inner = el;
-                                else if(Math.abs(std_rad - center.distanceFrom(el))<0.1&&outsideOthers)tri.outers.push(el);
+                                if(stdrad - center.distanceFrom(el) > 0.1) tri.inner = el;
+                                else if(Math.abs(stdrad - center.distanceFrom(el))<0.1&&outsideOthers)tri.outers.push(el);
                             });
                             if(less(tri.outers[1], tri.outers[0]))tri.outers.reverse();
                             return tri;
                         });
 
                     var segment_1 = function (d, i) {
-                        var tri = segments[i];
+                        var tri = segments[i],
+                            c = svg_center.distanceFrom(tri.outers[0]),
+                            b = tri.outers[0].distanceFrom(tri.outers[1]) / 2,
+                            larger_ellipse = svg_center.distanceFrom(centers[i]) > Math.sqrt( c*c - b*b) ? 1 : 0;
+
                         return 'M'+tri.outers[0].x+','+tri.outers[0].y +
-                              'A'+std_rad+','+std_rad+',0,1,0,'+tri.outers[1].x+','+tri.outers[1].y +
-                              'A'+std_rad+','+std_rad+',0,0,1,'+tri.inner.x+','+tri.inner.y +
-                              'A'+std_rad+','+std_rad+',0,0,1,'+tri.outers[0].x+','+tri.outers[0].y;
+                              'A'+stdrad+','+stdrad+',0,'+larger_ellipse+',0,'+tri.outers[1].x+','+tri.outers[1].y +
+                              'A'+stdrad+','+stdrad+',0,0,1,'+tri.inner.x+','+tri.inner.y +
+                              'A'+stdrad+','+stdrad+',0,0,1,'+tri.outers[0].x+','+tri.outers[0].y;
                     },
                     segment_2 = function(d, i){
                         var tri = segments[i],
                             next = segments[(i+1)%segments.length];
                         return 'M'+tri.outers[0].x+','+tri.outers[0].y +
-                                   'A'+std_rad+','+std_rad+',0,0,1,'+next.inner.x+','+ next.inner.y +
-                                    'A'+std_rad+','+std_rad+',0,0,0,'+tri.inner.x+','+ tri.inner.y +
-                                   'A'+std_rad+','+std_rad+',0,0,1,'+tri.outers[0].x+','+tri.outers[0].y;
+                                   'A'+stdrad+','+stdrad+',0,0,1,'+next.inner.x+','+ next.inner.y +
+                                    'A'+stdrad+','+stdrad+',0,0,0,'+tri.inner.x+','+ tri.inner.y +
+                                   'A'+stdrad+','+stdrad+',0,0,1,'+tri.outers[0].x+','+tri.outers[0].y;
                     },
                     last = _.last(segments),
                     segment_3 = 'M'+last.inner.x+','+last.inner.y +
                             _.map(segments, function(tri){
-                                return 'A'+std_rad+','+std_rad+',0,0,1,'+tri.inner.x+','+tri.inner.y;
+                                return 'A'+stdrad+','+stdrad+',0,0,1,'+tri.inner.x+','+tri.inner.y;
                             }).join('');
 
                     var groups = svg.selectAll('g').data(data).enter();
+
 // ================ paint segments 1, the outer sections
                     var segment_1_groups = groups.append('g');
                     segment_1_groups.append('path')
@@ -143,7 +149,6 @@ angular.module('mean.directives')
                         }).on('mouseout', function(){
                             d3.select(this).selectAll('path').style('fill-opacity', '0.5');
                         });
-
 
 // ================ paint segments 2, the 2-circle intersections
                     var segment_2_groups = groups.append('g');

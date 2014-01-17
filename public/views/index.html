@@ -2,8 +2,12 @@
   <h1>This is the home view</h1>
 
   <span>{{title}}</span>
-  <d3-circles data="d3Data" label="score" intersect="66" on-click="d3OnClick(item)"></d3-circles>
+  <d3-circles data="d3Data" label="score" intersect="distance" stdrad="radius" on-click="d3OnClick(item)"></d3-circles>
 
 
+  <hr/>
+  <input type="number" ng-model="distance"/>
+  <hr/>
+  <input type="number" ng-model="radius"/>
 
 </section>
