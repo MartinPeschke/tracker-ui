@@ -1,0 +1,24 @@
+<section>
+  <h1>This is the signin view</h1>
+  <form class="signin" action="/users/session" method="post" ng-controller="SigninController" ng-submit="submit()" >
+    <div class="form-group">
+      <label class="control-label" for='email'>Email</label>
+      <div class="controls">
+        <input id="email" class="form-control" type='text' name="email" placeholder='Email'/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="password">
+        Password
+      </label>
+      <div class="controls">
+        <input id="password" class="form-control" type='password' name="password" placeholder='Password'/>
+      </div>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" type='submit'>Sign in</button>
+      <span>&nbsp;or&nbsp;</span>
+      <a class="show-signup" href="#!/signup">Sign up</a>
+    </div>
+  </form>
+</section>

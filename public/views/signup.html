@@ -1,0 +1,31 @@
+<section>
+  <h1>This is the signup view</h1>
+  <form class="signin" action="/users" method="post" ng-controller="SignupController" ng-submit="submit()" >
+    <div class="form-group">
+      <label class="control-label" for="name">Full name</label>
+      <div class="controls">
+        <input id="name" class="form-control" type="text" name="name" placeholder="Full name" value="{{user.name}}">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="email">Email</label>
+      <div class="controls">
+        <input id="email" class="form-control" type="text" name="email" placeholder="Email" value="{{user.email}}">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="password">Password</label>
+      <div class="controls">
+        <input id="password" class="form-control" type="password" name="password" placeholder="Password">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary" type="submit">Sign up</button>
+      <span>&nbsp;or&nbsp;</span>
+      <a class="show-login" href="/signin">login</a>
+    </div>
+  </form>
+</section>

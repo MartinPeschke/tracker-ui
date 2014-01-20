@@ -4,6 +4,12 @@
 angular.module('trackerui').config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
+        when('/signin', {
+            templateUrl: 'views/signin.html'
+        }).
+        when('/signup', {
+            templateUrl: 'views/signup.html'
+        }).
         when('/', {
             templateUrl: 'views/index.html'
         }).
