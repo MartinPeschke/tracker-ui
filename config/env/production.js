@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: "mongodb://localhost/mean",
+    api: "http://bizintell.cloudapp.net:12345",
     app: {
         name: "Tracker UI"
     },

@@ -3,7 +3,8 @@
 /**
  * Module dependencies.
  */
-var express = require('express');
+var express = require('express'),
+    passport = require('passport');
 
 /**
  * Main application entry file.
@@ -14,18 +15,20 @@ var express = require('express');
 //Set the node enviornment variable if not set before
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-//Initializing system variables 
-var config = require('./config/config');
+//Initializing system variables
+var config = require('./config/config'),
+    auth = require('./config/middlewares/authorization');
 
-//bootstrap passport config
+// Bootstrap passport config
+require('./config/passport')(passport);
 
 var app = express();
 
 //express settings
-require('./config/express')(app);
+require('./config/express')(app, passport);
 
 //Bootstrap routes
-require('./config/routes')(app);
+require('./config/routes')(app, passport, auth);
 
 //Start the app by listening on <port>
 var port = process.env.PORT || config.port;

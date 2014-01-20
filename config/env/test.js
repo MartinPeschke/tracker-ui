@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: "mongodb://localhost/mean-test",
+    api: "http://bizintell.cloudapp.net:12345",
     port: 3001,
     app: {
         name: "Tracker UI"

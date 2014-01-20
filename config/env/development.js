@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    db: "mongodb://localhost/mean-dev",
+    api: "http://bizintell.cloudapp.net:12345",
     app: {
         name: "Tracker UI"
     },
@@ -25,4 +25,4 @@ module.exports = {
         clientSecret: "APP_SECRET",
         callbackURL: "http://localhost:3000/auth/google/callback"
     }
-}
+};
