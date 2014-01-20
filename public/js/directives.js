@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mean.directives')
+angular.module('trackerui.directives')
      .directive('d3Circles', ['d3', 'underscore', 'color', 'Point2D', 'Intersection', function(d3, _, color, Point2D, Intersection) {
         return {
             restrict: 'EA',

@@ -6,5 +6,7 @@ var path = require('path'),
 module.exports = {
     root: rootPath,
     port: process.env.PORT || 3000,
-    db: process.env.MONGOHQ_URL
+    sessionSecret: 'MEAN',
+    api: 'http://bizintell.cloudapp.net:12345',
+    apiClientToken: '1234asdf23t523f5ya'
 }

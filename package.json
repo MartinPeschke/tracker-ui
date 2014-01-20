@@ -1,52 +1,54 @@
 {
-    "name": "tracker-ui",
-    "description": "tracker-ui for visualizing things",
-    "version": "0.0.1",
-    "private": false,
-    "author": "Martin Peschke",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:MartinPeschke/tracker-ui.git"
-    },
-    "engines": {
-        "node": "0.10.x",
-        "npm": "1.3.x"
-    },
-    "scripts": {
-        "start": "node node_modules/grunt-cli/bin/grunt",
-        "test": "node node_modules/grunt-cli/bin/grunt test",
-        "postinstall": "node node_modules/bower/bin/bower install"
-    },
-    "dependencies": {
-        "express": "latest",
-        "jade": "latest",
-        "lodash": "latest",
-        "view-helpers": "latest",
-        "mean-logger": "latest",
-        "bower": "latest",
-        "grunt": "latest",
-        "grunt-cli": "latest",
-        "grunt-env": "latest",
-        "forever": "latest"
-    },
-    "devDependencies": {
-        "supertest": "latest",
-        "should": "latest",
-        "grunt-contrib-watch": "latest",
-        "grunt-contrib-jshint": "latest",
-        "grunt-nodemon": "latest",
-        "grunt-concurrent": "latest",
-        "grunt-mocha-test": "latest",
-        "karma-script-launcher": "~0.1.0",
-        "karma-chrome-launcher": "~0.1.0",
-        "karma-firefox-launcher": "~0.1.0",
-        "karma-html2js-preprocessor": "~0.1.0",
-        "karma-jasmine": "~0.1.3",
-        "karma-requirejs": "~0.1.0",
-        "karma-coffee-preprocessor": "~0.1.0",
-        "karma-phantomjs-launcher": "~0.1.0",
-        "karma": "~0.10.4",
-        "grunt-karma": "~0.6.2",
-        "karma-coverage": "~0.1.0"
-    }
+  "name": "tracker-ui",
+  "description": "tracker-ui for visualizing things",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Martin Peschke",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MartinPeschke/tracker-ui.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "scripts": {
+    "start": "node node_modules/grunt-cli/bin/grunt",
+    "test": "node node_modules/grunt-cli/bin/grunt test",
+    "postinstall": "node node_modules/bower/bin/bower install"
+  },
+  "dependencies": {
+    "express": "latest",
+    "jade": "latest",
+    "lodash": "latest",
+    "view-helpers": "latest",
+    "mean-logger": "latest",
+    "bower": "latest",
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "grunt-env": "latest",
+    "forever": "latest",
+    "request": "~2.33.0",
+    "winston": "~0.7.2"
+  },
+  "devDependencies": {
+    "supertest": "latest",
+    "should": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-nodemon": "latest",
+    "grunt-concurrent": "latest",
+    "grunt-mocha-test": "latest",
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-jasmine": "~0.1.3",
+    "karma-requirejs": "~0.1.0",
+    "karma-coffee-preprocessor": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma": "~0.10.4",
+    "grunt-karma": "~0.6.2",
+    "karma-coverage": "~0.1.0"
+  }
 }

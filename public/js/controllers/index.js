@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('mean.system').controller('IndexController', ['$scope', 'Global', function ($scope, Global) {
+angular.module('trackerui.system').controller('IndexController', ['$scope', 'Global', function ($scope, Global) {
     $scope.global = Global;
     $scope.title = 'Some d3 stuff';
-    $scope.distance = 90;
+    $scope.distance = 70;
     $scope.radius = 100;
     $scope.d3Data = [
         {title: 'Greg', score:12, intersect: 5, id:1},

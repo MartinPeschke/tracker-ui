@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-    api: "http://bizintell.cloudapp.net:12345",
     app: {
         name: "Tracker UI"
     },
