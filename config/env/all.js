@@ -7,6 +7,6 @@ module.exports = {
     root: rootPath,
     port: process.env.PORT || 3000,
     sessionSecret: 'MEAN',
-    api: 'http://bizintell.cloudapp.net:12345',
+    api: 'http://bizintell.cloudapp.net:12345/0.0.1/web',
     apiClientToken: '1234asdf23t523f5ya'
 }

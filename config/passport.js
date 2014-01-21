@@ -27,7 +27,7 @@ module.exports = function(passport) {
             passwordField: 'password'
         },
         function(email, password, done) {
-            backend.post('/login', {email:email, pwd:password}, function(err, result){
+            backend.post('/account/login', {email:email, pwd:password}, function(err, result){
                 var user = result.User;
                 done(null, user, user?null:{message: 'Unknown user'});
             });

@@ -1,31 +1,50 @@
-<section>
-  <h1>This is the signup view</h1>
-  <form class="signin" action="/users" method="post" ng-controller="SignupController" ng-submit="submit()" >
-    <div class="form-group">
-      <label class="control-label" for="name">Full name</label>
-      <div class="controls">
-        <input id="name" class="form-control" type="text" name="name" placeholder="Full name" value="{{user.name}}">
-      </div>
-    </div>
+<div class="row">
+  <div class="col-md-8 col-md-offset-3 col-xs-12 text-center" ng-include="'views/auth.html'"></div>
+  <div class="col-md-8 col-md-offset-3 col-xs-12">
+    <h1>This is the signup view</h1>
+    <form class="form-validated" method="post" ng-controller="SignupController" name="form" ng-submit="submit(model, form)">
 
-    <div class="form-group">
-      <label class="control-label" for="email">Email</label>
-      <div class="controls">
-        <input id="email" class="form-control" type="text" name="email" placeholder="Email" value="{{user.email}}">
+      <div class="form-group">
+        <label class="control-label" for="name">Full name</label>
+        <div class="controls">
+          <input type="text" ng-model="model.name" name="name" id="name" class="form-control" required/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <label class="control-label" for="password">Password</label>
-      <div class="controls">
-        <input id="password" class="form-control" type="password" name="password" placeholder="Password">
+      <div class="form-group">
+        <label class="control-label" for="email">Email</label>
+        <div class="controls">
+          <input type="email" ng-model="model.email" name="email" id="email" class="form-control" required/>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <button class="btn btn-primary" type="submit">Sign up</button>
-      <span>&nbsp;or&nbsp;</span>
-      <a class="show-login" href="/signin">login</a>
-    </div>
-  </form>
-</section>
+      <div class="form-group">
+        <label class="control-label" for="password">Password</label>
+        <div class="controls">
+          <input type="password" ng-model="model.password" id="password" name="password" class="form-control" required ng-minlength="8" ng-pattern="/^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\W]).*$/"/>
+          <div ng-show="form.password.$dirty && form.password.$invalid">Invalid:
+            <span ng-show="form.password.$error.minlength">Too Short</span>
+            <span ng-show="form.password.$error.pattern">Must contain lower case, upper case letters and numbers.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label" for="confirm_password">ReType Password</label>
+        <div class="controls">
+          <input type="password" ng-model="model.confirm_password" id="confirm_password" name="confirm_password" class="form-control" required data-password-verify="model.password" />
+          <div ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
+            <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Sign up</button>
+        <span>&nbsp;or&nbsp;</span>
+        <a class="show-login" href="#!/signin">Sign in</a>
+      </div>
+
+    </form>
+  </div>
+</div>

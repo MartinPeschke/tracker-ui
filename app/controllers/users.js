@@ -47,15 +47,15 @@ exports.session = function(req, res) {
  * Create user
  */
 exports.create = function(req, res, next) {
-    backend.post('/signup', req.body, function(err, result){
+    backend.post('/account/signup', req.body, function(err, result){
         var user = result.User;
         if(user){
             req.logIn(user, function(err) {
                 if (err) return next(err);
-                return res.redirect('/');
+                return res.json(result);
             });
         } else {
-            return res.render('users/signup', {
+            return res.json({
                 message: result.DbMessage,
                 user: user
             });

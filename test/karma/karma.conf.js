@@ -26,7 +26,7 @@ module.exports = function(config) {
             'public/lib/angular-ui-utils/modules/route/route.js',
             'public/js/app.js',
             'public/js/config.js',
-            'public/js/directives.js',
+            'public/js/paint.js',
             'public/js/filters.js',
             'public/js/services/global.js',
             'public/js/controllers/index.js',

@@ -3,11 +3,15 @@
 //Global service for global variables
 angular.module('trackerui.system').factory('Global', [
     function() {
-        var _this = this;
-        _this._data = {
-            user: window.user,
-            authenticated: !! window.user
+        var _user = window.user||{};
+
+        return {
+            user: _user,
+            setUser: function(user){
+                for(var prop in user){
+                    _user[prop] = user[prop];
+                }
+            }
         };
-        return _this._data;
     }
 ]);
