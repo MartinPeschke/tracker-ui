@@ -8,7 +8,7 @@ angular.module('trackerui.system').controller('HeaderController', ['$scope', 'Gl
     $scope.user = Global.user;
     $scope.authenticated = !_.isEmpty(Global.user);
 
-    $scope.$watch('user', function (newVal, oldVal) {
+    $scope.$watch('user', function (/*newVal , oldVal */) {
         $scope.authenticated = !_.isEmpty(Global.user);
     }, true);
 

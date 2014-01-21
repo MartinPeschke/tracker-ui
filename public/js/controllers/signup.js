@@ -9,7 +9,7 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
             $scope.loading = true;
             $scope.errors = [];
             $http.post('/users', model).
-                success(function(data, status, headers, config) {
+                success(function(data /*, status, headers, config*/) {
                     if(data.User){
                         Global.setUser(data.User);
                         $location.path( '/' );
@@ -18,7 +18,7 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
                     }
                     $scope.loading = false;
                 }).
-                error(function(data, status, headers, config) {
+                error(function(data /*, status, headers, config*/) {
                     $scope.errors.push(data);
                     $scope.loading = false;
                 });

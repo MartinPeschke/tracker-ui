@@ -9,17 +9,17 @@ angular.module('trackerui.system').controller('SigninController', ['$scope', '$h
             $scope.errors = [];
             $scope.loading = true;
             $http.post('/users/session', model)
-                .success(function(data, status, headers, config) {
+                .success(function(data /*, status, headers, config*/) {
                     if(data.User){
                         Global.setUser(data.User);
                         $location.path( '/' );
                     } else {
-                        $scope.errors.push("Unknown Email or Login");
+                        $scope.errors.push('Unknown Email or Login');
                     }
                     $scope.loading = false;
                 })
-                .error(function(data, status, headers, config) {
-                    $scope.errors.push("Unknown Email or Login");
+                .error(function(/* data, status, headers, config */) {
+                    $scope.errors.push('Unknown Email or Login');
                     $scope.loading = false;
                 });
         }
