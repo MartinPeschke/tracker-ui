@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trackerui', ['ngCookies', 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.route', 'trackerui.system', 'trackerui.directives']);
+angular.module('trackerui', ['ngCookies', 'ngResource', 'ngRoute', 'ui.bootstrap', 'trackerui.system', 'trackerui.directives']);
 
 angular.module('d3', []);
 angular.module('Point2D', []);
