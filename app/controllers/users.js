@@ -40,7 +40,7 @@ exports.signout = function(req, res) {
  * Session
  */
 exports.session = function(req, res) {
-    return res.json(req.user);
+    return res.json({User: req.user});
 };
 
 /**
