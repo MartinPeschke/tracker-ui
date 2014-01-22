@@ -16,6 +16,8 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
+            'public/lib/underscore/underscore-min.js',
+            'public/lib/colorjs/color.js',
             'public/lib/angular/angular.js',
             'public/lib/angular-mocks/angular-mocks.js',
             'public/lib/angular-cookies/angular-cookies.js',
@@ -23,13 +25,19 @@ module.exports = function(config) {
             'public/lib/angular-route/angular-route.js',
             'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
             'public/lib/angular-bootstrap/ui-bootstrap.js',
-            'public/lib/angular-ui-utils/modules/route/route.js',
             'public/js/app.js',
             'public/js/config.js',
-            'public/js/paint.js',
             'public/js/filters.js',
+            'public/js/directives/paint.js',
+            'public/js/directives/pwdmatch.js',
             'public/js/services/global.js',
+            'public/js/services/d3.js',
+            'public/js/services/point2d.js',
+            'public/js/services/polynomial.js',
+            'public/js/services/intersection.js',
             'public/js/controllers/index.js',
+            'public/js/controllers/signup.js',
+            'public/js/controllers/signin.js',
             'public/js/controllers/header.js',
             'public/js/init.js',
             'test/karma/unit/**/*.js'

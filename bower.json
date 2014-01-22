@@ -10,6 +10,7 @@
     "angular-bootstrap": "latest",
     "angular-ui-utils": "latest",
     "d3": "3.3.13",
-    "colorjs": "~1.0.1"
+    "colorjs": "~1.0.1",
+    "underscore": "~1.5.2"
   }
 }

@@ -21,7 +21,7 @@
       <div class="form-group">
         <label class="control-label" for="password">Password</label>
         <div class="controls">
-          <input type="password" ng-model="model.password" id="password" name="password" class="form-control" required ng-minlength="8" ng-pattern="/^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\W]).*$/"/>
+          <input type="password" ng-model="model.pwd" id="password" name="password" class="form-control" required ng-minlength="8" ng-pattern="/^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\W]).*$/"/>
           <div ng-show="form.password.$dirty && form.password.$invalid">Invalid:
             <span ng-show="form.password.$error.minlength">Too Short</span>
             <span ng-show="form.password.$error.pattern">Must contain lower case, upper case letters and numbers.</span>
@@ -32,7 +32,7 @@
       <div class="form-group">
         <label class="control-label" for="confirm_password">ReType Password</label>
         <div class="controls">
-          <input type="password" ng-model="model.confirm_password" id="confirm_password" name="confirm_password" class="form-control" required data-password-verify="model.password" />
+          <input type="password" id="confirm_password" name="confirm_password" class="form-control" required data-password-verify="model.password" />
           <div ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
             <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
           </div>

@@ -1,10 +1,10 @@
 'use strict';
 
 (function() {
-    describe('MEAN controllers', function() {
+    describe('TrackerUI controllers', function() {
         describe('HeaderController', function() {
             // Load the controllers module
-            beforeEach(module('mean'));
+            beforeEach(module('trackerui'));
 
             var scope, HeaderController;
 
@@ -16,9 +16,9 @@
                 });
             }));
 
-            it('should expose some global scope', function() {
+            it('should expose a user object globally', function() {
 
-                expect(scope.global).toBeTruthy();
+                expect(scope.user).toBeTruthy();
 
             });
         });
