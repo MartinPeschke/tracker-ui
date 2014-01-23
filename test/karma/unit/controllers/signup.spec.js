@@ -46,6 +46,15 @@
                 httpBackend.flush();
                 expect(scope.errors[0].errorMessage).toBe('ERROR');
             });
+            it('should push out error, if network failure', function() {
+                var form = {$valid : true},
+                    user = {email:'mapa@hackandcraft.com', pwd:'mapa'},
+                    company = {'name':'Test Corp!'};
+                expect(scope.submit(user, company, form)).toBeFalsy();
+                httpBackend.expectPOST('/users').respond(500, {'errorMessage':'ERROR'});
+                httpBackend.flush();
+                expect(scope.errors[0].errorMessage).toBe('ERROR');
+            });
 
 
         });
