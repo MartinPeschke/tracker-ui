@@ -31,13 +31,11 @@
             });
             it('should send if form valid', function() {
                 var form = {$valid : true};
-                expect(scope.submit({email:"mapa@hackandcraft.com", pwd:"mapa"}, form)).toBeFalsy();
+                expect(scope.submit({email:'mapa@hackandcraft.com', pwd:'mapa'}, form)).toBeFalsy();
                 httpBackend.expectPOST('/users/session');
                 httpBackend.flush();
                 expect(location.path()).toBe('/');
-
             });
-
         });
     });
 })();
