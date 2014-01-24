@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Polynomial')
+angular.module('Polynomial', [])
     .factory('Polynomial',[function(){
         /*****
         *

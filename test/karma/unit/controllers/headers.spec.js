@@ -23,7 +23,7 @@
 
             it('setting user should set authenticated to true', function() {
 
-                scope.user.id = 1;
+                scope.user.Id = 1;
                 scope.$apply();
                 expect(scope.authenticated).toBe(true);
 

@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('trackerui.system').controller('IndexController', ['$scope', 'Global', function ($scope, Global) {
-    $scope.global = Global;
+angular.module('trackerui.system').controller('IndexController', ['$scope', function ($scope) {
     $scope.title = 'Some d3 stuff';
     $scope.distance = 70;
     $scope.radius = 100;

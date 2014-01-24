@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Point2D')
+angular.module('Point2D', [])
     .factory('Point2D',[function(){
 
         /*****

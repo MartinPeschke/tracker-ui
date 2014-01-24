@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Intersection')
+angular.module('Intersection', ['Point2D', 'Polynomial'])
     .factory('Intersection',['Point2D', 'Polynomial', function(Point2D, Polynomial){
             /*****
             *

@@ -1,16 +1,18 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SignupController', ['$scope', '$http', '$location', 'Global', function ($scope, $http, $location, Global) {
-    $scope.global = Global;
+angular.module('trackerui.system').controller('SignupController', ['$scope', '$http', '$location', 'UserService', function ($scope, $http, $location, User) {
+
     $scope.errors = [];
     $scope.loading = false;
     $scope.submit = function(company, user, form){
+        var companyReq = {'name':company.name, 'Users':[user]};
         if(form.$valid && !$scope.loading){
             $scope.errors = [];
             $scope.loading = true;
-            $http.post('/users', {'name':company.name, 'Users':[user]})
+            $http.post('/users', companyReq)
                 .success(function(data /*, status, headers, config*/) {
-                    if(Global.setUserFromCompany(data.Company)){
+                    var user = User.setCompany(data.Company);
+                    if(user){
                         $location.path( '/' );
                     } else {
                         $scope.errors.push(data);

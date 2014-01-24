@@ -25,21 +25,24 @@ module.exports = function(config) {
             'public/lib/angular-route/angular-route.js',
             'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
             'public/lib/angular-bootstrap/ui-bootstrap.js',
+
+            'public/lib/d3-angular/d3.js',
+            'public/lib/d3-angular/point2d.js',
+            'public/lib/d3-angular/polynomial.js',
+            'public/lib/d3-angular/intersection.js',
+
             'public/js/app.js',
             'public/js/config.js',
             'public/js/filters.js',
             'public/js/directives/paint.js',
             'public/js/directives/pwdmatch.js',
-            'public/js/services/global.js',
-            'public/js/services/d3.js',
-            'public/js/services/point2d.js',
-            'public/js/services/polynomial.js',
-            'public/js/services/intersection.js',
+            'public/js/services/user.js',
             'public/js/controllers/index.js',
             'public/js/controllers/signup.js',
             'public/js/controllers/signin.js',
             'public/js/controllers/header.js',
             'public/js/init.js',
+
             'test/karma/unit/**/*.js'
         ],
 
@@ -61,7 +64,8 @@ module.exports = function(config) {
             // do not include tests or libraries
             // (these files will be instrumented by Istanbul)
             'public/js/controllers/*.js': ['coverage'],
-            'public/js/services/*.js': ['coverage']
+            'public/js/services/*.js': ['coverage'],
+            'public/js/directives/*.js': ['coverage']
         },
 
         coverageReporter: {

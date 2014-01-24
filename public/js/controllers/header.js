@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('trackerui.system').controller('HeaderController', ['$scope', 'Global', 'underscore', function ($scope, Global, _) {
+angular.module('trackerui.system').controller('HeaderController', ['$scope', 'UserService', 'underscore', function ($scope, User, _) {
     $scope.menu = [];
     $scope.isCollapsed = false;
 
 
-    $scope.user = Global.user;
-    $scope.authenticated = !_.isEmpty(Global.user);
+    $scope.user = User.data;
+    $scope.authenticated = User.isAuthenticated();
 
     $scope.$watch('user', function (/*newVal , oldVal */) {
-        $scope.authenticated = !_.isEmpty(Global.user);
+        $scope.authenticated = User.isAuthenticated();
     }, true);
 
 }]);
