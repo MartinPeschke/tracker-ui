@@ -48,7 +48,7 @@ exports.session = function(req, res) {
  */
 exports.create = function(req, res, next) {
     backend.post('/company/signup', req.body, function(err, result){
-        var company = result.Company, user = company.Users[0];
+        var company = result.Company;
         if(company){
             req.logIn(company, function(err) {
                 if (err) return next(err);
@@ -65,4 +65,16 @@ exports.create = function(req, res, next) {
  */
 exports.me = function(req, res) {
     res.jsonp(req.user || null);
+};
+
+
+
+/**
+ * check email is available
+ */
+
+exports.checkEmail = function(req, res){
+    backend.post('/user/EmailAvailable', req.query, function(err, result){
+        return res.json({'success':!result.DbMessage});
+    });
 };

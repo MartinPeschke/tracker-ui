@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trackerui.system').controller('HeaderController', ['$scope', 'UserService', 'underscore', function ($scope, User, _) {
+angular.module('trackerui.system').controller('HeaderController', ['$scope', 'UserService', function ($scope, User) {
     $scope.menu = [];
     $scope.isCollapsed = false;
 

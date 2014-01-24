@@ -26,6 +26,7 @@ module.exports = function(config) {
             'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
             'public/lib/angular-bootstrap/ui-bootstrap.js',
 
+
             'public/lib/d3-angular/d3.js',
             'public/lib/d3-angular/point2d.js',
             'public/lib/d3-angular/polynomial.js',
@@ -35,7 +36,8 @@ module.exports = function(config) {
             'public/js/config.js',
             'public/js/filters.js',
             'public/js/directives/paint.js',
-            'public/js/directives/pwdmatch.js',
+            'public/js/directives/sameas.js',
+            'public/js/directives/servervalid.js',
             'public/js/services/user.js',
             'public/js/controllers/index.js',
             'public/js/controllers/signup.js',

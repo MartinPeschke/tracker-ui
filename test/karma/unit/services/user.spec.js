@@ -23,7 +23,6 @@
             });
             it('isAnon = false when Company with user', function() {
                 var data = user_service.setCompany({'Users':[{Id:2}], Id:0});
-                console.log(data);
                 expect(user_service.data.Id).toBe(2);
                 expect(user_service.isAuthenticated()).toBe(true);
             });
