@@ -10,8 +10,7 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
             $scope.loading = true;
             $http.post('/users', {'name':company.name, 'Users':[user]})
                 .success(function(data /*, status, headers, config*/) {
-                    if(data.User){
-                        Global.setUser(data.User);
+                    if(Global.setUserFromCompany(data.Company)){
                         $location.path( '/' );
                     } else {
                         $scope.errors.push(data);

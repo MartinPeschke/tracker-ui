@@ -1,10 +1,6 @@
 'use strict';
 
 var LocalStrategy = require('passport-local').Strategy,
-    TwitterStrategy = require('passport-twitter').Strategy,
-    FacebookStrategy = require('passport-facebook').Strategy,
-    GitHubStrategy = require('passport-github').Strategy,
-    GoogleStrategy = require('passport-google-oauth').OAuth2Strategy,
     config = require('./config'),
     backend = require('../models/backend'),
     user = require('../models/user');
@@ -25,11 +21,15 @@ module.exports = function(passport) {
             passwordField: 'password'
         },
         function(email, password, done) {
-            backend.post('/account/login', {email:email, pwd:password}, function(err, result){
-                var user = result.User;
-                done(null, user, user?null:{message: 'Unknown user'});
+            backend.post('/user/login', {email:email, pwd:password}, function(err, result){
+                var has_user = result.Company&&
+                                   result.Company.Users&&
+                                       result.Company.Users.length>0;
+                if(!has_user)
+                    done(null, has_user, {message: 'Unknown user'});
+                else
+                    done(null, result);
             });
         }
     ));
-
 };

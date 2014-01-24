@@ -21,6 +21,12 @@
                 httpBackend.verifyNoOutstandingRequest();
             });
 
+
+            var user = {email:'mapa@hackandcraft.com', pwd:'mapa'},
+                company = {'name':'Test Corp!'},
+                error = {'errorMessage':'ERROR'},
+                valid_reply = {Company:{Users:[{Id: '1'}]}};
+
             it('should start out non loading', function() {
                 expect(scope.loading).toBe(false);
             });
@@ -33,25 +39,21 @@
                     user = {email:'mapa@hackandcraft.com', pwd:'mapa'},
                     company = {'name':'Test Corp!'};
                 expect(scope.submit(user, company, form)).toBeFalsy();
-                httpBackend.expectPOST('/users').respond(200, {User:{Id: '1'}});
+                httpBackend.expectPOST('/users').respond(200, valid_reply);
                 httpBackend.flush();
                 expect(location.path()).toBe('/');
             });
             it('should push out error, if signup not successful', function() {
-                var form = {$valid : true},
-                    user = {email:'mapa@hackandcraft.com', pwd:'mapa'},
-                    company = {'name':'Test Corp!'};
+                var form = {$valid : true};
                 expect(scope.submit(user, company, form)).toBeFalsy();
-                httpBackend.expectPOST('/users').respond(200, {'errorMessage':'ERROR'});
+                httpBackend.expectPOST('/users').respond(200, error);
                 httpBackend.flush();
                 expect(scope.errors[0].errorMessage).toBe('ERROR');
             });
             it('should push out error, if network failure', function() {
-                var form = {$valid : true},
-                    user = {email:'mapa@hackandcraft.com', pwd:'mapa'},
-                    company = {'name':'Test Corp!'};
+                var form = {$valid : true};
                 expect(scope.submit(user, company, form)).toBeFalsy();
-                httpBackend.expectPOST('/users').respond(500, {'errorMessage':'ERROR'});
+                httpBackend.expectPOST('/users').respond(500, error);
                 httpBackend.flush();
                 expect(scope.errors[0].errorMessage).toBe('ERROR');
             });

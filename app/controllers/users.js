@@ -40,25 +40,22 @@ exports.signout = function(req, res) {
  * Session
  */
 exports.session = function(req, res) {
-    return res.json({User: req.user});
+    return res.json(req.user);
 };
 
 /**
  * Create user
  */
 exports.create = function(req, res, next) {
-    backend.post('/account/signup', req.body, function(err, result){
-        var user = result.User;
-        if(user){
-            req.logIn(user, function(err) {
+    backend.post('/company/signup', req.body, function(err, result){
+        var company = result.Company, user = company.Users[0];
+        if(company){
+            req.logIn(company, function(err) {
                 if (err) return next(err);
                 return res.json(result);
             });
         } else {
-            return res.json({
-                message: result.DbMessage,
-                user: user
-            });
+            return res.json({message: result.DbMessage});
         }
     });
 };

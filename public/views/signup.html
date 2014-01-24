@@ -40,7 +40,7 @@
       <div class="form-group">
         <label class="control-label" for="confirm_password">ReType Password</label>
         <div class="controls">
-          <input type="password" id="confirm_password" name="confirm_password" class="form-control" required data-password-verify="user.password" />
+          <input type="password" id="confirm_password" name="confirm_password" class="form-control" ng-model="scrap" required data-password-verify="user.pwd" />
           <div ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
             <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
           </div>

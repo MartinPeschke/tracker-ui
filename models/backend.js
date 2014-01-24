@@ -17,9 +17,9 @@ exports.post = function(path, data, next){
             'Client-Token': config.apiClientToken
         }
     };
-    console.log(options);
+    console.log('REQUEST: ', JSON.stringify(options));
     request(options, function callback(error, response, body){
-        console.log(body);
+        console.log('RESPONSE: ', JSON.stringify(body));
         if (!error && response.statusCode == 200) {
             next(error, body);
         }
