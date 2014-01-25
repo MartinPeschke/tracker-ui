@@ -1,31 +1,16 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-3 col-xs-12 text-center" ng-include="'views/auth.html'"></div>
-  <div class="col-md-8 col-md-offset-3 col-xs-12">
-    <h1>This is the signup view</h1>
-    <form class="form-validated" method="post" ng-controller="SignupController" name="form" ng-submit="submit(user, form)">
+  <div>Validated: {{ validated }}</div>
 
-      <div class="form-group">
-        <label class="control-label" for="company_name">Company name</label>
-        <div class="controls">
-          <input type="text" ng-model="user.CompanyReference.name" name="company_name" id="company_name" class="form-control" required/>
-        </div>
-      </div>
+  <div class="col-md-8 col-md-offset-3 col-xs-12" ng-show="!loading&&validated">
+    <h1>This is the forgot password view</h1>
+    <form class="form-validated forgotpwd" method="post" ng-controller="PwdResetController" name="form" ng-submit="submit(model, form)">
 
-
-      <div class="form-group">
-        <label class="control-label" for="user_name">Full name</label>
-        <div class="controls">
-          <input type="text" ng-model="user.name" name="user_name" id="user_name" class="form-control" required/>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="control-label" for="user_email">Email</label>
-        <div class="controls">
-          <input type="email" ng-model="user.email" name="user_email" id="user_email" class="form-control" required data-server-valid="/email/taken" >
-          <div ng-show="form.email.$dirty && form.email.$invalid && form.email.$error.serverValid">Invalid: This email is already registered!</div>
-        </div>
-      </div>
+      <ul ng-show="errors.length">
+        <li ng-repeat="error in errors">
+          {{ error }}
+        </li>
+      </ul>
 
       <div class="form-group">
         <label class="control-label" for="password">Password</label>
@@ -49,10 +34,21 @@
       </div>
 
       <div class="form-group">
-        <button class="btn btn-primary" type='submit' ng-show="!loading">Sign up</button>
+        <button class="btn btn-primary" type='submit' ng-show="!loading">Submit</button>
         <button class="btn btn-primary" ng-show="loading" disabled>Loading</button>
+        <span>&nbsp;or&nbsp;</span>
+        <a class="show-signup" href="#!/signin">Signin</a>
       </div>
 
     </form>
+  </div>
+
+  <div class="col-md-8 col-md-offset-3 col-xs-12" ng-show="loading">
+    <h1 class="alert alert-danger">Invalid token</h1>
+  </div>
+
+
+  <div class="col-md-8 col-md-offset-3 col-xs-12" ng-show="!loading&&!validated">
+    <h1 class="alert alert-danger">Invalid token</h1>
   </div>
 </div>

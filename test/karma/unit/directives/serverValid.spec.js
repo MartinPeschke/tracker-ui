@@ -6,7 +6,7 @@
             // Load the controllers module
             beforeEach(module('trackerui'));
 
-            var element, scope, compile, defaultData, httpBackend, changeInputValueTo,
+            var element, scope, compile, defaultData, httpBackend,
               validTemplate = '<input name="email" ng-model="email" data-server-valid="/checkemail">';
 
             beforeEach(function () {

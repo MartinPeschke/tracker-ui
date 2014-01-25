@@ -4,15 +4,14 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
 
     $scope.errors = [];
     $scope.loading = false;
-    $scope.submit = function(company, user, form){
-        var companyReq = {'name':company.name, 'Users':[user]};
+    $scope.submit = function(signupReq, form){
         if(form.$valid && !$scope.loading){
             $scope.errors = [];
             $scope.loading = true;
-            $http.post('/users', companyReq)
+            $http.post('/users', signupReq)
                 .success(function(data /*, status, headers, config*/) {
-                    var user = User.setCompany(data.Company);
-                    if(user){
+                    User.set(data.User);
+                    if(User.isAuthenticated()){
                         $location.path( '/' );
                     } else {
                         $scope.errors.push(data);

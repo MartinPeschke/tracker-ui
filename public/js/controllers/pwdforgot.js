@@ -1,21 +1,16 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SigninController', ['$scope', '$http', '$location', 'UserService', function ($scope, $http, $location, User) {
+angular.module('trackerui.system').controller('PwdForgotController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
 
     $scope.errors = [];
     $scope.loading = false;
-    $scope.submit = function(loginReq, form){
+    $scope.submit = function(forgotReq, form){
         if(form.$valid && !$scope.loading){
             $scope.errors = [];
             $scope.loading = true;
-            $http.post('/users/session', loginReq)
+            $http.post('/user/pwdforgot', forgotReq)
                 .success(function(data /*, status, headers, config*/) {
-                    User.set(data.User);
-                    if(User.isAuthenticated()){
-                        $location.path( '/' );
-                    } else {
-                        $scope.errors.push('Unknown Email or Login');
-                    }
+                    $location.path( '/signin' );
                     $scope.loading = false;
                 })
                 .error(function(/* data, status, headers, config */) {

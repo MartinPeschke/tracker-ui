@@ -10,6 +10,12 @@ angular.module('trackerui').config(['$routeProvider',
         when('/signup', {
             templateUrl: 'views/signup.html'
         }).
+        when('/pwdforgot', {
+            templateUrl: 'views/pwdforgot.html'
+        }).
+        when('/pwdreset/:token', {
+            templateUrl: 'views/pwdreset.html'
+        }).
         when('/', {
             templateUrl: 'views/index.html'
         }).

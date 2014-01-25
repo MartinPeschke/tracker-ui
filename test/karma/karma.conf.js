@@ -43,6 +43,8 @@ module.exports = function(config) {
             'public/js/controllers/signup.js',
             'public/js/controllers/signin.js',
             'public/js/controllers/header.js',
+            'public/js/controllers/pwdforgot.js',
+            'public/js/controllers/pwdreset.js',
             'public/js/init.js',
 
             'test/karma/unit/**/*.js'

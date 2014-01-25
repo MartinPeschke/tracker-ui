@@ -22,10 +22,27 @@
                 httpBackend.verifyNoOutstandingRequest();
             });
 
-
             var user = {email:'mapa@hackandcraft.com', pwd:'mapa'},
                 error = {'errorMessage':'ERROR'},
-                valid_reply = {Company:{Users:[{Id: '1'}]}};
+                valid_reply = {
+                    'DbMessage' : null,
+                    'Status' : '0',
+                    'ErrorMessage' : null,
+                    'EndPoint' : '/0.0.1/web/user/signup',
+                    'User' : {
+                        'Id' : 'users/1',
+                        'Name' : 'maropa@',
+                        'Email' : 'maropa@friendfund.com',
+                        'Pwd' : 'maropa2M',
+                        'Role' : null,
+                        'CompanyReference' : {
+                            'Id' : 'companies/65',
+                            'Name' : 'COMPANY CORP'
+                        },
+                        'PwdForgetTokens' : null
+                    }
+                };
+
             it('should start out non loading', function() {
                 expect(scope.loading).toBe(false);
             });

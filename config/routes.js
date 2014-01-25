@@ -15,6 +15,9 @@ module.exports = function(app, passport, auth) {
 
     // Setting the local strategy route
     app.post('/users/session', passport.authenticate('local', {}), users.session);
+    app.post('/user/pwdforgot', users.pwdforgot);
+    app.post('/user/pwdtokenvalid', users.pwdtokenvalid);
+    app.post('/user/pwdreset', users.pwdreset);
 
     // Home route
     var index = require('../app/controllers/index');

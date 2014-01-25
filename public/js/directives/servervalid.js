@@ -5,7 +5,7 @@ angular.module('trackerui.directives')
         return {
             require: 'ngModel',
             link: function(scope, element, attrs, ctrl) {
-                var uniqueness
+                var uniqueness;
                 scope.url = attrs.serverValid;
                 ctrl.$parsers.unshift(function(viewValue){
                     if(viewValue && viewValue.length>3){

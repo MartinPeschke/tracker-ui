@@ -22,11 +22,9 @@ module.exports = function(passport) {
         },
         function(email, password, done) {
             backend.post('/user/login', {email:email, pwd:password}, function(err, result){
-                var has_user = result.Company&&
-                                   result.Company.Users&&
-                                       result.Company.Users.length>0;
-                if(!has_user)
-                    done(null, has_user, {message: 'Unknown user'});
+                var login_success = result.User&&result.User.Id;
+                if(!login_success)
+                    done(null, login_success, {message: 'Unknown user'});
                 else
                     done(null, result);
             });
