@@ -92,16 +92,16 @@ exports.pwdforgot = function(req, res){
 };
 exports.pwdtokenvalid = function(req, res){
     backend.post('/user/LoginWithToken', req.body, function(err, result){
-        return res.json({'valid':true});
+        return res.json(result);
     });
 };
 exports.pwdreset = function(req, res){
     var token = req.body.token, pwd = req.body.pwd, user;
 
-    backend.post('/user/LoginWithToken', {PasswordForgetToken: token}, function(err, result){
+    backend.post('/user/LoginWithToken', {'PwdForgetTokens':[{'Token': token}]}, function(err, result){
         user = result.User;
         backend.post('/user/UpdatePassword', {pwd: pwd, id: user.Id}, function(err, result){
-            return res.json({'success': !result.DbMessage})
+            return res.json({'success': !result.DbMessage});
         });
     });
 };

@@ -10,7 +10,9 @@ angular.module('trackerui.system').controller('PwdForgotController', ['$scope', 
             $scope.loading = true;
             $http.post('/user/pwdforgot', forgotReq)
                 .success(function(data /*, status, headers, config*/) {
-                    $location.path( '/signin' );
+                    if(data.DbMessage)$scope.errors.push(data.DbMessage);
+                    else
+                        $location.path( '/signin' );
                     $scope.loading = false;
                 })
                 .error(function(/* data, status, headers, config */) {

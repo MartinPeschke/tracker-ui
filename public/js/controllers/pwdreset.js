@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trackerui.system').controller('PwdResetController', ['$scope', '$http', '$location', '$routeParams', function ($scope, $http, $location, $routeParams) {
+angular.module('trackerui.system').controller('PwdResetController', ['$scope', '$http', '$location', '$routeParams', 'underscore', function ($scope, $http, $location, $routeParams, _) {
 
     $scope.errors = [];
     $scope.loading = true;
@@ -9,7 +9,7 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
 
     if(!$scope.token)$scope.validated = false;
     else {
-        $http.post('/user/pwdforgot', {PasswordForgetToken: $scope.token})
+        $http.post('/user/pwdtokenvalid', {'PwdForgetTokens':[{'Token': $scope.token}]})
             .success(function(data /*, status, headers, config*/) {
                 $scope.validated = !data.DbMessage;
                 $scope.loading = false;
@@ -22,10 +22,11 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
 
 
     $scope.submit = function(forgotReq, form){
-        if(form.$valid && !$scope.loading){
+        if($scope.validated && form.$valid && !$scope.loading){
             $scope.errors = [];
             $scope.loading = true;
-            $http.post('/user/pwdreset', forgotReq)
+
+            $http.post('/user/pwdreset', _.extend({token: $scope.token}, forgotReq))
                 .success(function(data /*, status, headers, config*/) {
                     if(data.success)
                         $location.path( '/signin' );

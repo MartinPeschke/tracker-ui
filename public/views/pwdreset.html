@@ -1,54 +1,55 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-3 col-xs-12 text-center" ng-include="'views/auth.html'"></div>
-  <div>Validated: {{ validated }}</div>
 
-  <div class="col-md-8 col-md-offset-3 col-xs-12" ng-show="!loading&&validated">
+  <div class="col-md-8 col-md-offset-3 col-xs-12">
     <h1>This is the forgot password view</h1>
     <form class="form-validated forgotpwd" method="post" ng-controller="PwdResetController" name="form" ng-submit="submit(model, form)">
 
-      <ul ng-show="errors.length">
-        <li ng-repeat="error in errors">
-          {{ error }}
-        </li>
-      </ul>
+      <div ng-show="!loading && validated">
+        <ul ng-show="errors.length">
+          <li ng-repeat="error in errors">
+            {{ error }}
+          </li>
+        </ul>
 
-      <div class="form-group">
-        <label class="control-label" for="password">Password</label>
-        <div class="controls">
-          <input type="password" ng-model="user.pwd" id="password" name="password" class="form-control" required ng-minlength="8" ng-pattern="/^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\W]).*$/"/>
-          <div ng-show="form.password.$dirty && form.password.$invalid">Invalid:
-            <span ng-show="form.password.$error.minlength">Too Short</span>
-            <span ng-show="form.password.$error.pattern">Must contain lower case, upper case letters and numbers.</span>
+        <div class="form-group">
+          <label class="control-label" for="password">Password</label>
+          <div class="controls">
+            <input type="password" ng-model="model.pwd" id="password" name="password" class="form-control" required ng-minlength="8" ng-pattern="/^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\W]).*$/"/>
+            <div ng-show="form.password.$dirty && form.password.$invalid">Invalid:
+              <span ng-show="form.password.$error.minlength">Too Short</span>
+              <span ng-show="form.password.$error.pattern">Must contain lower case, upper case letters and numbers.</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <label class="control-label" for="confirm_password">ReType Password</label>
-        <div class="controls">
-          <input type="password" id="confirm_password" name="confirm_password" class="form-control" ng-model="scrap" required data-same-as="user.pwd" />
-          <div ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
-            <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
+        <div class="form-group">
+          <label class="control-label" for="confirm_password">ReType Password</label>
+          <div class="controls">
+            <input type="password" id="confirm_password" name="confirm_password" class="form-control" ng-model="scrap" required data-same-as="model.pwd" />
+            <div ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
+              <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
+            </div>
           </div>
         </div>
+
+        <div class="form-group">
+          <button class="btn btn-primary" type='submit' ng-show="!loading">Submit</button>
+          <button class="btn btn-primary" ng-show="loading" disabled>Loading</button>
+          <span>&nbsp;or&nbsp;</span>
+          <a class="show-signup" href="#!/signin">Signin</a>
+        </div>
+
       </div>
 
-      <div class="form-group">
-        <button class="btn btn-primary" type='submit' ng-show="!loading">Submit</button>
-        <button class="btn btn-primary" ng-show="loading" disabled>Loading</button>
-        <span>&nbsp;or&nbsp;</span>
-        <a class="show-signup" href="#!/signin">Signin</a>
+      <div ng-show="validated === null">
+        <h1 class="alert alert-info">Loading...</h1>
       </div>
 
+
+      <div ng-show="!loading && !validated">
+        <h1 class="alert alert-danger">Invalid token</h1>
+      </div>
     </form>
-  </div>
-
-  <div class="col-md-8 col-md-offset-3 col-xs-12" ng-show="loading">
-    <h1 class="alert alert-danger">Invalid token</h1>
-  </div>
-
-
-  <div class="col-md-8 col-md-offset-3 col-xs-12" ng-show="!loading&&!validated">
-    <h1 class="alert alert-danger">Invalid token</h1>
   </div>
 </div>
