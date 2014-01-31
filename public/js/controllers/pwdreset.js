@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('trackerui.system').controller('PwdResetController', ['$scope', '$http', '$location', '$routeParams', 'underscore', function ($scope, $http, $location, $routeParams, _) {
+angular.module('trackerui.system').controller('PwdResetController', ['$scope', '$http', '$location', '$stateParams', 'underscore', function ($scope, $http, $location, $stateParams, _) {
 
     $scope.errors = [];
     $scope.loading = true;
     $scope.validated = null;
-    $scope.token = $routeParams.token;
+    $scope.token = $stateParams.token;
 
     if(!$scope.token)$scope.validated = false;
     else {

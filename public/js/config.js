@@ -1,27 +1,34 @@
 'use strict';
 
 //Setting up route
-angular.module('trackerui').config(['$routeProvider',
-    function($routeProvider) {
-        $routeProvider.
-        when('/signin', {
-            templateUrl: 'views/signin.html'
-        }).
-        when('/signup', {
-            templateUrl: 'views/signup.html'
-        }).
-        when('/pwdforgot', {
-            templateUrl: 'views/pwdforgot.html'
-        }).
-        when('/pwdreset/:token', {
-            templateUrl: 'views/pwdreset.html'
-        }).
-        when('/', {
-            templateUrl: 'views/index.html'
-        }).
-        otherwise({
-            redirectTo: '/'
-        });
+angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
+    function($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise("/");
+        $stateProvider
+            .state('auth', {
+                abstract:true,
+                templateUrl:'views/auth.html'
+            })
+            .state('auth.signin', {
+                url: '/signin',
+                templateUrl: 'views/signin.html'
+            })
+            .state('auth.signup', {
+                url: '/signup',
+                templateUrl: 'views/signup.html'
+            })
+            .state('auth.pwdforgot', {
+                url:'/pwdforgot',
+                templateUrl: 'views/pwdforgot.html'
+            })
+            .state('auth.pwdreset', {
+                url: '/pwdreset/:token',
+                templateUrl: 'views/pwdreset.html'
+            })
+            .state('index', {
+                url:'/',
+                templateUrl: 'views/index.html'
+            });
     }
 ]);
 

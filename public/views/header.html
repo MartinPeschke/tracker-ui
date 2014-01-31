@@ -3,14 +3,11 @@
         <li>
             <a class="brand" href="/">TrackerUI - A new UI</a>
         </li>
-        <li data-ng-repeat="item in menu" data-ng-show="authenticated" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
-            <a href="#!/{{item.link}}">{{item.title}}</a>
-        </li>
     </ul>
     <ul class="nav navbar-nav pull-right" data-ng-hide="authenticated">
-        <li><a href="#!/signup">Signup</a></li>
+        <li><a ui-sref="auth.signup">Signup</a></li>
         <li class="divider-vertical"></li>
-        <li><a href="#!/signin">Signin</a>
+        <li><a ui-sref="auth.signin">Signin</a>
         </li>
     </ul>
     <ul class="nav navbar-nav pull-right" data-ng-show="authenticated">
@@ -19,8 +16,7 @@
               {{user.Name}} <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="/signout">Signout</a>
-                </li>
+                <li><a href="/signout">Signout</a></li>
             </ul>
         </li>
     </ul>

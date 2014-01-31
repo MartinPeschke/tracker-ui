@@ -1,58 +1,53 @@
-<div class="row">
-  <div class="col-md-8 col-md-offset-3 col-xs-12 text-center" ng-include="'views/auth.html'"></div>
-  <div class="col-md-8 col-md-offset-3 col-xs-12">
-    <h1>This is the signup view</h1>
-    <form class="form-validated" method="post" ng-controller="SignupController" name="form" ng-submit="submit(user, form)">
+<h1>This is the signup view</h1>
+<form class="form-validated" method="post" ng-controller="SignupController" name="form" ng-submit="submit(user, form)">
 
-      <div class="form-group">
-        <label class="control-label" for="company_name">Company name</label>
-        <div class="controls">
-          <input type="text" ng-model="user.CompanyReference.name" name="company_name" id="company_name" class="form-control" required/>
-        </div>
-      </div>
-
-
-      <div class="form-group">
-        <label class="control-label" for="user_name">Full name</label>
-        <div class="controls">
-          <input type="text" ng-model="user.name" name="user_name" id="user_name" class="form-control" required/>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="control-label" for="user_email">Email</label>
-        <div class="controls">
-          <input type="email" ng-model="user.email" name="user_email" id="user_email" class="form-control" required data-server-valid="/email/taken" >
-          <div ng-show="form.email.$dirty && form.email.$invalid && form.email.$error.serverValid">Invalid: This email is already registered!</div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="control-label" for="password">Password</label>
-        <div class="controls">
-          <input type="password" ng-model="user.pwd" id="password" name="password" class="form-control" required ng-minlength="8" ng-pattern="/^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\W]).*$/"/>
-          <div ng-show="form.password.$dirty && form.password.$invalid">Invalid:
-            <span ng-show="form.password.$error.minlength">Too Short</span>
-            <span ng-show="form.password.$error.pattern">Must contain lower case, upper case letters and numbers.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="control-label" for="confirm_password">ReType Password</label>
-        <div class="controls">
-          <input type="password" id="confirm_password" name="confirm_password" class="form-control" ng-model="scrap" required data-same-as="user.pwd" />
-          <div ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
-            <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <button class="btn btn-primary" type='submit' ng-show="!loading">Sign up</button>
-        <button class="btn btn-primary" ng-show="loading" disabled>Loading</button>
-      </div>
-
-    </form>
+  <div class="form-group">
+    <label class="control-label" for="company_name">Company name</label>
+    <div class="controls">
+      <input type="text" ng-model="user.CompanyReference.name" name="company_name" id="company_name" class="form-control" required/>
+    </div>
   </div>
-</div>
+
+
+  <div class="form-group">
+    <label class="control-label" for="user_name">Full name</label>
+    <div class="controls">
+      <input type="text" ng-model="user.name" name="user_name" id="user_name" class="form-control" required/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label" for="user_email">Email</label>
+    <div class="controls">
+      <input type="email" ng-model="user.email" name="user_email" id="user_email" class="form-control" required data-server-valid="/email/taken" >
+      <div ng-show="form.email.$dirty && form.email.$invalid && form.email.$error.serverValid">Invalid: This email is already registered!</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label" for="password">Password</label>
+    <div class="controls">
+      <input type="password" ng-model="user.pwd" id="password" name="password" class="form-control" required ng-minlength="8" ng-pattern="/^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\W]).*$/"/>
+      <div ng-show="form.password.$dirty && form.password.$invalid">Invalid:
+        <span ng-show="form.password.$error.minlength">Too Short</span>
+        <span ng-show="form.password.$error.pattern">Must contain lower case, upper case letters and numbers.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label" for="confirm_password">ReType Password</label>
+    <div class="controls">
+      <input type="password" id="confirm_password" name="confirm_password" class="form-control" ng-model="scrap" required data-same-as="user.pwd" />
+      <div ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
+        <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-primary" type='submit' ng-show="!loading">Sign up</button>
+    <button class="btn btn-primary" ng-show="loading" disabled>Loading</button>
+  </div>
+
+</form>

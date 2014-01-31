@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('trackerui', ['ngCookies', 'ngResource', 'ngRoute', 'ui.bootstrap', 'trackerui.system', 'trackerui.directives']);
+angular.module('trackerui', ['ngCookies', 'ngResource', 'ui.router', 'ui.bootstrap', 'trackerui.system', 'trackerui.directives']);
 
 angular.module('underscore', []).factory('underscore', function() { return window._; });
 angular.module('color', []).factory('color', function() { return window.net.brehaut.Color; });
