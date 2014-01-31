@@ -1,13 +1,11 @@
 'use strict';
 
 angular.module('trackerui.directives')
-     .directive('d3Circles', ['d3', 'underscore', 'color', 'Point2D', 'Intersection', function(d3, _, color, Point2D, Intersection) {
+     .directive('d3Circles', ['$window', 'd3', 'underscore', 'color', 'Point2D', 'Intersection', function($window, d3, _, color, Point2D, Intersection) {
         return {
             restrict: 'EA',
             scope: {
                 data: '=',
-                intersect: '=',
-                stdrad: '=',
                 label: '@',
                 onClick: '&'
             },
@@ -30,15 +28,19 @@ angular.module('trackerui.directives')
                 scope.$watch('stdrad', rerender);
 
                 // define render function
-                scope.render = function(data, intersection, stdrad){
-
+                scope.render = function(data){
+                    var height = $window.innerHeight * 3/4,
+                        fSize = height / 12,
+                        stdrad = height * 2/5,
+                        intersection = stdrad * 3/5;
                     if(intersection >= stdrad) {return;}
 
                     svg.selectAll('*').remove();
 
-                    var height = 800,
-                        fSize = 60,
+                    var
                         total_width = d3.select(iElement[0])[0][0].offsetWidth,
+
+
                         center = {x:total_width/2, y:height*2/5, r: intersection},
                         getX = function(d, i){
                             return center.x + center.r * Math.cos(2*Math.PI * i/data.length + 1/2);
@@ -126,10 +128,10 @@ angular.module('trackerui.directives')
                             .attr('text-anchor', 'middle')
                             .attr('font-size', fSize/3+'px')
                             .attr('y', function(d,i){
-                                return center.y + center.r * Math.sin(2*Math.PI * i/data.length + 1/2) * 1.8 - fSize/3;
+                                return center.y + center.r * Math.sin(2*Math.PI * i/data.length + 1/2) * 1.5 - fSize/3;
                             })
                             .attr('x', function(d, i){
-                                return center.x + center.r * Math.cos(2*Math.PI * i/data.length + 1/2) * 1.8;
+                                return center.x + center.r * Math.cos(2*Math.PI * i/data.length + 1/2) * 1.5;
                             })
                             .text(function(d){return d.title;});
                     segment_1_groups.append('text')
@@ -137,10 +139,10 @@ angular.module('trackerui.directives')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
                         .attr('y', function(d,i){
-                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length + 1/2) * 1.8 + fSize/2;
+                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length + 1/2) * 1.5 + fSize/2;
                         })
                         .attr('x', function(d, i){
-                            return center.x + center.r * Math.cos(2*Math.PI * i/data.length + 1/2) * 1.8;
+                            return center.x + center.r * Math.cos(2*Math.PI * i/data.length + 1/2) * 1.5;
                         })
                         .text(function(d){return d.score;});
                     segment_1_groups.on('mouseover', function(){

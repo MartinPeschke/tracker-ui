@@ -3,7 +3,7 @@
 //Setting up route
 angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/");
+        $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('auth', {
                 abstract:true,
