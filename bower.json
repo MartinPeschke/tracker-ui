@@ -6,7 +6,6 @@
     "angular-resource": "latest",
     "angular-cookies": "latest",
     "angular-mocks": "latest",
-    "angular-route": "latest",
     "angular-bootstrap": "latest",
     "angular-ui-utils": "latest",
     "angular-ui-router": "0.2.8-bowratic-tedium",

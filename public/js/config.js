@@ -7,23 +7,23 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
         $stateProvider
             .state('auth', {
                 abstract:true,
-                templateUrl:'views/auth.html'
+                templateUrl:'views/auth/layout.html'
             })
             .state('auth.signin', {
                 url: '/signin',
-                templateUrl: 'views/signin.html'
+                templateUrl: 'views/auth/signin.html'
             })
             .state('auth.signup', {
                 url: '/signup',
-                templateUrl: 'views/signup.html'
+                templateUrl: 'views/auth/signup.html'
             })
             .state('auth.pwdforgot', {
                 url:'/pwdforgot',
-                templateUrl: 'views/pwdforgot.html'
+                templateUrl: 'views/auth/pwdforgot.html'
             })
             .state('auth.pwdreset', {
                 url: '/pwdreset/:token',
-                templateUrl: 'views/pwdreset.html'
+                templateUrl: 'views/auth/pwdreset.html'
             })
             .state('index', {
                 url:'/',

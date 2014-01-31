@@ -22,9 +22,10 @@ module.exports = function(config) {
             'public/lib/angular-mocks/angular-mocks.js',
             'public/lib/angular-cookies/angular-cookies.js',
             'public/lib/angular-resource/angular-resource.js',
-            'public/lib/angular-route/angular-route.js',
-            'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+
+            'public/lib/angular-ui-router/release/angular-ui-router.min.js',
             'public/lib/angular-bootstrap/ui-bootstrap.js',
+            'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
 
 
             'public/lib/d3-angular/d3.js',
