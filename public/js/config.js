@@ -2,20 +2,21 @@
 
 //Setting up route
 angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider) {
+    function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
+
         $stateProvider
 
             .state('auth', {
-                abstract:true,
-                templateUrl:'views/auth/layout.html'
+                abstract: true,
+                templateUrl: 'views/auth/layout.html'
             })
             .state('auth.signin', {
                 url: '/signin',
                 templateUrl: 'views/auth/signin.html'
             })
             .state('auth.pwdforgot', {
-                url:'/pwdforgot',
+                url: '/pwdforgot',
                 templateUrl: 'views/auth/pwdforgot.html'
             })
             .state('auth.pwdreset', {
@@ -24,25 +25,25 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
             })
 
             .state('signup', {
-                abstract:true,
+                abstract: true,
                 url: '/signup',
-                templateUrl:'views/signup/layout.html',
-                data: {totalSteps:4}
+                templateUrl: 'views/signup/workflow.html',
+                data: {totalSteps: 4}
             })
             .state('signup.start', {
                 url: '',
-                templateUrl:'views/signup/step1.html',
-                data: {step:1}
+                templateUrl: 'views/signup/step1.html',
+                data: {step: 1}
             })
             .state('signup.step', {
-                url:"/:step",
-                templateUrl: function(stateParams){
-                    return 'views/signup/step'+stateParams.step+'.html';
+                url: '/:step',
+                templateUrl: function (stateParams) {
+                    return 'views/signup/step' + stateParams.step + '.html';
                 }
             })
 
             .state('index', {
-                url:'/',
+                url: '/',
                 templateUrl: 'views/index.html'
             });
     }
@@ -50,7 +51,7 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
 
 //Setting HTML5 Location Mode
 angular.module('trackerui').config(['$locationProvider',
-    function($locationProvider) {
+    function ($locationProvider) {
         $locationProvider.hashPrefix('!');
     }
 ]);

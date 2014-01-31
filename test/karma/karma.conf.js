@@ -47,7 +47,7 @@ module.exports = function(config) {
             'public/js/controllers/auth/pwdforgot.js',
             'public/js/controllers/auth/pwdreset.js',
 
-            'public/js/controllers/signup/breadcrumbs.js',
+            'public/js/controllers/signup/workflow.js',
             'public/js/controllers/signup/step1.js',
 
             'public/js/init.js',

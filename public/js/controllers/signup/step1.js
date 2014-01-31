@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SignupController', ['$scope', '$http', '$state', 'UserService', function ($scope, $http, $state, User) {
+angular.module('trackerui.system').controller('SignupController', ['$scope', '$http', '$state', 'UserService',
+    function ($scope, $http, $state, User) {
 
     $scope.errors = [];
     $scope.loading = false;
@@ -12,10 +13,10 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
                 .success(function(data /*, status, headers, config*/) {
                     User.set(data.User);
                     if(User.isAuthenticated()){
-                        if(User.isComplete()){
-                            $state.go('^.step2');
+                        if(User.isSignupComplete()){
+                            $state.go( 'index' );
                         } else {
-                            $state.go('index');
+                            $scope.goNextUrl();
                         }
                     } else {
                         $scope.errors.push(data);
