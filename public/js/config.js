@@ -5,6 +5,7 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
         $stateProvider
+
             .state('auth', {
                 abstract:true,
                 templateUrl:'views/auth/layout.html'
@@ -12,10 +13,6 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
             .state('auth.signin', {
                 url: '/signin',
                 templateUrl: 'views/auth/signin.html'
-            })
-            .state('auth.signup', {
-                url: '/signup',
-                templateUrl: 'views/auth/signup.html'
             })
             .state('auth.pwdforgot', {
                 url:'/pwdforgot',
@@ -25,6 +22,25 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
                 url: '/pwdreset/:token',
                 templateUrl: 'views/auth/pwdreset.html'
             })
+
+            .state('signup', {
+                abstract:true,
+                url: '/signup',
+                templateUrl:'views/signup/layout.html',
+                data: {totalSteps:4}
+            })
+            .state('signup.start', {
+                url: '',
+                templateUrl:'views/signup/step1.html',
+                data: {step:1}
+            })
+            .state('signup.step', {
+                url:"/:step",
+                templateUrl: function(stateParams){
+                    return 'views/signup/step'+stateParams.step+'.html';
+                }
+            })
+
             .state('index', {
                 url:'/',
                 templateUrl: 'views/index.html'

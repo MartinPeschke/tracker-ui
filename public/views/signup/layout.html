@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-3 col-xs-12 text-center" ng-controller="SignupBreadcrumbsController">
+    Signup workflow for THINGS!
+    <div>Signup step: {{ currentStep }} or {{ totalSteps }}</div>
+    <a href="{{ nextStepUrl }}">skip</a>
+
+  </div>
+  <div class="col-md-8 col-md-offset-3 col-xs-12" ui-view></div>
+</div>

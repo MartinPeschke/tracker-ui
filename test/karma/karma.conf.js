@@ -41,11 +41,15 @@ module.exports = function(config) {
             'public/js/directives/servervalid.js',
             'public/js/services/user.js',
             'public/js/controllers/index.js',
-            'public/js/controllers/signup.js',
-            'public/js/controllers/signin.js',
             'public/js/controllers/header.js',
-            'public/js/controllers/pwdforgot.js',
-            'public/js/controllers/pwdreset.js',
+
+            'public/js/controllers/auth/signin.js',
+            'public/js/controllers/auth/pwdforgot.js',
+            'public/js/controllers/auth/pwdreset.js',
+
+            'public/js/controllers/signup/breadcrumbs.js',
+            'public/js/controllers/signup/step1.js',
+
             'public/js/init.js',
 
             'test/karma/unit/**/*.js'
