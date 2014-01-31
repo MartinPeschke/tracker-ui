@@ -36,15 +36,15 @@ angular.module('trackerui.directives')
 
                     svg.selectAll('*').remove();
 
-                    var height = 500,
-                        fSize = 20,
+                    var height = 800,
+                        fSize = 60,
                         total_width = d3.select(iElement[0])[0][0].offsetWidth,
-                        center = {x:total_width/4, y:200, r: intersection},
+                        center = {x:total_width/2, y:height*2/5, r: intersection},
                         getX = function(d, i){
-                            return center.x + center.r * Math.cos(2*Math.PI * i/data.length);
+                            return center.x + center.r * Math.cos(2*Math.PI * i/data.length + 1/2);
                         },
                         getY = function(d, i){
-                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length);
+                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length + 1/2);
                         },
                         getIntersect = function(i){
                             var x1 = getX(null, i), y1 = getY(null, i),
@@ -84,7 +84,6 @@ angular.module('trackerui.directives')
                             if(less(tri.outers[1], tri.outers[0]))tri.outers.reverse();
                             return tri;
                         });
-
                     var segment_1 = function (d, i) {
                         var tri = segments[i],
                             c = svg_center.distanceFrom(tri.outers[0]),
@@ -123,25 +122,25 @@ angular.module('trackerui.directives')
                             })
                             .attr('fill-opacity', '0.5');
                     segment_1_groups.append('text')
-                            .attr('color', '#000000')
+                            .attr('fill', '#ffffff')
                             .attr('text-anchor', 'middle')
-                            .attr('font-size', fSize/2+'px')
+                            .attr('font-size', fSize/3+'px')
                             .attr('y', function(d,i){
-                                return center.y + center.r * Math.sin(2*Math.PI * i/data.length) * 1.8 - fSize/2;
+                                return center.y + center.r * Math.sin(2*Math.PI * i/data.length + 1/2) * 1.8 - fSize/3;
                             })
                             .attr('x', function(d, i){
-                                return center.x + center.r * Math.cos(2*Math.PI * i/data.length) * 1.8;
+                                return center.x + center.r * Math.cos(2*Math.PI * i/data.length + 1/2) * 1.8;
                             })
                             .text(function(d){return d.title;});
                     segment_1_groups.append('text')
-                        .attr('color', '#000000')
+                        .attr('fill', '#ffffff')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
                         .attr('y', function(d,i){
-                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length) * 1.8 + fSize/2;
+                            return center.y + center.r * Math.sin(2*Math.PI * i/data.length + 1/2) * 1.8 + fSize/2;
                         })
                         .attr('x', function(d, i){
-                            return center.x + center.r * Math.cos(2*Math.PI * i/data.length) * 1.8;
+                            return center.x + center.r * Math.cos(2*Math.PI * i/data.length + 1/2) * 1.8;
                         })
                         .text(function(d){return d.score;});
                     segment_1_groups.on('mouseover', function(){
@@ -161,14 +160,14 @@ angular.module('trackerui.directives')
                         })
                         .attr('fill-opacity', '0.5');
                     segment_2_groups.append('text')
-                        .attr('color', '#000000')
+                        .attr('fill', '#ffffff')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
                         .attr('y', function(d,i){
-                            return center.y + center.r/2 * Math.sin(2*Math.PI * i/data.length + Math.PI/3) * 1.8 + fSize/2;
+                            return center.y + center.r/2 * Math.sin(2*Math.PI * i/data.length + 1/2 + Math.PI/3) * 2.4 + fSize/2;
                         })
                         .attr('x', function(d, i){
-                            return center.x + center.r/2 * Math.cos(2*Math.PI * i/data.length + Math.PI/3) * 1.8;
+                            return center.x + center.r/2 * Math.cos(2*Math.PI * i/data.length + 1/2 + Math.PI/3) * 2.4;
                         })
                         .text(function(d){return d.intersect;});
                     segment_2_groups.on('mouseover', function(){
@@ -185,7 +184,7 @@ angular.module('trackerui.directives')
                         .attr('stroke-width', 2)
                         .attr('fill', '#ffffff');
                     bullsEyeGroup.append('text')
-                        .attr('color', '#000000')
+                        .attr('fill', '#000000')
                         .attr('text-anchor', 'middle')
                         .attr('font-size', fSize+'px')
                         .attr('x', center.x)
@@ -197,6 +196,11 @@ angular.module('trackerui.directives')
                         d3.select(this).selectAll('path').style('fill', '#ffffff');
                     });
 
+// ================ debugging circle
+//                 svg.append("circle")
+//                  .attr("cy", centers[0].y)
+//                  .attr("cx", centers[0].x)
+//                  .attr("r", stdrad);
                 };
             }
         };

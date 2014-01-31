@@ -17,7 +17,8 @@ angular.module('trackerui.system').factory('UserService', ['$window',
         return {
                 data: _data,
                 set: deepObjectExtend,
-                isAuthenticated: function(){return !!_data.Id;}
+                isAuthenticated: function(){return !!_data.Id;},
+                isSignupComplete: function(){return false;}
             };
     }
 ]);
