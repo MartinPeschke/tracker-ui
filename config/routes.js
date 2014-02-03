@@ -13,7 +13,7 @@ module.exports = function(app, passport, auth) {
     // Setting up the users api
     app.post('/users', users.create);
     app.post('/account', users.account_setup);
-    app.post('/events', users.events);
+    app.post('/events', users.account_setup);
 
     // Setting the local strategy route
     app.post('/users/session', passport.authenticate('local', {}), users.session);

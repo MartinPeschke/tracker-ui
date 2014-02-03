@@ -7,10 +7,15 @@ var express = require('express'),
     MemoryStore = express.session.MemoryStore,
     flash = require('connect-flash'),
     helpers = require('view-helpers'),
-    config = require('./config');
+    config = require('./config'),
+    httpProxy = require('http-proxy'),
+    apiProxy = httpProxy.createProxyServer({});
 
 module.exports = function(app, passport) {
     app.set('showStackError', true);
+    app.use('/api', function(req, res) {
+          apiProxy.web(req, res, { target: 'http://bizintell.cloudapp.net:12345' });
+    });
 
     // Prettify HTML
     app.locals.pretty = true;
