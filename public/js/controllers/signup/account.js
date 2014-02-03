@@ -16,7 +16,7 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
                         if(User.isSignupComplete()){
                             $state.go( 'index' );
                         } else {
-                            $scope.goNextUrl();
+                            $scope.workflowGoNext();
                         }
                     } else {
                         $scope.errors.push(data);
