@@ -8,7 +8,7 @@ angular.module('trackerui.system').controller('SigninController', ['$scope', '$h
         if(form.$valid && !$scope.loading){
             $scope.errors = [];
             $scope.loading = true;
-            $http.post('/users/session', loginReq)
+            $http.post('/api/0.0.1/web/user/login', loginReq)
                 .success(function(data /*, status, headers, config*/) {
                     State.setUser(data.User);
                     if(State.isAuthenticated()){

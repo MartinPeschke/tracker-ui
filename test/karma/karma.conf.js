@@ -23,6 +23,7 @@ module.exports = function(config) {
             'public/lib/angular-cookies/angular-cookies.js',
             'public/lib/angular-resource/angular-resource.js',
 
+            'public/lib/angular-local-storage/angular-local-storage.min.js',
             'public/lib/angular-ui-router/release/angular-ui-router.min.js',
             'public/lib/angular-bootstrap/ui-bootstrap.js',
             'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
@@ -44,6 +45,7 @@ module.exports = function(config) {
             'public/js/controllers/header.js',
 
             'public/js/controllers/auth/signin.js',
+            'public/js/controllers/auth/signout.js',
             'public/js/controllers/auth/pwdforgot.js',
             'public/js/controllers/auth/pwdreset.js',
 

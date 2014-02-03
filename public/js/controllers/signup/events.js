@@ -19,7 +19,7 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
             $scope.eventTypes = _.without($scope.eventTypes, model);
             $scope.events.push(model);
         };
-        $scope.appendEvent = function(model, form){
+        $scope.appendEvent = function(model){
             $scope.events.push(model);
             $scope.event = {'name': ''};
         };
@@ -34,7 +34,7 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
                     Events: $scope.events
                 };
 
-                $http.post('/events', params)
+                $http.post('/api/0.0.1/web/events', params)
                     .success(function(data /*, status, headers, config*/) {
                         State.setAccount(data.Account);
                         if(State.isAuthenticated()){

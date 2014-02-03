@@ -8,7 +8,7 @@ angular.module('trackerui.system').controller('PwdForgotController', ['$scope', 
         if(form.$valid && !$scope.loading){
             $scope.errors = [];
             $scope.loading = true;
-            $http.post('/user/pwdforgot', forgotReq)
+            $http.post('/api/0.0.1/web/user/passwordforget', forgotReq)
                 .success(function(data /*, status, headers, config*/) {
                     if(data.DbMessage)$scope.errors.push(data.DbMessage);
                     else

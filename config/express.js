@@ -4,17 +4,16 @@
  * Module dependencies.
  */
 var express = require('express'),
-    MemoryStore = express.session.MemoryStore,
-    flash = require('connect-flash'),
     helpers = require('view-helpers'),
     config = require('./config'),
     httpProxy = require('http-proxy'),
     apiProxy = httpProxy.createProxyServer({});
 
-module.exports = function(app, passport) {
+module.exports = function(app) {
     app.set('showStackError', true);
     app.use('/api', function(req, res) {
-          apiProxy.web(req, res, { target: 'http://bizintell.cloudapp.net:12345' });
+        req.headers['Client-Token'] = config.apiClientToken;
+        apiProxy.web(req, res, { target: 'http://bizintell.cloudapp.net:12345' });
     });
 
     // Prettify HTML
@@ -40,29 +39,14 @@ module.exports = function(app, passport) {
     app.enable("jsonp callback");
 
     app.configure(function() {
-        // The cookieParser should be above session
-        app.use(express.cookieParser());
 
         // Request body parsing middleware should be above methodOverride
         app.use(express.urlencoded());
         app.use(express.json());
         app.use(express.methodOverride());
 
-        // Express/Mongo session storage
-        app.use(express.session({
-            secret: config.sessionSecret,
-            store: new MemoryStore()
-        }));
-
-        // Connect flash for flash messages
-        app.use(flash());
-
         // Dynamic helpers
         app.use(helpers(config.app.name));
-
-        // Use passport session
-        app.use(passport.initialize());
-        app.use(passport.session());
 
         // Routes should be at the last
         app.use(app.router);

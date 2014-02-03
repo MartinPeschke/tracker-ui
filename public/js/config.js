@@ -1,10 +1,8 @@
 'use strict';
 
 //Setting up route
-angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
-    function ($stateProvider, $urlRouterProvider) {
-        // this breaks tests
-        //$urlRouterProvider.otherwise('/');
+angular.module('trackerui').config(['$stateProvider',
+    function ($stateProvider) {
 
         $stateProvider
 
@@ -23,6 +21,11 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
             .state('auth.pwdreset', {
                 url: '/pwdreset/:token',
                 templateUrl: 'views/auth/pwdreset.html'
+            })
+            .state('auth.logout', {
+                url: '/logout',
+                template:'',
+                controller: 'SignoutController'
             })
 
             .state('signup', {
@@ -44,7 +47,7 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
                     return 'views/signup/' + stateParams.step + '.html';
                 },
                 data: {rule: function(state){
-                    if(!state.isAuthenticated()) return {to:'signup.start'}
+                    if(!state.isAuthenticated()) return {to:'signup.start'};
                 }}
             })
 

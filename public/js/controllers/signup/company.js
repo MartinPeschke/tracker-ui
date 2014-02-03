@@ -9,7 +9,7 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
         if(form.$valid && !$scope.loading){
             $scope.errors = [];
             $scope.loading = true;
-            $http.post('/users', signupReq)
+            $http.post('/api/0.0.1/web/user/signup', signupReq)
                 .success(function(data /*, status, headers, config*/) {
                     State.setUser(data.User);
                     if(State.isAuthenticated()){

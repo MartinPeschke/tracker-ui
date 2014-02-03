@@ -16,19 +16,15 @@ var express = require('express'),
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 //Initializing system variables
-var config = require('./config/config'),
-    auth = require('./config/middlewares/authorization');
-
-// Bootstrap passport config
-require('./config/passport')(passport);
+var config = require('./config/config');
 
 var app = express();
 
 //express settings
-require('./config/express')(app, passport);
+require('./config/express')(app);
 
 //Bootstrap routes
-require('./config/routes')(app, passport, auth);
+require('./config/routes')(app);
 
 //Start the app by listening on <port>
 var port = process.env.PORT || config.port;

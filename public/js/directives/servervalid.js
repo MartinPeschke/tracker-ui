@@ -13,10 +13,10 @@ angular.module('trackerui.directives')
                         uniqueness = my_uniqueness;
                         opts[attrs.name] = viewValue;
 
-                        $http.get(scope.url, opts)
+                        $http.post(scope.url, opts)
                             .success(function(data/*, status, headers, config*/){
                                 if(my_uniqueness === uniqueness)
-                                    ctrl.$setValidity('serverValid', data.success);
+                                    ctrl.$setValidity('serverValid',    !data.DbMessage);
                             });
                     }
                     return viewValue;
