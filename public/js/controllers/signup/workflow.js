@@ -4,7 +4,7 @@ angular.module('trackerui.system').controller('SignupWorkflowController', ['$roo
     function ($rootScope, $scope, $state, $stateParams) {
 
         var steps = $state.current.data.steps,
-            setNavi = function(state, params){
+            setNaviState = function(state, params){
                 $scope.currentStep = params.step || state.data.step;
                 $scope.currentStepIdx = steps.indexOf($scope.currentStep);
                 if($scope.currentStepIdx + 1 >= steps.length ){
@@ -24,13 +24,13 @@ angular.module('trackerui.system').controller('SignupWorkflowController', ['$roo
             return $state.go.apply($state, $scope.nextStepParams);
         };
 
-        if(setNavi($state.current, $stateParams))
+        if(setNaviState($state.current, $stateParams))
             $state.go( 'index' );
         else {
             var unregister = $rootScope.$on('$stateChangeStart',
                 function(event, toState, toParams){
                     if(toState.name.indexOf('signup.') === 0)
-                        setNavi(toState, toParams);
+                        setNaviState(toState, toParams);
                 }
             );
             $scope.$on('$destroy', function(){

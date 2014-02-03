@@ -8,7 +8,21 @@ angular.module('color', []).factory('color', function() { return window.net.breh
 angular.module('trackerui.system', []);
 angular.module('trackerui.directives', ['d3', 'underscore', 'color', 'Point2D', 'Intersection']);
 
-angular.module('trackerui').run(function ($rootScope, $state, $stateParams) {
-    $rootScope.$state = $state;
-    $rootScope.$stateParams = $stateParams;
-});
+angular.module('trackerui').run(['$rootScope', '$state', '$stateParams', 'StateService',
+    function ($rootScope, $state, $stateParams, StateService) {
+        $rootScope.$state = $state;
+        $rootScope.$stateParams = $stateParams;
+
+        $rootScope.$on('$stateChangeStart', function(e, to) {
+            if (!angular.isFunction(to.data.rule)) return;
+            var result = to.data.rule(StateService);
+
+            if (result && result.to) {
+                e.preventDefault();
+                $state.go(result.to, result.params, result.options);
+            }
+        });
+
+    }
+]);
+

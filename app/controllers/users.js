@@ -112,3 +112,8 @@ exports.account_setup = function(req, res){
         return res.json(result);
     });
 };
+exports.events = function(req, res){
+    backend.post('/account/event', req.body, function(err, result){
+        return res.json(result);
+    });
+};

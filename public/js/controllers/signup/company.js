@@ -13,11 +13,7 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
                 .success(function(data /*, status, headers, config*/) {
                     State.setUser(data.User);
                     if(State.isAuthenticated()){
-                        if(State.isSignupComplete()){
-                            $state.go( 'index' );
-                        } else {
-                            $scope.workflowGoNext();
-                        }
+                        $scope.workflowGoNext();
                     } else {
                         $scope.errors.push(data);
                     }

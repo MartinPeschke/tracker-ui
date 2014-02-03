@@ -32,11 +32,7 @@ angular.module('trackerui.system').controller('SignupAccountController', ['$scop
                     .success(function(data /*, status, headers, config*/) {
                         State.setAccount(data.Account);
                         if(State.isAuthenticated()){
-                            if(State.isSignupComplete()){
-                                $state.go( 'index' );
-                            } else {
-                                $scope.workflowGoNext();
-                            }
+                            $scope.workflowGoNext();
                         } else {
                             $scope.errors.push(data);
                         }

@@ -42,7 +42,10 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
                 url: '/:step',
                 templateUrl: function (stateParams) {
                     return 'views/signup/' + stateParams.step + '.html';
-                }
+                },
+                data: {rule: function(state){
+                    if(!state.isAuthenticated()) return {to:'signup.start'}
+                }}
             })
 
             .state('index', {

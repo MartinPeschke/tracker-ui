@@ -1,36 +1,44 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SignupEventsController', ['$scope', '$http', '$state', 'StateService',
-    function ($scope, $http, $state, State) {
+angular.module('trackerui.system').controller('SignupEventsController', ['$scope', '$http', '$state', 'underscore', 'StateService',
+    function ($scope, $http, $state, _, State) {
 
+        $scope.loading = false;
+        $scope.errors = [];
         $scope.eventTypes = [
             {name: 'Signup'},
             {name: 'Purchase'},
             {name: 'Review'}
         ];
 
-        $scope.errors = [];
 
-        $scope.model = {PlatForms: $scope.eventTypes};
+        $scope.events = [];
+        $scope.event = {'name': ''};
 
-        $scope.loading = false;
+        $scope.addPreEvent = function(model){
+            $scope.eventTypes = _.without($scope.eventTypes, model);
+            $scope.events.push(model);
+        };
+        $scope.appendEvent = function(model, form){
+            $scope.events.push(model);
+            $scope.event = {'name': ''};
+        };
+
         $scope.submit = function(model, form){
             if(form.$valid && !$scope.loading){
                 $scope.errors = [];
                 $scope.loading = true;
-                model.User = {'Id':State.user.Id};
 
-                model.Account.Platforms = [{'Name':'Android'}, {'Name':'iPad'}];
+                var params = {
+                    Id : State.account.Id,
+                    Events: $scope.events
+                };
 
-                $http.post('/account', model)
+                $http.post('/events', params)
                     .success(function(data /*, status, headers, config*/) {
                         State.setAccount(data.Account);
                         if(State.isAuthenticated()){
-                            if(State.isSignupComplete()){
-                                $state.go( 'index' );
-                            } else {
-                                $scope.workflowGoNext();
-                            }
+                            $scope.workflowGoNext();
                         } else {
                             $scope.errors.push(data);
                         }
@@ -42,4 +50,5 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
                     });
             }
         };
-    }]);
+    }
+]);
