@@ -105,3 +105,10 @@ exports.pwdreset = function(req, res){
         });
     });
 };
+
+
+exports.account_setup = function(req, res){
+    backend.post('/account/create', req.body, function(err, result){
+        return res.json(result);
+    });
+};

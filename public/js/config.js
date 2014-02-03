@@ -3,7 +3,8 @@
 //Setting up route
 angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/');
+        // this breaks tests
+        //$urlRouterProvider.otherwise('/');
 
         $stateProvider
 
@@ -45,7 +46,7 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
             })
 
             .state('index', {
-                url: '/',
+                url: '',
                 templateUrl: 'views/index.html'
             });
     }

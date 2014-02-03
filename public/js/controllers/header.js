@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('trackerui.system').controller('HeaderController', ['$scope', 'UserService', function ($scope, User) {
+angular.module('trackerui.system').controller('HeaderController', ['$scope', 'StateService', function ($scope, State) {
     $scope.menu = [];
     $scope.isCollapsed = false;
 
 
-    $scope.user = User.data;
-    $scope.authenticated = User.isAuthenticated();
+    $scope.user = State.user;
+    $scope.authenticated = State.isAuthenticated();
 
     $scope.$watch('user', function (/*newVal , oldVal */) {
-        $scope.authenticated = User.isAuthenticated();
+        $scope.authenticated = State.isAuthenticated();
     }, true);
 
 }]);

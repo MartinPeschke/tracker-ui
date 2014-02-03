@@ -1,32 +1,26 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SignupAccountController', ['$scope', '$http', '$state', 'underscore', 'StateService',
-    function ($scope, $http, $state, _, State) {
+angular.module('trackerui.system').controller('SignupEventsController', ['$scope', '$http', '$state', 'StateService',
+    function ($scope, $http, $state, State) {
 
-        $scope.deviceTypes = [
-            {name: 'Android'},
-            {name: 'iOS'},
-            {name: 'Web'},
-            {name: 'WinPho'}
+        $scope.eventTypes = [
+            {name: 'Signup'},
+            {name: 'Purchase'},
+            {name: 'Review'}
         ];
 
         $scope.errors = [];
 
-        $scope.model = {};
-        $scope.platforms = $scope.deviceTypes;
+        $scope.model = {PlatForms: $scope.eventTypes};
 
         $scope.loading = false;
         $scope.submit = function(model, form){
             if(form.$valid && !$scope.loading){
                 $scope.errors = [];
                 $scope.loading = true;
-
                 model.User = {'Id':State.user.Id};
-                model.Account.Platforms = [];
-                for(var i in $scope.platforms){
-                    if($scope.platforms[i].enabled)
-                        model.Account.Platforms.push({'name':$scope.platforms[i].name});
-                }
+
+                model.Account.Platforms = [{'Name':'Android'}, {'Name':'iPad'}];
 
                 $http.post('/account', model)
                     .success(function(data /*, status, headers, config*/) {

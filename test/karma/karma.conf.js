@@ -39,7 +39,7 @@ module.exports = function(config) {
             'public/js/directives/paint.js',
             'public/js/directives/sameas.js',
             'public/js/directives/servervalid.js',
-            'public/js/services/user.js',
+            'public/js/services/state.js',
             'public/js/controllers/index.js',
             'public/js/controllers/header.js',
 
@@ -50,6 +50,7 @@ module.exports = function(config) {
             'public/js/controllers/signup/workflow.js',
             'public/js/controllers/signup/company.js',
             'public/js/controllers/signup/account.js',
+            'public/js/controllers/signup/events.js',
 
             'public/js/init.js',
 
