@@ -4,7 +4,7 @@
     describe('trackerui controllers', function() {
         describe('StateService', function() {
             // Load the controllers module
-            beforeEach(module('trackerui');
+            beforeEach(module('trackerui'));
             beforeEach(module('stateMock'));
 
 
