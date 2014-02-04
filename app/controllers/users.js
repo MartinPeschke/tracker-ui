@@ -13,7 +13,7 @@ exports.pwdtokenvalid = function(req, res){
 };
 exports.pwdreset = function(req, res){
     var token = req.body.token, pwd = req.body.pwd, user;
-    backend.post('/user/LoginWithToken', {'PwdForgetTokens':[{'Token': token}]}, function(err, result){
+    backend.post('/user/LoginWithToken', {'Token': token}, function(err, result){
         user = result.User;
         backend.post('/user/UpdatePassword', {pwd: pwd, id: user.Id}, function(err, result){
             return res.json({'success': !result.DbMessage});

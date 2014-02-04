@@ -10,13 +10,14 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
 
     if(!$scope.token)$scope.validated = false;
     else {
-        $http.post('/user/pwdtokenvalid', {'PwdForgetTokens':[{'Token': $scope.token}]})
+        $http.post('/user/pwdtokenvalid', {'Token': $scope.token})
             .success(function(data) {
                 if(data.DbMessage){
                     toaster.pop('error', 'Invalid Token', 'Seems your token has expired.');
                     $state.go( 'index' );
                 } else {
                     $scope.loading = false;
+                    $scope.validated = true;
                 }
             })
             .error(function(/* data, status, headers, config */) {
@@ -33,7 +34,7 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
             $http.post('/user/pwdreset', _.extend({token: $scope.token}, forgotReq))
                 .success(function(data) {
                     if(data.success)
-                        $state.path( 'auth.signin' );
+                        $state.go( 'auth.signin' );
                     else
                         $scope.errors.push('Invalid token');
                     $scope.loading = false;

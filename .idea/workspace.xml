@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/backend.js" afterPath="$PROJECT_DIR$/public/js/services/backend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" afterPath="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users.js" afterPath="$PROJECT_DIR$/app/controllers/users.js" />
     </list>
     <ignored path="trackerui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +26,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="events.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/events.js">
+      <file leaf-file-name="pwdreset.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="26" selection-start="758" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+            <state line="22" column="28" selection-start="848" selection-end="848" vertical-scroll-proportion="0.35623002" vertical-offset="63" max-vertical-offset="689">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="backend.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
+      <file leaf-file-name="pwdforgot.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="80" selection-start="574" selection-end="574" vertical-scroll-proportion="0.24920128" vertical-offset="0" max-vertical-offset="626">
+            <state line="13" column="147" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="338">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="28" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
               <folding />
             </state>
           </provider>
@@ -61,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/services/config.js" />
         <option value="$PROJECT_DIR$/public/views/auth/pwdforgot.html" />
         <option value="$PROJECT_DIR$/public/views/auth/signin.html" />
         <option value="$PROJECT_DIR$/public/js/controllers/auth/signin.js" />
@@ -71,12 +80,13 @@
         <option value="$PROJECT_DIR$/public/views/signup/events.html" />
         <option value="$PROJECT_DIR$/public/js/controllers/signup/events.js" />
         <option value="$PROJECT_DIR$/public/views/signup/company.html" />
-        <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/header.js" />
         <option value="$PROJECT_DIR$/public/js/directives/paint.js" />
         <option value="$PROJECT_DIR$/public/views/index.html" />
         <option value="$PROJECT_DIR$/public/js/services/backend.js" />
+        <option value="$PROJECT_DIR$/app/controllers/users.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" />
       </list>
     </option>
   </component>
@@ -216,6 +226,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -235,6 +271,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -564,13 +604,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/views/auth/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="69" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.4262295" vertical-offset="0" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/account.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="40" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.4439701" vertical-offset="0" max-vertical-offset="937">
@@ -648,30 +681,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
+    <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="796" selection-end="796" vertical-scroll-proportion="0.41533548" vertical-offset="0" max-vertical-offset="676">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="147" selection-start="684" selection-end="684" vertical-scroll-proportion="0.26996806" vertical-offset="0" max-vertical-offset="626">
+        <state line="11" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.2284345" vertical-offset="0" max-vertical-offset="626">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/events.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="758" selection-end="769" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+        <state line="22" column="26" selection-start="758" selection-end="769" vertical-scroll-proportion="0.456869" vertical-offset="0" max-vertical-offset="702">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="80" selection-start="574" selection-end="574" vertical-scroll-proportion="0.24920128" vertical-offset="0" max-vertical-offset="626">
+        <state line="13" column="147" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="28" selection-start="848" selection-end="848" vertical-scroll-proportion="0.35623002" vertical-offset="63" max-vertical-offset="689">
           <folding />
         </state>
       </provider>
