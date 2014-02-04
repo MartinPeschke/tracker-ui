@@ -1,16 +1,14 @@
 'use strict';
 
 //Global service for global variables
-angular.module('trackerui.system').factory('ConfigService', ['$http', '$q',
-    function($http, $q) {
+angular.module('trackerui.system').factory('ConfigService', ['$q', 'BackendService',
+    function($q, backend) {
         var deferred = $q.defer();
-        $http.post('/api/0.0.1/web/config', {})
-            .success(function(data){
+        backend.post('/web/config', {},
+            function success(data){
                 deferred.resolve(data.Config);
-            })
-            .error(function(){
-                deferred.reject('An error occured while fetching items');
-            });
+            }
+        );
         return deferred.promise;
     }
 ]);

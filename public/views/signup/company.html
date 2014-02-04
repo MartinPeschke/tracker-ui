@@ -39,13 +39,13 @@
     <div class="controls">
       <input type="password" id="confirm_password" name="confirm_password" class="form-control" ng-model="scrap" required data-same-as="user.pwd" />
       <div ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
-        <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
+        <span ng-show="form.confirm_password.$error.sameAs">Passwords don't match!</span>
       </div>
     </div>
   </div>
 
   <div class="form-group">
-    <button class="btn btn-primary" type='submit' ng-show="!loading">Sign up</button>
-    <button class="btn btn-primary" ng-show="loading" disabled>Loading</button>
+    <button class="btn btn-primary" type='submit' ng-show="!_LOADING_">Sign up</button>
+    <button class="btn btn-primary" ng-show="_LOADING_" disabled>Loading</button>
   </div>
 </form>

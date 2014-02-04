@@ -1,24 +1,18 @@
 'use strict';
 
-angular.module('trackerui.system').controller('PwdForgotController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
-
+angular.module('trackerui.system').controller('PwdForgotController', ['$scope', '$state', 'BackendService', function ($scope, $state, backend) {
     $scope.errors = [];
-    $scope.loading = false;
+
     $scope.submit = function(forgotReq, form){
         if(form.$valid && !$scope.loading){
             $scope.errors = [];
-            $scope.loading = true;
-            $http.post('/api/0.0.1/web/user/passwordforget', forgotReq)
-                .success(function(data /*, status, headers, config*/) {
+            backend.post('/web/user/passwordforget', forgotReq,
+                function success(data) {
                     if(data.DbMessage)$scope.errors.push(data.DbMessage);
                     else
-                        $location.path( '/signin' );
-                    $scope.loading = false;
-                })
-                .error(function(/* data, status, headers, config */) {
-                    $scope.errors.push('Unknown Email or Login');
-                    $scope.loading = false;
-                });
+                        $state.path( 'auth.signin' );
+                }
+            );
         }
     };
 }]);

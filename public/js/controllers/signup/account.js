@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SignupAccountController', ['$scope', '$http', '$state', 'underscore', 'ConfigService', 'StateService',
-    function ($scope, $http, $state, _, ConfigService, State) {
+angular.module('trackerui.system').controller('SignupAccountController', ['$scope', '$state', 'underscore', 'BackendService', 'ConfigService', 'StateService',
+    function ($scope, $state, _, backend, ConfigService, State) {
 
         $scope.platforms = [];
         ConfigService.then(function(config){
@@ -15,11 +15,9 @@ angular.module('trackerui.system').controller('SignupAccountController', ['$scop
 
         $scope.model = {};
 
-        $scope.loading = false;
         $scope.submit = function(model, form){
-            if(form.$valid && !$scope.loading){
+            if(form.$valid && !$scope._LOADING_){
                 $scope.errors = [];
-                $scope.loading = true;
 
                 model.User = {'Id':State.user.Id};
                 model.Account.Platforms = [];
@@ -28,19 +26,14 @@ angular.module('trackerui.system').controller('SignupAccountController', ['$scop
                         model.Account.Platforms.push({'name':$scope.platforms[i].name});
                 }
 
-                $http.post('/api/0.0.1/web/account/create', model)
-                    .success(function(data /*, status, headers, config*/) {
+                backend.post('/web/account/create', model,
+                    function success(data) {
                         State.setAccount(data.Account);
                         if(State.isAuthenticated()){
                             $scope.workflowGoNext();
                         } else {
                             $scope.errors.push(data);
                         }
-                        $scope.loading = false;
-                    })
-                    .error(function(data /*, status, headers, config*/) {
-                        $scope.errors.push(data);
-                        $scope.loading = false;
                     });
             }
         };

@@ -12,8 +12,8 @@ angular.module('trackerui').run(['$rootScope', '$state', '$stateParams', 'StateS
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
 
-        $rootScope.$on('$stateChangeError', function(e, to) {
-            toaster.pop('error', 'some error', 'has occured');
+        $rootScope.$on('$stateChangeError', function(/*e, to*/) {
+            toaster.pop('error', 'Some error!', 'has occured!!!');
             $state.go( 'index' );
         });
         $rootScope.$on('$stateChangeStart', function(e, to) {

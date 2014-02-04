@@ -43,6 +43,7 @@ module.exports = function(config) {
             'public/js/directives/sameas.js',
             'public/js/directives/servervalid.js',
 
+            'public/js/services/backend.js',
             'public/js/services/state.js',
             'public/js/services/config.js',
             'public/js/services/auth.js',

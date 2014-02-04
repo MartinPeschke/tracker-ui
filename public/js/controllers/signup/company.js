@@ -4,20 +4,15 @@ angular.module('trackerui.system').controller('SignupController', ['$scope', '$h
     function ($scope, $http, $state, AuthService) {
 
         $scope.errors = [];
-        $scope.loading = false;
         $scope.submit = function(signupReq, form){
-            if(form.$valid && !$scope.loading){
+            if(form.$valid && !$scope._LOADING_){
                 $scope.errors = [];
-                $scope.loading = true;
 
                 AuthService.createUser(signupReq)
                     .then(function resolve(success){
                         if(success)$scope.workflowGoNext();
                         else $scope.errors.push('Unknown Email or Login');
-                    })
-                    ['finally'](function _finally(/*msg*/){
-                    $scope.loading = false;
-                });
+                    });
             }
         };
     }

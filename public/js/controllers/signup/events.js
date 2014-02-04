@@ -1,8 +1,7 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SignupEventsController', ['$scope', '$http', '$state', 'underscore', 'ConfigService', 'StateService',
-    function ($scope, $http, $state, _, ConfigService, State) {
-        $scope.loading = false;
+angular.module('trackerui.system').controller('SignupEventsController', ['$scope', '$state', 'underscore', 'BackendService', 'ConfigService', 'StateService',
+    function ($scope, $state, _, backend, ConfigService, State) {
         $scope.errors = [];
 
         $scope.events = [];
@@ -27,28 +26,22 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
         };
 
         $scope.submit = function(model, form){
-            if(form.$valid && !$scope.loading){
+            if(form.$valid && !$scope._LOADING_){
                 $scope.errors = [];
-                $scope.loading = true;
 
                 var params = {
                     Id : State.account.Id,
                     Events: $scope.events
                 };
 
-                $http.post('/api/0.0.1/web/account/CreateEvents', params)
-                    .success(function(data /*, status, headers, config*/) {
+                backend.post('/web/account/CreateEvents', params,
+                    function success(data) {
                         State.setAccount(data.Account);
                         if(State.isAuthenticated()){
                             $scope.workflowGoNext();
                         } else {
                             $scope.errors.push(data);
                         }
-                        $scope.loading = false;
-                    })
-                    .error(function(data /*, status, headers, config*/) {
-                        $scope.errors.push(data);
-                        $scope.loading = false;
                     });
             }
         };

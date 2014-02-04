@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('trackerui.system').controller('PwdResetController', ['$scope', '$http', '$location', '$stateParams', 'underscore', function ($scope, $http, $location, $stateParams, _) {
+angular.module('trackerui.system').controller('PwdResetController', ['$scope', '$http', '$state', '$stateParams', 'underscore',
+    function ($scope, $http, $state, $stateParams, _) {
 
     $scope.errors = [];
     $scope.loading = true;
@@ -20,7 +21,6 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
             });
     }
 
-
     $scope.submit = function(forgotReq, form){
         if($scope.validated && form.$valid && !$scope.loading){
             $scope.errors = [];
@@ -29,7 +29,7 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
             $http.post('/user/pwdreset', _.extend({token: $scope.token}, forgotReq))
                 .success(function(data /*, status, headers, config*/) {
                     if(data.success)
-                        $location.path( '/signin' );
+                        $state.path( 'auth.signin' );
                     else
                         $scope.errors.push('Invalid token');
                     $scope.loading = false;
