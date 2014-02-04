@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/header.html" afterPath="$PROJECT_DIR$/public/views/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/auth/signin.js" afterPath="$PROJECT_DIR$/public/js/controllers/auth/signin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/state.js" afterPath="$PROJECT_DIR$/public/js/services/state.js" />
     </list>
     <ignored path="trackerui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,46 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="858">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="state.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="35" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="403">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signin.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="signin.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="39" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
+            <state line="3" column="35" selection-start="156" selection-end="162" vertical-scroll-proportion="0.0416222" vertical-offset="0" max-vertical-offset="937">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/header.js">
+      <file leaf-file-name="company.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/company.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="21" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/views/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="54" selection-start="798" selection-end="798" vertical-scroll-proportion="0.2557377" vertical-offset="0" max-vertical-offset="915">
+            <state line="19" column="43" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="429">
               <folding />
             </state>
           </provider>
@@ -88,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/env/production.js" />
         <option value="$PROJECT_DIR$/config/env/development.js" />
         <option value="$PROJECT_DIR$/config/env/test.js" />
         <option value="$PROJECT_DIR$/config/express.js" />
@@ -102,8 +75,9 @@
         <option value="$PROJECT_DIR$/public/js/config.js" />
         <option value="$PROJECT_DIR$/public/views/auth/signin.html" />
         <option value="$PROJECT_DIR$/public/js/controllers/header.js" />
-        <option value="$PROJECT_DIR$/public/js/services/state.js" />
         <option value="$PROJECT_DIR$/public/views/header.html" />
+        <option value="$PROJECT_DIR$/public/js/services/state.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/auth/signin.js" />
       </list>
     </option>
   </component>
@@ -673,13 +647,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/env/production.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="80" selection-end="80" vertical-scroll-proportion="0.12460064" vertical-offset="0" max-vertical-offset="626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/express.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="27" selection-start="288" selection-end="302" vertical-scroll-proportion="0.24920128" vertical-offset="0" max-vertical-offset="1144">
@@ -757,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="21" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
@@ -771,16 +731,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
+    <entry file="file://$PROJECT_DIR$/public/views/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="403">
+        <state line="16" column="16" selection-start="704" selection-end="704" vertical-scroll-proportion="-9.454545" vertical-offset="0" max-vertical-offset="364">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/header.html">
+    <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="798" selection-end="798" vertical-scroll-proportion="0.2557377" vertical-offset="0" max-vertical-offset="915">
+        <state line="13" column="37" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="403">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/company.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="43" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="429">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="35" selection-start="156" selection-end="162" vertical-scroll-proportion="0.0416222" vertical-offset="0" max-vertical-offset="937">
           <folding />
         </state>
       </provider>

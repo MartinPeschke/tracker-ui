@@ -19,7 +19,7 @@ angular.module('trackerui.system').factory('StateService', ['$http', 'localStora
                     this.account = {};
                     return localStorageService.clearAll();
                 },
-                isAuthenticated: function(){return !!this.user.Id;}
+                isAuthenticated: function(){return this.user&&!!this.user.Id;}
             };
     }
 ]);
