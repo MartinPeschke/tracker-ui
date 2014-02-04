@@ -3,6 +3,9 @@
 // Karma configuration
 // Generated on Sat Oct 05 2013 22:00:14 GMT+0700 (ICT)
 
+
+
+
 module.exports = function(config) {
     config.set({
 
@@ -63,13 +66,13 @@ module.exports = function(config) {
 
             'public/js/init.js',
 
+            'test/karma/mocks/*.js',
             'test/karma/unit/**/*.js'
         ],
 
 
         // list of files to exclude
         exclude: [
-
         ],
 
 

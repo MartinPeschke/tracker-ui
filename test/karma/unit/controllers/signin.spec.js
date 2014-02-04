@@ -4,12 +4,13 @@
     describe('trackerui controllers', function() {
         describe('SigninController', function() {
             // Load the controllers module
+            beforeEach(module('stateMock'));
             beforeEach(module('trackerui'));
 
-            var httpBackend, SigninController, scope, location;
+            var httpBackend, SigninController, scope, uistate;
 
-            beforeEach(inject(function($httpBackend, $controller, $rootScope, $location) {
-                location = $location;
+            beforeEach(inject(function($httpBackend, $controller, $rootScope, $state) {
+                uistate = $state;
                 httpBackend = $httpBackend;
                 httpBackend.when('POST', '/users/session').respond({User:{Id: '1'}});
                 scope = $rootScope.$new();

@@ -4,6 +4,7 @@
     describe('trackerui controllers', function() {
         describe('serverValid', function() {
             // Load the controllers module
+            beforeEach(module('stateMock'));
             beforeEach(module('trackerui'));
 
             var element, scope, compile, defaultData, httpBackend,

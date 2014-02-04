@@ -4,6 +4,7 @@
     describe('TrackerUI controllers', function() {
         describe('HeaderController', function() {
             // Load the controllers module
+            beforeEach(module('stateMock'));
             beforeEach(module('trackerui'));
 
             var scope, HeaderController;

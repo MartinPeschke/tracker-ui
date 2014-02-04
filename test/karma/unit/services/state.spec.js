@@ -4,12 +4,15 @@
     describe('trackerui controllers', function() {
         describe('StateService', function() {
             // Load the controllers module
+            beforeEach(module('stateMock'));
             beforeEach(module('trackerui'));
 
-            var state_service, wndw;
 
-            beforeEach(inject(function($window, StateService) {
+            var state_service, wndw, state;
+
+            beforeEach(inject(function($window, $state, StateService) {
                 wndw = $window;
+                state = $state;
                 state_service = StateService;
             }));
 
