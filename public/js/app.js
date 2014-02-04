@@ -7,11 +7,15 @@ angular.module('trackerui', ['ngCookies', 'ngResource', 'LocalStorageModule', 't
 angular.module('trackerui.system', []);
 angular.module('trackerui.directives', ['d3', 'underscore', 'color', 'Point2D', 'Intersection']);
 
-angular.module('trackerui').run(['$rootScope', '$state', '$stateParams', 'StateService',
-    function ($rootScope, $state, $stateParams, StateService) {
+angular.module('trackerui').run(['$rootScope', '$state', '$stateParams', 'StateService', 'toaster',
+    function ($rootScope, $state, $stateParams, StateService, toaster) {
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
 
+        $rootScope.$on('$stateChangeError', function(e, to) {
+            toaster.pop('error', 'some error', 'has occured');
+            $state.go( 'index' );
+        });
         $rootScope.$on('$stateChangeStart', function(e, to) {
             if (!(to.data&&angular.isFunction(to.data.rule))) return;
             var result = to.data.rule(StateService);
