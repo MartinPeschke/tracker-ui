@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('trackerui.system').controller('SigninController', ['$scope', '$http', '$state', 'AuthService',
-    function ($scope, $http, $state, AuthService) {
+    function ($scope, $http, $state, AuthService){
 
         $scope.errors = [];
         $scope.loading = false;

@@ -3,7 +3,7 @@
 //Setting up route
 angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/");
+        $urlRouterProvider.otherwise('/');
 
         $stateProvider
 
@@ -32,7 +32,7 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
                 url: '/signup',
                 templateUrl: 'views/signup/workflow.html',
                 data: {
-                    steps : ['company', 'account', 'events', 'code'],
+                    steps : ['company', 'account', 'events', 'codes'],
                     rule: function(state){
                         if(state.isAuthenticated()) return {to:'index'};
                     }

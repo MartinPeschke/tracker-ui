@@ -1,0 +1,17 @@
+<div ng-controller="SignupCodesController">
+  <h3>Your done with Signup for Account: {{ state.account.Name }}</h3>
+  <h4>Platforms:</h4>
+  <ul>
+    <li ng-repeat="platform in state.account.Platforms">{{ platform.Name }}</li>
+  </ul>
+  <hr/>
+  <h4>Events:</h4>
+  <ul>
+    <li ng-repeat="event in state.account.Events">{{ event.Name }}</li>
+  </ul>
+
+
+  <div>
+    <a class="btn btn-primary" href="{{ workflowNextUrl() }}">Done</a>
+  </div>
+</div>

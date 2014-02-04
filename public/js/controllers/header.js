@@ -8,6 +8,4 @@ angular.module('trackerui.system').controller('HeaderController', ['$scope', '$s
         State.logout();
         $state.go( 'index' );
     };
-
-
 }]);

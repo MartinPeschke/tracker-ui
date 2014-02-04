@@ -1,4 +1,9 @@
 <div ng-controller="SignupEventsController">
+  <h3>Platforms for Account: {{ state.account.Name }}</h3>
+  <ul>
+    <li ng-repeat="platform in state.account.Platforms">{{ platform.Name }}</li>
+  </ul>
+  <hr/>
 
   <form name="event_form" ng-submit="appendEvent(event, event_form)">
     <div class="form-group">

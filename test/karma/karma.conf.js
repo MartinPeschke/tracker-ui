@@ -21,10 +21,12 @@ module.exports = function(config) {
             'public/lib/angular/angular.js',
             'public/lib/angular-mocks/angular-mocks.js',
             'public/lib/angular-cookies/angular-cookies.js',
+            'public/lib/angular-animate/angular-animate.min.js',
             'public/lib/angular-resource/angular-resource.js',
 
             'public/lib/angular-local-storage/angular-local-storage.min.js',
             'public/lib/angular-ui-router/release/angular-ui-router.min.js',
+            'public/lib/angular-notify-toaster/toaster.js',
             'public/lib/angular-bootstrap/ui-bootstrap.js',
             'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
 
@@ -56,6 +58,7 @@ module.exports = function(config) {
             'public/js/controllers/signup/company.js',
             'public/js/controllers/signup/account.js',
             'public/js/controllers/signup/events.js',
+            'public/js/controllers/signup/codes.js',
 
             'public/js/init.js',
 

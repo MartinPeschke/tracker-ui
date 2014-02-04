@@ -8,6 +8,9 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
         $scope.events = [];
         $scope.event = {'name': ''};
         $scope.eventTypes = [];
+
+        $scope.state = State;
+
         ConfigService.then(function(config){
             $scope.eventTypes = _.map(config.Events, function(ev){
                 return {name: ev.Name};
