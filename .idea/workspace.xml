@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/header.js" afterPath="$PROJECT_DIR$/public/js/controllers/header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js" afterPath="$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" afterPath="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trackerui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/controllers/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="85" selection-start="100" selection-end="100" vertical-scroll-proportion="0.041533545" vertical-offset="0" max-vertical-offset="626">
+            <state line="2" column="85" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="208">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pwdforgot.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="146" selection-start="561" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="338">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pwdreset.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="41" selection-start="905" selection-end="905" vertical-scroll-proportion="0.456869" vertical-offset="0" max-vertical-offset="676">
               <folding />
             </state>
           </provider>
@@ -55,7 +75,6 @@
         <option value="$PROJECT_DIR$/app/views/includes/foot.jade" />
         <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
         <option value="$PROJECT_DIR$/public/js/services/config.js" />
-        <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js" />
         <option value="$PROJECT_DIR$/public/views/auth/pwdforgot.html" />
         <option value="$PROJECT_DIR$/public/js/services/backend.js" />
         <option value="$PROJECT_DIR$/public/views/auth/signin.html" />
@@ -65,9 +84,10 @@
         <option value="$PROJECT_DIR$/public/js/controllers/signup/account.js" />
         <option value="$PROJECT_DIR$/public/views/signup/events.html" />
         <option value="$PROJECT_DIR$/public/js/controllers/signup/events.js" />
-        <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" />
         <option value="$PROJECT_DIR$/public/views/signup/company.html" />
         <option value="$PROJECT_DIR$/public/js/controllers/header.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" />
       </list>
     </option>
   </component>
@@ -252,6 +272,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -648,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.055496264" vertical-offset="0" max-vertical-offset="937">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.06937033" vertical-offset="0" max-vertical-offset="937">
@@ -704,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="66" selection-start="708" selection-end="708" vertical-scroll-proportion="0.35303515" vertical-offset="0" max-vertical-offset="626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/company.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="10" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.24668874" vertical-offset="137" max-vertical-offset="741">
@@ -720,7 +752,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="85" selection-start="100" selection-end="100" vertical-scroll-proportion="0.041533545" vertical-offset="0" max-vertical-offset="626">
+        <state line="2" column="85" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="208">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="146" selection-start="561" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="338">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="41" selection-start="905" selection-end="905" vertical-scroll-proportion="0.456869" vertical-offset="0" max-vertical-offset="676">
           <folding />
         </state>
       </provider>

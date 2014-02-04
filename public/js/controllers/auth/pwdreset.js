@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('trackerui.system').controller('PwdResetController', ['$scope', '$http', '$state', '$stateParams', 'underscore',
-    function ($scope, $http, $state, $stateParams, _) {
+angular.module('trackerui.system').controller('PwdResetController', ['$scope', '$http', '$state', '$stateParams', 'underscore', 'toaster',
+    function ($scope, $http, $state, $stateParams, _, toaster) {
 
     $scope.errors = [];
     $scope.loading = true;
@@ -11,9 +11,13 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
     if(!$scope.token)$scope.validated = false;
     else {
         $http.post('/user/pwdtokenvalid', {'PwdForgetTokens':[{'Token': $scope.token}]})
-            .success(function(data /*, status, headers, config*/) {
-                $scope.validated = !data.DbMessage;
-                $scope.loading = false;
+            .success(function(data) {
+                if(data.DbMessage){
+                    toaster.pop('error', 'Invalid Token', 'Seems your token has expired.');
+                    $state.go( 'index' );
+                } else {
+                    $scope.loading = false;
+                }
             })
             .error(function(/* data, status, headers, config */) {
                 $scope.validated = false;
@@ -27,7 +31,7 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
             $scope.loading = true;
 
             $http.post('/user/pwdreset', _.extend({token: $scope.token}, forgotReq))
-                .success(function(data /*, status, headers, config*/) {
+                .success(function(data) {
                     if(data.success)
                         $state.path( 'auth.signin' );
                     else
