@@ -27,7 +27,7 @@ angular.module('trackerui.system').controller('SignupWorkflowController', ['$roo
         if(setNaviState($state.current, $stateParams))
             $state.go( 'index' );
         else {
-            var unregister = $rootScope.$on('$stateChangeStart',
+            var unregister = $rootScope.$on('$stateChangeSuccess',
                 function(event, toState, toParams){
                     if(toState.name.indexOf('signup.') === 0)
                         setNaviState(toState, toParams);

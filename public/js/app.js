@@ -13,7 +13,7 @@ angular.module('trackerui').run(['$rootScope', '$state', '$stateParams', 'StateS
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
 
-        $rootScope.$on('stateChangeStart', function(e, to) {
+        $rootScope.$on('$stateChangeStart', function(e, to) {
             if (!(to.data&&angular.isFunction(to.data.rule))) return;
             var result = to.data.rule(StateService);
 

@@ -34,7 +34,7 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
                     Events: $scope.events
                 };
 
-                $http.post('/api/0.0.1/web/events', params)
+                $http.post('/api/0.0.1/web/account/CreateEvents', params)
                     .success(function(data /*, status, headers, config*/) {
                         State.setAccount(data.Account);
                         if(State.isAuthenticated()){

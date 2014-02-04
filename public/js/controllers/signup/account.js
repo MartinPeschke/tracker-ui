@@ -33,7 +33,7 @@ angular.module('trackerui.system').controller('SignupAccountController', ['$scop
                         model.Account.Platforms.push({'name':$scope.platforms[i].name});
                 }
 
-                $http.post('/api/0.0.1/web/account', model)
+                $http.post('/api/0.0.1/web/account/create', model)
                     .success(function(data /*, status, headers, config*/) {
                         State.setAccount(data.Account);
                         if(State.isAuthenticated()){
