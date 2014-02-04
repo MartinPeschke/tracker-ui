@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/karma/mocks/stateMock.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/karma.conf.js" afterPath="$PROJECT_DIR$/test/karma/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js" />
+      <change type="DELETED" beforePath="D:\_projects\trackerui\test\karma\unit\controllers\headers.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\_projects\trackerui\test\karma\unit\controllers\index.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\_projects\trackerui\test\karma\unit\controllers\signin.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\_projects\trackerui\test\karma\unit\controllers\signup.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\_projects\trackerui\test\karma\unit\directives\servervalid.spec.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/state.js" afterPath="$PROJECT_DIR$/public/js/services/state.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/mocks/stateMock.js" afterPath="$PROJECT_DIR$/test/karma/mocks/stateMock.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trackerui.iws" />
@@ -32,55 +33,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="signin.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="44" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="44" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="servervalid.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/karma/unit/directives/servervalid.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="44" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="44" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="headers.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="44" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="533">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="state.spec.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/karma/unit/services/state.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="43" selection-start="212" selection-end="212" vertical-scroll-proportion="0.12460064" vertical-offset="0" max-vertical-offset="663">
+            <state line="17" column="60" selection-start="518" selection-end="518" vertical-scroll-proportion="0.35303515" vertical-offset="0" max-vertical-offset="650">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stateMock.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/karma/mocks/stateMock.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="48" selection-start="140" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="59" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="403">
               <folding />
             </state>
           </provider>
@@ -104,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/views/signup/company.html" />
         <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/header.js" />
         <option value="$PROJECT_DIR$/public/js/directives/paint.js" />
@@ -113,12 +95,13 @@
         <option value="$PROJECT_DIR$/app/controllers/users.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" />
         <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
-        <option value="$PROJECT_DIR$/test/karma/mocks/stateMock.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/directives/servervalid.spec.js" />
+        <option value="$PROJECT_DIR$/public/js/services/state.js" />
+        <option value="$PROJECT_DIR$/test/karma/mocks/stateMock.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" />
       </list>
     </option>
@@ -214,58 +197,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="karma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="karma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -593,7 +524,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -601,7 +532,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3229491" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.13660619" sideWeight="0.67082036" order="0" side_tool="false" content_ui="combo" x="-533" y="0" width="469" height="1079" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.13660619" sideWeight="0.67082036" order="0" side_tool="false" content_ui="combo" x="-533" y="0" width="469" height="1079" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39875388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -677,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="42" selection-start="204" selection-end="204" vertical-scroll-proportion="0.10383387" vertical-offset="0" max-vertical-offset="949">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="39" selection-start="859" selection-end="859" vertical-scroll-proportion="0.35623002" vertical-offset="63" max-vertical-offset="689">
@@ -705,13 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/mocks/stateMock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="54" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.5399361" vertical-offset="0" max-vertical-offset="626">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="30" selection-start="2333" selection-end="2333" vertical-scroll-proportion="0.37380192" vertical-offset="650" max-vertical-offset="1820">
@@ -719,44 +636,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js">
+    <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
+        <state line="3" column="59" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="403">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js">
+    <entry file="file://$PROJECT_DIR$/test/karma/mocks/stateMock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+        <state line="28" column="0" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js">
+    <entry file="file://$PROJECT_DIR$/public/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="533">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/directives/servervalid.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+        <state line="4" column="48" selection-start="140" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/karma/unit/services/state.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="212" selection-end="212" vertical-scroll-proportion="0.12460064" vertical-offset="0" max-vertical-offset="663">
+        <state line="17" column="60" selection-start="518" selection-end="518" vertical-scroll-proportion="0.35303515" vertical-offset="0" max-vertical-offset="650">
           <folding />
         </state>
       </provider>

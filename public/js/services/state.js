@@ -1,8 +1,8 @@
 'use strict';
 
 //Global service for global variables
-angular.module('trackerui.system').factory('StateService', ['$http', 'localStorageService',
-    function($http, localStorageService) {
+angular.module('trackerui.system').factory('StateService', ['localStorageService',
+    function(localStorageService) {
         return {
                 user: localStorageService.get('State.User')||{},
                 account: localStorageService.get('State.Account')||{},
@@ -19,7 +19,7 @@ angular.module('trackerui.system').factory('StateService', ['$http', 'localStora
                     this.account = {};
                     return localStorageService.clearAll();
                 },
-                isAuthenticated: function(){return this.user&&!!this.user.Id;}
+                isAuthenticated: function(){return this.user?!!this.user.Id:false;}
             };
     }
 ]);

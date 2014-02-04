@@ -4,19 +4,18 @@
     describe('trackerui controllers', function() {
         describe('StateService', function() {
             // Load the controllers module
+            beforeEach(module('trackerui');
             beforeEach(module('stateMock'));
-            beforeEach(module('trackerui'));
 
 
-            var state_service, wndw, state;
+            var state_service, state;
 
-            beforeEach(inject(function($window, $state, StateService) {
-                wndw = $window;
-                state = $state;
+            beforeEach(inject(function(StateService, $state) {
                 state_service = StateService;
+                state = $state;
             }));
 
-            it('isAnon = true when no Company in window', function() {
+            it('isAnon = true when no Company', function() {
                 state_service.setUser(null);
                 expect(state_service.isAuthenticated()).toBe(false);
             });
