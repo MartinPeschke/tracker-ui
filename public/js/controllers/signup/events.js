@@ -1,19 +1,18 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SignupEventsController', ['$scope', '$http', '$state', 'underscore', 'StateService',
-    function ($scope, $http, $state, _, State) {
-
+angular.module('trackerui.system').controller('SignupEventsController', ['$scope', '$http', '$state', 'underscore', 'ConfigService', 'StateService',
+    function ($scope, $http, $state, _, ConfigService, State) {
         $scope.loading = false;
         $scope.errors = [];
-        $scope.eventTypes = [
-            {name: 'Signup'},
-            {name: 'Purchase'},
-            {name: 'Review'}
-        ];
-
 
         $scope.events = [];
         $scope.event = {'name': ''};
+        $scope.eventTypes = [];
+        ConfigService.then(function(config){
+            $scope.eventTypes = _.map(config.Events, function(ev){
+                return {name: ev.Name};
+            });
+        });
 
         $scope.addPreEvent = function(model){
             $scope.eventTypes = _.without($scope.eventTypes, model);

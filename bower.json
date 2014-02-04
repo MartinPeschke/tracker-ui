@@ -6,12 +6,13 @@
     "angular-resource": "latest",
     "angular-cookies": "latest",
     "angular-mocks": "latest",
-    "angular-bootstrap": "latest",
+    "angular-bootstrap": "~3.0.0",
     "angular-ui-utils": "latest",
     "angular-ui-router": "0.2.8-bowratic-tedium",
     "d3": "3.3.13",
     "colorjs": "~1.0.1",
     "underscore": "~1.5.2",
-    "angular-local-storage": "*"
+    "angular-local-storage": "*",
+    "angular-notify-toaster": "~0.4.1"
   }
 }

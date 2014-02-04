@@ -3,22 +3,17 @@
 angular.module('trackerui.system').controller('SignupAccountController', ['$scope', '$http', '$state', 'underscore', 'ConfigService', 'StateService',
     function ($scope, $http, $state, _, ConfigService, State) {
 
-        $scope.deviceTypes = [
-            {name: 'Android'},
-            {name: 'iOS'},
-            {name: 'Web'},
-            {name: 'WinPho'}
-        ];
-
+        $scope.platforms = [];
         ConfigService.then(function(config){
-            console.log(config);
+            $scope.platforms = _.map(config.Platforms, function(ev){
+                return {name: ev.Name};
+            });
         });
 
 
         $scope.errors = [];
 
         $scope.model = {};
-        $scope.platforms = $scope.deviceTypes;
 
         $scope.loading = false;
         $scope.submit = function(model, form){

@@ -1,8 +1,9 @@
 'use strict';
 
 //Setting up route
-angular.module('trackerui').config(['$stateProvider',
-    function ($stateProvider) {
+angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
+    function ($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise("/");
 
         $stateProvider
 
@@ -12,7 +13,10 @@ angular.module('trackerui').config(['$stateProvider',
             })
             .state('auth.signin', {
                 url: '/signin',
-                templateUrl: 'views/auth/signin.html'
+                templateUrl: 'views/auth/signin.html',
+                data: {rule: function(state){
+                    if(state.isAuthenticated()) return {to:'index'};
+                }}
             })
             .state('auth.pwdforgot', {
                 url: '/pwdforgot',
@@ -28,7 +32,10 @@ angular.module('trackerui').config(['$stateProvider',
                 url: '/signup',
                 templateUrl: 'views/signup/workflow.html',
                 data: {
-                    steps : ['company', 'account', 'events', 'code']
+                    steps : ['company', 'account', 'events', 'code'],
+                    rule: function(state){
+                        if(state.isAuthenticated()) return {to:'index'};
+                    }
                 }
             })
             .state('signup.start', {
@@ -47,7 +54,7 @@ angular.module('trackerui').config(['$stateProvider',
             })
 
             .state('index', {
-                url: '',
+                url: '/',
                 templateUrl: 'views/index.html'
             });
     }

@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SigninController', ['$scope', '$http', '$state', 'StateService',
-    function ($scope, $http, $state, State) {
+angular.module('trackerui.system').controller('SigninController', ['$scope', '$http', '$state', 'AuthService',
+    function ($scope, $http, $state, AuthService) {
 
         $scope.errors = [];
         $scope.loading = false;
@@ -9,18 +9,13 @@ angular.module('trackerui.system').controller('SigninController', ['$scope', '$h
             if(form.$valid && !$scope.loading){
                 $scope.errors = [];
                 $scope.loading = true;
-                $http.post('/api/0.0.1/web/user/login', loginReq)
-                    .success(function(data /*, status, headers, config*/) {
-                        State.setUser(data.User);
-                        if(State.isAuthenticated()){
-                            $state.go( 'index' );
-                        } else {
-                            $scope.errors.push('Unknown Email or Login');
-                        }
-                        $scope.loading = false;
+
+                AuthService.authenticateUser(loginReq.email, loginReq.pwd)
+                    .then(function resolve(success){
+                        if(success)$state.go( 'index' );
+                        else $scope.errors.push('Unknown Email or Login');
                     })
-                    .error(function(/* data, status, headers, config */) {
-                        $scope.errors.push('Unknown Email or Login');
+                    ['finally'](function _finally(/*msg*/){
                         $scope.loading = false;
                     });
             }

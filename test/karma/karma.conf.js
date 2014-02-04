@@ -43,6 +43,7 @@ module.exports = function(config) {
 
             'public/js/services/state.js',
             'public/js/services/config.js',
+            'public/js/services/auth.js',
 
             'public/js/controllers/index.js',
             'public/js/controllers/header.js',
