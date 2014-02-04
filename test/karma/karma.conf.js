@@ -40,12 +40,14 @@ module.exports = function(config) {
             'public/js/directives/paint.js',
             'public/js/directives/sameas.js',
             'public/js/directives/servervalid.js',
+
             'public/js/services/state.js',
+            'public/js/services/config.js',
+
             'public/js/controllers/index.js',
             'public/js/controllers/header.js',
 
             'public/js/controllers/auth/signin.js',
-            'public/js/controllers/auth/signout.js',
             'public/js/controllers/auth/pwdforgot.js',
             'public/js/controllers/auth/pwdreset.js',
 

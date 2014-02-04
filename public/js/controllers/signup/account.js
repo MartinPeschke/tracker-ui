@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('trackerui.system').controller('SignupAccountController', ['$scope', '$http', '$state', 'underscore', 'StateService',
-    function ($scope, $http, $state, _, State) {
+angular.module('trackerui.system').controller('SignupAccountController', ['$scope', '$http', '$state', 'underscore', 'ConfigService', 'StateService',
+    function ($scope, $http, $state, _, ConfigService, State) {
 
         $scope.deviceTypes = [
             {name: 'Android'},
@@ -9,6 +9,11 @@ angular.module('trackerui.system').controller('SignupAccountController', ['$scop
             {name: 'Web'},
             {name: 'WinPho'}
         ];
+
+        ConfigService.then(function(config){
+            console.log(config);
+        });
+
 
         $scope.errors = [];
 

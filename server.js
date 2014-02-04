@@ -3,8 +3,7 @@
 /**
  * Module dependencies.
  */
-var express = require('express'),
-    passport = require('passport');
+var express = require('express');
 
 /**
  * Main application entry file.

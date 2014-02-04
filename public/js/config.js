@@ -22,11 +22,6 @@ angular.module('trackerui').config(['$stateProvider',
                 url: '/pwdreset/:token',
                 templateUrl: 'views/auth/pwdreset.html'
             })
-            .state('auth.logout', {
-                url: '/logout',
-                template:'',
-                controller: 'SignoutController'
-            })
 
             .state('signup', {
                 abstract: true,
