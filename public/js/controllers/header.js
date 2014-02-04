@@ -6,6 +6,6 @@ angular.module('trackerui.system').controller('HeaderController', ['$scope', '$w
 
     $scope.logout = function(){
         State.logout();
-        $window.location.href = '/'
+        $window.location.href = '/';
     };
 }]);

@@ -24,8 +24,6 @@ angular.module('trackerui.directives')
                 scope.$watch(function(){
                         return angular.element(window)[0].innerWidth;
                     }, rerender);
-                scope.$watch('intersect', rerender);
-                scope.$watch('stdrad', rerender);
 
                 // define render function
                 scope.render = function(data){
