@@ -10,7 +10,7 @@ angular.module('trackerui.system').factory('BackendService', ['$rootScope', '$ht
                 $http.post('/api/0.0.1'+path, data)
                     .success(success)
                     .error(error||function(){
-                        toaster.pop('error', 'Network error!', 'Cannot reach baclkend, whats up?');
+                        toaster.pop('error', 'Network error!', 'Cannot reach backend, whats up?');
                     })['finally'](function(){$rootScope._LOADING_ = false;});
             }
         };
