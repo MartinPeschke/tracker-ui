@@ -1,3 +1,4 @@
+'use strict';
 angular.module('stateMock',[]);
 angular.module('stateMock').service('$state', function($q){
     this.expectedTransitions = [];
@@ -5,10 +6,10 @@ angular.module('stateMock').service('$state', function($q){
         if(this.expectedTransitions.length > 0){
             var expectedState = this.expectedTransitions.shift();
             if(expectedState !== stateName){
-                throw Error('Expected transition to state: ' + expectedState + ' but transitioned to ' + stateName );
+                throw new Error('Expected transition to state: ' + expectedState + ' but transitioned to ' + stateName );
             }
         }else{
-            throw Error('No more transitions were expected! Tried to transition to '+ stateName );
+            throw new Error('No more transitions were expected! Tried to transition to '+ stateName );
         }
         console.log('Mock transition to: ' + stateName);
         var deferred = $q.defer();
@@ -22,7 +23,7 @@ angular.module('stateMock').service('$state', function($q){
     };
     this.ensureAllTransitionsHappened = function(){
         if(this.expectedTransitions.length > 0){
-            throw Error('Not all transitions happened!');
+            throw new Error('Not all transitions happened!');
         }
-    }
+    };
 });

@@ -2,7 +2,4 @@ extends layouts/default
 
 block content
   section(ui-view)
-
-  <div toaster-container></div>
-  script(type="text/javascript").
-    window.User = !{User};
+  div(toaster-container)
