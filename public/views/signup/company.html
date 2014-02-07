@@ -15,22 +15,23 @@
 
   <div class="form-group">
     <div class="controls">
+      <span class="form-control-success" ng-show="form.email.$dirty && form.email.$valid">✔</span>
       <input type="email" ng-model="user.email" name="email" id="user_email" class="form-control" required data-server-valid="/api/0.0.1/web/user/EmailAvailable" placeholder="Email">
-      <div ng-show="form.email.$dirty && form.email.$invalid && form.email.$error.serverValid">Invalid: This email is already registered!</div>
+      <div class="help-block" ng-show="form.email.$dirty && form.email.$invalid && form.email.$error.serverValid">Invalid: This email is already registered!</div>
     </div>
   </div>
 
   <div class="form-group">
     <div class="controls">
       <input type="password" ng-model="user.pwd" id="password" name="password" class="form-control" required ng-minlength="8" ng-pattern="/^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d\W]).*$/" placeholder="Password">
-      <div ng-show="form.password.$dirty && form.password.$invalid">Invalid:
+      <div class="help-block" ng-show="form.password.$dirty && (form.password.$error.minlength || form.password.$error.pattern)">Invalid:
         <span ng-show="form.password.$error.minlength">Too Short</span>
         <span ng-show="form.password.$error.pattern">Must contain lower case, upper case letters and numbers.</span>
       </div>
     </div>
   </div>
 
-  <div class="form-group">
+  <div class="form-actions">
     <button class="btn btn-primary" type='submit' ng-show="!_LOADING_">Sign up</button>
     <button class="btn btn-primary" ng-show="_LOADING_" disabled>Loading</button>
   </div>

@@ -123,8 +123,7 @@ output {
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @input-border;
   border-radius: @input-border-radius;
-  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-  .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
+  .transition(~"border-color ease-in-out .15s");
 
   // Customize the `:focus` state to imitate native WebKit styles.
   .form-control-focus();
@@ -271,13 +270,13 @@ input[type="checkbox"],
 }
 
 // Feedback states
-.has-success {
+.ng-valid.ng-dirty, .has-success {
   .form-control-validation(@state-success-text; @state-success-text; @state-success-bg);
 }
 .has-warning {
   .form-control-validation(@state-warning-text; @state-warning-text; @state-warning-bg);
 }
-.has-error {
+.ng-invalid.ng-dirty, .has-error {
   .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
 }
 

@@ -18,11 +18,11 @@ angular.module('trackerui.directives')
                     };
 
                 // on window resize, re-render d3 canvas
-                window.onresize = function() {
+                $window.onresize = function() {
                     return scope.$apply();
                 };
                 scope.$watch(function(){
-                        return angular.element(window)[0].innerWidth;
+                        return angular.element($window)[0].innerWidth;
                     }, rerender);
 
                 // define render function
