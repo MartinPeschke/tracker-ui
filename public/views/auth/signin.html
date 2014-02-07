@@ -1,5 +1,5 @@
 <h1 class="box-title">Sign in</h1>
-<div class="col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+<div class="col-md-6 col-md-offset-3">
   <form class="form-validated form-box signin" method="post" ng-controller="SigninController" name="form" ng-submit="submit(model, form)">
 
     <ul ng-show="errors.length">
@@ -9,9 +9,8 @@
     </ul>
 
     <div class="form-group">
-      <label class="control-label" for='email'>Email</label>
       <div class="controls">
-        <input type="email" ng-model="model.email" name="email" id="email" class="form-control" required>
+        <input type="email" ng-model="model.email" name="email" id="email" class="form-control" required placeholder="Email">
         <div ng-show="form.email.$dirty && form.email.$invalid">Invalid:
           <span ng-show="form.email.$error.required">Tell us your email.</span>
           <span ng-show="form.email.$error.email">This is not a valid email.</span>
@@ -20,19 +19,17 @@
     </div>
 
     <div class="form-group">
-      <label class="control-label" for="password">
-        Password
-      </label>
       <div class="controls">
-        <input type="password" ng-model="model.pwd" id="password" name="password" class="form-control" required>
+        <input type="password" ng-model="model.pwd" id="password" name="password" class="form-control" required placeholder="Password">
       </div>
     </div>
 
-    <div class="form-group">
-      <button class="btn btn-primary" type='submit' ng-show="!_LOADING_">Sign in</button>
-      <button class="btn btn-primary" ng-show="_LOADING_" disabled>Loading</button>
-      <span>&nbsp;or&nbsp;</span>
-      <a class="show-signup" ui-sref="auth.pwdforgot">Forgot password</a>
+    <div class="form-actions">
+        <button class="btn btn-primary" type='submit' ng-show="!_LOADING_">Sign in</button>
+        <button class="btn btn-primary" ng-show="_LOADING_" disabled>Loading</button>
+    </div>
+    <div class="text-center small">
+      Forgot password? <a class="show-signup" ui-sref="auth.pwdforgot">Click here</a>
     </div>
   </form>
 </div>

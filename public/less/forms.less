@@ -1,6 +1,7 @@
 .form-validated input.ng-invalid.ng-dirty {
   background-color: #FA787E;
   color:white;
+  .placeholder(#f3f3f3);
 }
 
 .form-validated input.ng-valid.ng-dirty {
@@ -14,7 +15,15 @@
 }
 
 .form-box {
-  padding: 20px;
+  padding: 30px 40px;
   display: block;
   background-color: white;
+  box-shadow: -2px -2px 6px rgba(0, 0, 0, 0.2);
+  .form-group {
+    margin-bottom: 1.5 * @line-height-computed;
+  }
+  .form-actions {
+    text-align: center;
+    margin-bottom: .5 * @line-height-computed;
+  }
 }
