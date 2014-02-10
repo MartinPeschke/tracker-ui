@@ -6,7 +6,6 @@ angular.module('trackerui.directives')
         $window.onresize = function(){
             element.css('height', ($window.innerHeight - 50) + 'px');
         };
-
         $window.onresize();
     };
 }]);

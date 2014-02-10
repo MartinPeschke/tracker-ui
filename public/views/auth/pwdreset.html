@@ -22,19 +22,17 @@
       <div class="form-group">
         <div class="help-block" class="controls">
           <input type="password" id="confirm_password" name="confirm_password" class="form-control" ng-model="scrap" required data-same-as="model.pwd" placeholder="ReType Password">
-          <div class="help-block" ng-show="form.confirm_password.$dirty && form.confirm_password.$invalid">Invalid:
-            <div ng-show="form.confirm_password.$error.passwordVerify">Passwords don't match!</div>
-          </div>
+          <div class="help-block" ng-show="form.confirm_password.$dirty && form.confirm_password.$error.passwordVerify">Invalid: Passwords don't match!</div>
         </div>
       </div>
 
       <div class="form-group">
-        <button class="btn btn-primary" type='submit' ng-show="!loading">Submit</button>
-        <button class="btn btn-primary" ng-show="loading" disabled>Loading</button>
-        <span>&nbsp;or&nbsp;</span>
-        <a class="show-signup" ui-sref="auth.signin">Signin</a>
+        <button class="btn btn-success" type='submit' ng-show="!_LOADING_">Submit</button>
+        <button class="btn btn-default" ng-show="_LOADING_" disabled>Loading</button>
       </div>
-
+      <div class="text-center small">
+        Don't want to change your password? <a class="show-signup" ui-sref="auth.signin">Sign in</a>
+      </div>
     </div>
 
     <div ng-show="validated === null">
