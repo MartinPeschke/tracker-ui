@@ -4,25 +4,28 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
     function ($scope, $state, _, backend, ConfigService, State) {
         $scope.errors = [];
 
-        $scope.events = [];
-        $scope.event = {'name': ''};
-        $scope.eventTypes = [];
-
         $scope.state = State;
+        $scope.customEvent = {'name': ''};
 
+        $scope.defaultEvents = [];
+        $scope.selectedEvents = [];
         ConfigService.then(function(config){
-            $scope.eventTypes = _.map(config.Events, function(ev){
-                return {name: ev.Name};
+            angular.forEach(config.Events, function(model){
+                $scope.defaultEvents.push(model);
             });
         });
-
-        $scope.addPreEvent = function(model){
-            $scope.eventTypes = _.without($scope.eventTypes, model);
-            $scope.events.push(model);
+        $scope.addEvent = function(model){
+            $scope.defaultEvents = _.without($scope.defaultEvents, model);
+            $scope.selectedEvents.push(model);
         };
+        $scope.removeEvent = function(model){
+            $scope.selectedEvents = _.without($scope.selectedEvents, model);
+            $scope.defaultEvents.push(model);
+        };
+
         $scope.appendEvent = function(model){
-            $scope.events.push(model);
-            $scope.event = {'name': ''};
+            $scope.selectedEvents.push(model);
+            $scope.customEvent = {'name': ''};
         };
 
         $scope.submit = function(model, form){

@@ -43,8 +43,13 @@
   >.workflow-step {
     font-weight: 100;
     font-size: @font-size-h4;
+    padding-top:.2em;
+    padding-bottom:.2em;
   }
-  >.active {
+  .small {
+    font-size: @font-size-small;
+  }
+  >.active > .item-title{
     font-weight: 700;
   }
 }
@@ -70,6 +75,14 @@
     &:hover {
       background-color: @btn-primary-bg;
       color:@btn-primary-color;
+    }
+    > .glyphicon {
+      float: right;
+      display: block;
+      padding-top: 0;
+      top: 0;
+      height: @input-height-base - 2px;
+      line-height: @input-height-base - 2px;
     }
   }
   .list-selectable {

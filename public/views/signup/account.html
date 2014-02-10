@@ -15,17 +15,13 @@
       <div>Add Platforms</div>
 
       <ul class="list-selector list-selectable">
-        <li class="item" ng-click="addPlatform(device)" ng-repeat="device in platforms | orderBy:'name'"> {{ device.name }}</li>
+        <li class="item" ng-click="addPlatform(device)" ng-repeat="device in defaultPlatforms"><i class="glyphicon glyphicon-send"></i> {{ device.Name }}</li>
       </ul>
     </div>
     <div class="col-md-6">
       <div>Selected Platforms</div>
       <ul class="list-selector list-removeable">
-        <li class="item" ng-click="removePlatform(device)" ng-repeat="device in platforms | orderBy:'name'">
-          <div ng-if="device.selected">
-            {{ device.name }}
-          </div>
-        </li>
+        <li class="item" ng-click="removePlatform(device)" ng-repeat="device in selectedPlatforms"><i class="glyphicon glyphicon-remove-circle"></i>  {{ device.Name }}</li>
       </ul>
     </div>
   </div>

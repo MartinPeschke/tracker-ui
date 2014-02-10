@@ -33,11 +33,11 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
                 templateUrl: 'views/signup/workflow.html',
                 data: {
                     steps : [
-                        {key:'company', label: 'Sign Up'},
-                        {key:'account', label: 'Create Account'},
-                        {key:'events', label: 'Select Events'},
-                        {key:'codes', label: 'Master Script'},
-                        {key:'integrate', label: 'Integrate Tracking'}
+                        {key:'company', label: 'Sign Up', description:'Lorem Ipsum long winded for signup'},
+                        {key:'account', label: 'Create Account', description:'Lorem Ipsum long winded for account'},
+                        {key:'events', label: 'Select Events', description:'Lorem Ipsum long winded for event create'},
+                        {key:'codes', label: 'Master Script', description:'Lorem Ipsum long winded for master script'},
+                        {key:'integrate', label: 'Integrate Tracking', description:'Lorem Ipsum long winded for integration'}
                     ],
                     rule: function(state){
                         if(state.isAuthenticated()) return {to:'index'};

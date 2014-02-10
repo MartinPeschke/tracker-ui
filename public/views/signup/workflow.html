@@ -4,7 +4,8 @@
       <h4 class="upper">Information</h4>
       <ol class="workflow-steps mar-top">
         <li ng-repeat="step in allSteps" ng-class="{active: step.key == currentStep.key}" class="workflow-step">
-            {{ step.label }}
+          <div class="item-title">{{ step.label }}</div>
+          <div class="small" ng-if="step.key == currentStep.key">{{ step.description }}</div>
         </li>
       </ol>
     </div>
