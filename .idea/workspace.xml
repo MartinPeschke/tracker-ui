@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/account.html" afterPath="$PROJECT_DIR$/public/views/signup/account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/signup/account.js" afterPath="$PROJECT_DIR$/public/js/controllers/signup/account.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/company.html" afterPath="$PROJECT_DIR$/public/views/signup/company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/config.js" afterPath="$PROJECT_DIR$/public/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/forms.less" afterPath="$PROJECT_DIR$/public/less/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/layout.less" afterPath="$PROJECT_DIR$/public/less/layout.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/auth/signin.html" afterPath="$PROJECT_DIR$/public/views/auth/signin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/type.less" afterPath="$PROJECT_DIR$/public/less/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/bootstrap/variables.less" afterPath="$PROJECT_DIR$/public/less/bootstrap/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/workflow.html" afterPath="$PROJECT_DIR$/public/views/signup/workflow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/signup/workflow.js" afterPath="$PROJECT_DIR$/public/js/controllers/signup/workflow.js" />
-    </list>
+    <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="" />
     <ignored path="trackerui.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
