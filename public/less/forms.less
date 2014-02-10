@@ -39,3 +39,41 @@
     padding-top: .2em;
   }
 }
+.workflow-steps {
+  >.workflow-step {
+    font-weight: 100;
+    font-size: @font-size-h4;
+  }
+  >.active {
+    font-weight: 700;
+  }
+}
+
+
+.list-selector {
+  list-style-type: none;
+  padding:0;
+  > .item {
+    display: block;
+    cursor:pointer;
+    width: 100%;
+    height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    padding: 0 @padding-base-horizontal;
+    font-size: @font-size-base;
+    line-height: @input-height-base;
+    background-color: white;
+    border: 1px solid @input-border;
+    border-radius: @input-border-radius;
+    +.item {
+      border-top: none;
+    }
+    &:hover {
+      background-color: @btn-primary-bg;
+      color:@btn-primary-color;
+    }
+  }
+  .list-selectable {
+  }
+  .list-removeable {
+  }
+}

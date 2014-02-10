@@ -3,18 +3,27 @@
 angular.module('trackerui.system').controller('SignupWorkflowController', ['$rootScope', '$scope', '$state', '$stateParams',
     function ($rootScope, $scope, $state, $stateParams) {
 
-        var steps = $state.current.data.steps,
+        var steps = $scope.allSteps = $state.current.data.steps,
+            stepIdxLookup = [],
+            getStepIdx = function(key){
+                var idx = stepIdxLookup.indexOf(key);
+                return idx;
+            },
             setNaviState = function(state, params){
-                $scope.currentStep = params.step || state.data.step;
-                $scope.currentStepIdx = steps.indexOf($scope.currentStep);
-                if($scope.currentStepIdx + 1 >= steps.length ){
+                $scope.currentStepIdx = getStepIdx(params.step || state.data.step);
+                $scope.currentStep = steps[$scope.currentStepIdx];
+                if($scope.currentStepIdx + 1 >= stepIdxLookup.length ){
                     $scope.nextStepParams = ['index'];
                 } else {
-                    $scope.nextStep = steps[($scope.currentStepIdx + 1)%steps.length];
+                    $scope.nextStep = stepIdxLookup[($scope.currentStepIdx + 1)%stepIdxLookup.length];
                     $scope.nextStepParams = ['signup.step', {step:$scope.nextStep}];
                 }
                 return $scope.currentStepIdx < 0;
             };
+
+        angular.forEach(steps, function(step){
+            stepIdxLookup.push(step.key);
+        });
 
         $scope.totalSteps = steps.length;
         $scope.workflowNextUrl = function(){

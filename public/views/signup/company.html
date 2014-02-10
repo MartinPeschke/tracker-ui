@@ -1,5 +1,6 @@
 <h1 class="box-title">Sign up with Convins</h1>
 <form class="form-validated form-box" method="post" ng-controller="SignupController" name="form" ng-submit="submit(user, form)">
+
   <div class="form-group">
     <div class="controls">
       <input type="text" ng-model="user.CompanyReference.name" name="company_name" id="company_name" class="form-control" required placeholder="Company name">
@@ -32,7 +33,7 @@
   </div>
 
   <div class="form-actions">
-    <button class="btn btn-success" type='submit' ng-show="!_LOADING_"><i class="glyphicon glyphicon-expand"></i> Sign up</button>
-    <button class="btn btn-success" ng-show="_LOADING_" disabled>Loading</button>
+    <button class="btn btn-success" type='submit' ng-show="!_LOADING_"><i class="glyphicon glyphicon-send"></i> Sign up</button>
+    <button class="btn btn-default" ng-show="_LOADING_" disabled>Loading</button>
   </div>
 </form>
