@@ -36,8 +36,8 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
                         {key:'company', label: 'Sign Up', description:'Lorem Ipsum long winded for signup'},
                         {key:'account', label: 'Create Account', description:'Lorem Ipsum long winded for account'},
                         {key:'events', label: 'Select Events', description:'Lorem Ipsum long winded for event create'},
-                        {key:'codes', label: 'Master Script', description:'Lorem Ipsum long winded for master script'},
-                        {key:'integrate', label: 'Integrate Tracking', description:'Lorem Ipsum long winded for integration'}
+                        {key:'mastercode', label: 'Master Script', description:'Lorem Ipsum long winded for master script'},
+                        {key:'codes', label: 'Integrate Tracking', description:'Lorem Ipsum long winded for integration'}
                     ],
                     rule: function(state){
                         if(state.isAuthenticated()) return {to:'index'};

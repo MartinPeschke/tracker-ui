@@ -1,7 +1,6 @@
 <h1 class="box-title">Set up your account</h1>
 <div class="form-box" ng-controller="SignupEventsController">
   <h3>Platforms for Account: {{ state.account.Name }}</h3>
-
   <div class="small">Devices</div>
   <ul>
     <li ng-repeat="platform in state.account.Platforms">{{ platform.Name }}</li>
@@ -15,22 +14,29 @@
       <ul class="list-selector list-selectable">
         <li class="item" ng-click="addEvent(event)" ng-repeat="event in defaultEvents"><i class="glyphicon glyphicon-send"></i> {{ event.Name }}</li>
       </ul>
-      <form name="event_form" ng-submit="appendEvent(event, event_form)">
-        <input type="text" ng-model="customEvent.name" value="{{ customEvent.name }}" name="event_name" id="event_name" class="form-control" required placeholder="Add custom event">
+      <form name="event_form" ng-submit="appendEvent(customEvent, event_form)">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" ng-model="customEvent.Name" value="{{ customEvent.Name }}" name="event_name" id="event_name" class="form-control" required placeholder="Add custom event">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-send"></i></button>
+            </span>
+          </div>
+        </div>
       </form>
     </div>
     <div class="col-md-6">
       <div>Selected Events</div>
       <ul class="list-selector list-removeable">
-        <li class="item" ng-click="removeEvent(event)" ng-repeat="event in selectedEvents"><i class="glyphicon glyphicon-remove-circle"></i>  {{ event.Name }}</li>
+        <li class="item" ng-click="removeEvent(event)" ng-repeat="event in selectedEvents"><i class="glyphicon glyphicon-remove-circle"></i> {{ event.Name }}</li>
       </ul>
     </div>
   </div>
 
   <form name="submit_form" ng-submit="submit(model, submit_form)">
-    <div class="form-group">
-      <button class="btn btn-primary" type='submit' ng-show="!_LOADING_">Submit</button>
-      <button class="btn btn-primary" ng-show="_LOADING_" disabled>Loading</button>
+    <div class="form-actions">
+      <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_">Submit</button>
+      <button class="btn btn-success btn-wide" ng-show="_LOADING_" disabled>Loading</button>
     </div>
   </form>
 </div>

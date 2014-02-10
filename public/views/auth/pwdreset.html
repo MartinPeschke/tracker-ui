@@ -2,7 +2,7 @@
 <div class="col-md-6 col-md-offset-3">
   <form class="form-validated form-box forgotpwd" method="post" ng-controller="PwdResetController" name="form" ng-submit="submit(model, form)">
 
-    <div ng-show="!loading && validated">
+    <div>
       <ul ng-show="errors.length">
         <li ng-repeat="error in errors">
           {{ error }}
@@ -26,22 +26,12 @@
         </div>
       </div>
 
-      <div class="form-group">
-        <button class="btn btn-success" type='submit' ng-show="!_LOADING_">Submit</button>
-        <button class="btn btn-default" ng-show="_LOADING_" disabled>Loading</button>
+      <div class="form-actions">
+        <button class="btn btn-success btn-wide" type='submit' ng-disabled="_LOADING_">Submit</button>
       </div>
       <div class="text-center small">
         Don't want to change your password? <a class="show-signup" ui-sref="auth.signin">Sign in</a>
       </div>
-    </div>
-
-    <div ng-show="validated === null">
-      <h1 class="alert alert-info">Loading...</h1>
-    </div>
-
-
-    <div ng-show="!loading && !validated">
-      <h1 class="alert alert-danger">Invalid token</h1>
     </div>
   </form>
 </div>

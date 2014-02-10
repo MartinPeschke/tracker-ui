@@ -36,9 +36,11 @@
     float: right;
     display: block;
     height: inherit;
-    padding-top: .2em;
+    line-height: @line-height-computed;
   }
 }
+
+
 .workflow-steps {
   >.workflow-step {
     font-weight: 100;
@@ -48,9 +50,24 @@
   }
   .small {
     font-size: @font-size-small;
+    font-weight: 100;
   }
-  >.active > .item-title{
+  >.active {
     font-weight: 700;
+  }
+  >.done:before {
+    float:right;
+    content: "\e084";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 34px;
+    color:@brand-success;
   }
 }
 

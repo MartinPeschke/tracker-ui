@@ -29,7 +29,10 @@ angular.module('trackerui.system').controller('SignupAccountController', ['$scop
                 $scope.errors = [];
 
                 model.User = {'Id':State.user.Id};
-                model.Account.Platforms = $scope.selectedPlatforms;
+                model.Account.Platforms = [];
+                angular.forEach($scope.selectedPlatforms, function(p){
+                    model.Account.Platforms.push({'Name': p.Name});
+                });
 
                 backend.post('/web/account/create', model,
                     function success(data) {

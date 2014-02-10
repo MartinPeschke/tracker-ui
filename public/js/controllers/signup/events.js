@@ -5,7 +5,7 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
         $scope.errors = [];
 
         $scope.state = State;
-        $scope.customEvent = {'name': ''};
+        $scope.customEvent = {'Name': ''};
 
         $scope.defaultEvents = [];
         $scope.selectedEvents = [];
@@ -25,7 +25,7 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
 
         $scope.appendEvent = function(model){
             $scope.selectedEvents.push(model);
-            $scope.customEvent = {'name': ''};
+            $scope.customEvent = {'Name': ''};
         };
 
         $scope.submit = function(model, form){
@@ -34,7 +34,7 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
 
                 var params = {
                     Id : State.account.Id,
-                    Events: $scope.events
+                    Events: $scope.selectedEvents
                 };
 
                 backend.post('/web/account/CreateEvents', params,

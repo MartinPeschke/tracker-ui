@@ -1,0 +1,17 @@
+<div ng-controller="MasterCodeController">
+  <h3>Here are the master codes for your account: {{ state.account.Name }}</h3>
+  <h4>Platforms:</h4>
+  <ul>
+    <li ng-repeat="platform in state.account.Platforms">{{ platform.Name }}</li>
+  </ul>
+  <hr/>
+  <h4>Events:</h4>
+  <ul>
+    <li ng-repeat="event in state.account.Events">{{ event.Name }}</li>
+  </ul>
+
+
+  <div>
+    <a class="btn btn-primary" href="{{ workflowNextUrl() }}">Next</a>
+  </div>
+</div>
