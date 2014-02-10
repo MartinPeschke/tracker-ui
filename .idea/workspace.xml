@@ -38,7 +38,7 @@
       <file leaf-file-name="account.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/views/signup/account.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="77" selection-start="750" selection-end="766" vertical-scroll-proportion="0.23411018" vertical-offset="0" max-vertical-offset="944">
+            <state line="27" column="8" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.37182203" vertical-offset="0" max-vertical-offset="944">
               <folding />
             </state>
           </provider>
@@ -957,7 +957,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="77" selection-start="750" selection-end="766" vertical-scroll-proportion="0.23411018" vertical-offset="0" max-vertical-offset="944">
+        <state line="27" column="8" selection-start="1141" selection-end="1141" vertical-scroll-proportion="0.37182203" vertical-offset="0" max-vertical-offset="944">
           <folding />
         </state>
       </provider>
