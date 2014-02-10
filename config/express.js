@@ -4,7 +4,6 @@
  * Module dependencies.
  */
 var express = require('express'),
-    helpers = require('view-helpers'),
     config = require('./config'),
     httpProxy = require('http-proxy'),
     apiProxy = httpProxy.createProxyServer({});
@@ -35,18 +34,7 @@ module.exports = function(app) {
     app.set('views', config.root + '/app/views');
     app.set('view engine', 'jade');
 
-    // Enable jsonp
-    app.enable("jsonp callback");
-
     app.configure(function() {
-
-        // Request body parsing middleware should be above methodOverride
-        app.use(express.urlencoded());
-        app.use(express.json());
-        app.use(express.methodOverride());
-
-        // Dynamic helpers
-        app.use(helpers(config.app.name));
 
         // Routes should be at the last
         app.use(app.router);

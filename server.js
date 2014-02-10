@@ -1,14 +1,6 @@
 'use strict';
 
-/**
- * Module dependencies.
- */
 var express = require('express');
-
-/**
- * Main application entry file.
- * Please note that the order of loading is important.
- */
 
 //Load configurations
 //Set the node enviornment variable if not set before
@@ -23,7 +15,7 @@ var app = express();
 require('./config/express')(app);
 
 //Bootstrap routes
-require('./config/routes')(app);
+app.get('/', function(req, res) { res.render('index'); });
 
 //Start the app by listening on <port>
 var port = process.env.PORT || config.port;
