@@ -4,6 +4,7 @@
  * Module dependencies.
  */
 var express = require('express'),
+    helpers = require('view-helpers'),
     config = require('./config'),
     httpProxy = require('http-proxy'),
     apiProxy = httpProxy.createProxyServer({});
@@ -17,7 +18,6 @@ module.exports = function(app) {
 
     // Prettify HTML
     app.locals.pretty = true;
-
     // Should be placed before express.static
     // To ensure that all assets and data are compressed (utilize bandwidth)
     app.use(express.compress({
@@ -35,7 +35,10 @@ module.exports = function(app) {
     app.set('view engine', 'jade');
 
     app.configure(function() {
-
+        app.use(express.json());
+        app.use(express.methodOverride());
+        // Dynamic helpers
+        app.use(helpers(config.app.name));
         // Routes should be at the last
         app.use(app.router);
 
