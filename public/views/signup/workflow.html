@@ -1,16 +1,18 @@
-<div class="container">
-  <div class="row" ng-controller="SignupWorkflowController">
-    <div class="col-sm-3 context-menu" data-keep-height>
-      <h4 class="context-menu-title">Information</h4>
-      <ol class="workflow-steps mar-top">
-        <li ng-repeat="step in allSteps" ng-class="{active: step.key == currentStep.key, done: $index < currentStepIdx}" class="workflow-step">
-          <div class="item-title">{{ step.label }}</div>
-          <div class="small" ng-if="step.key == currentStep.key">{{ step.description }}</div>
-        </li>
-      </ol>
-    </div>
-    <div class="col-sm-6">
-      <div class="top-offset-large" ui-view></div>
+<div ng-controller="SignupWorkflowController">
+  <div class="context-menu expanded" data-keep-height>
+    <h4 class="context-menu-title">Information</h4>
+    <ol class="workflow-steps mar-top">
+      <li ng-repeat="step in allSteps" ng-class="{active: step.key == currentStep.key, done: $index < currentStepIdx}" class="workflow-step">
+        <div class="item-title">{{ step.label }}</div>
+        <div class="small" ng-if="step.key == currentStep.key">{{ step.description }}</div>
+      </li>
+    </ol>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="top-offset-large" ui-view></div>
+      </div>
     </div>
   </div>
 </div>

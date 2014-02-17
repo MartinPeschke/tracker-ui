@@ -17,7 +17,7 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
                         $state.go( 'index' );
                     } else
                         $scope.validated = true;
-                        $scope.loading = false;
+                    $scope.loading = false;
                 });
         }
 
@@ -32,7 +32,7 @@ angular.module('trackerui.system').controller('PwdResetController', ['$scope', '
                             toaster.pop('error', 'Invalid Token', 'Seems your token has expired.');
                         } else
                             $state.go( 'auth.signin' );
-                    })
+                    });
             }
         };
     }]);

@@ -13,11 +13,22 @@ body {overflow-y: scroll;height:100%;}
   margin: @line-height-computed*2 0 @line-height-computed;
 }
 .context-menu {
+  position: fixed;
+  top:@navbar-height;
+  left:0;
+  height:100%;
   background-color: @transp-white-box-color;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  padding: 0 20px;
+  &.expanded {
+    max-width:100%;
+    width: 250px;
+  }
 }
+
 .top-offset-large {
-  padding-top:160px;
+  padding-top:120px;
 }
 
 

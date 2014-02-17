@@ -11,7 +11,7 @@
   <div class="row">
     <div class="col-md-6">
       <div>Add Events</div>
-      <ul class="list-selector list-selectable">
+      <ul class="list-selector list-selectable x-long">
         <li class="item" ng-click="addEvent(event)" ng-repeat="event in defaultEvents"><i class="glyphicon glyphicon-send"></i> {{ event.Name }}</li>
       </ul>
       <form name="event_form" ng-submit="appendEvent(customEvent, event_form)">
@@ -27,7 +27,7 @@
     </div>
     <div class="col-md-6">
       <div>Selected Events</div>
-      <ul class="list-selector list-removeable">
+      <ul class="list-selector list-removeable xx-long">
         <li class="item" ng-click="removeEvent(event)" ng-repeat="event in selectedEvents"><i class="glyphicon glyphicon-remove-circle"></i> {{ event.Name }}</li>
       </ul>
     </div>

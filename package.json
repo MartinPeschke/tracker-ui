@@ -19,17 +19,12 @@
   },
   "dependencies": {
     "express": "latest",
-    "jade": "latest",
-    "lodash": "latest",
-    "view-helpers": "latest",
-    "mean-logger": "latest",
     "bower": "latest",
     "grunt": "latest",
     "grunt-cli": "latest",
     "grunt-env": "latest",
     "forever": "latest",
     "request": "~2.33.0",
-    "winston": "~0.7.2",
     "http-proxy": "~1.0.2"
   },
   "devDependencies": {

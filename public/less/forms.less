@@ -73,8 +73,20 @@
 
 
 .list-selector {
+  @marginBottom: (@line-height-computed / 2);
   list-style-type: none;
+  margin-bottom:@marginBottom;
   padding:0;
+  background-color: white;
+  border: 1px solid @input-border;
+  border-radius: @input-border-radius;
+  min-height: 3*@input-height-base + 1px;
+  &.x-long {
+    min-height: 7*@input-height-base;
+  }
+  &.xx-long {
+    min-height: 8*@input-height-base + @marginBottom;
+  }
   > .item {
     display: block;
     cursor:pointer;
@@ -84,10 +96,9 @@
     font-size: @font-size-base;
     line-height: @input-height-base;
     background-color: white;
-    border: 1px solid @input-border;
-    border-radius: @input-border-radius;
-    +.item {
-      border-top: none;
+    border-bottom: 1px solid @input-border;
+    &:last-child {
+      margin-bottom: -1px;
     }
     &:hover {
       background-color: @btn-primary-bg;

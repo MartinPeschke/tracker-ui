@@ -1,26 +1,31 @@
 'use strict';
 
-var express = require('express');
+var express = require('express'),
+    httpProxy = require('http-proxy'),
+    apiProxy = httpProxy.createProxyServer({}),
+    fs = require('fs'),
+    config = {
+        apiUrl: 'http://bizintell.cloudapp.net:12345',
+        apiClientToken: '1234asdf23t523f5ya'
+    };
 
-//Load configurations
-//Set the node enviornment variable if not set before
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-
-//Initializing system variables
-var config = require('./config/config');
+process.env.PORT = process.env.PORT || 3000;
 
 var app = express();
 
-//express settings
-require('./config/express')(app);
+app.use('/api', function(req, res) {
+    req.headers['Client-Token'] = config.apiClientToken;
+    apiProxy.web(req, res, { target: config.apiUrl });
+});
+app.use(express.static(__dirname + '/public'));
+app.use('/', function(req, res) {
+    fs.readFile(__dirname + '/public/index.html', 'utf8', function(err, text){
+        res.send(text);
+    });
+});
 
-//Bootstrap routes
-app.get('/', function(req, res) { res.render('index'); });
 
-//Start the app by listening on <port>
-var port = process.env.PORT || config.port;
-app.listen(port);
-console.log('Express app started on port ' + port);
-
-//expose app
+app.listen(process.env.PORT);
+console.log('Express app started on port ' + process.env.PORT);
 exports = module.exports = app;
