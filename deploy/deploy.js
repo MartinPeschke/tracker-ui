@@ -1,48 +1,70 @@
-process.env.AZURE_STORAGE_ACCOUNT = 'booksys';
-process.env.AZURE_STORAGE_ACCESS_KEY = 'BS323SGwtVqgJF+mx3JGpWF81e4rGqt7CHUEJoeu4SsBtO+S+lm9tmx1E6qG68VQ6WFhSPliPMs7ji4QMaTjEQ==';
 
-
-var azure = require('azure'),
+var containerName = 'tracker-ui',
     path = require('path'),
+    async = require('async'),
+    fs = require('fs'),
+    azure = require('azure'),
     blobService = azure.createBlobService(),
-    containerName = 'tracker-ui';
-
-var fs = require('fs');
-var walk = function(root, each_done, path) {
-    path=path||root;
-    fs.readdirSync(path).forEach(function(file) {
-        var newPath = path + '/' + file;
-        var stat = fs.statSync(newPath);
-        if (/^[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)?$/.test(file)) {
-            if (stat.isFile()) {
-                each_done(file, newPath.substr(root.length+1), newPath);
-            } else if (stat.isDirectory()) {
-                walk(root, each_done, newPath);
-            }
-        }
-    });
-};
-
-
-function upload(blobService, container){
-    return function(name, relPath, absPath){
-        blobService.createBlockBlobFromFile(containerName
-            , relPath       // blobName
-            , path.normalize(absPath    )   // localName
-            , function done(error){
-                if(!error){
-                    console.log("Uploaded: " + relPath);
+    walk = function(root, each_done, path) {
+        path=path||root;
+        fs.readdirSync(path).forEach(function(file) {
+            var newPath = path + '/' + file;
+            var stat = fs.statSync(newPath);
+            if (/^[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)?$/.test(file)) {
+                if (stat.isFile()) {
+                    each_done(file, newPath.substr(root.length+1), newPath);
+                } else if (stat.isDirectory()) {
+                    walk(root, each_done, newPath);
                 }
-            });
-    };
-}
-
-blobService.createContainerIfNotExists(containerName
-    , {publicAccessLevel : 'blob'}
-    , function done(error){
-        if(!error){
+            }
+        });
+    },
+    uploadFile = function (b_service, c_name){
+        return function(name, relPath, absPath){
+            b_service.createBlockBlobFromFile(c_name
+                , relPath       // blobName
+                , path.normalize(absPath    )   // localName
+                , function done(error){
+                    if(!error){
+                        console.log("Uploaded: " + relPath);
+                    }
+                });
+        };
+    },
+    uploadFiles = function(b_service, c_name){
+        return function(){
             var root = __dirname +"/../public";
-            walk(root, upload(blobService));
+            walk(root, uploadFile(b_service, c_name));
+        };
+    },
+    emptyContainer = function(b_service, c_name, next){
+        var deleteBlob = function(blob){
+            return function(_cb){
+                b_service.deleteBlob(c_name, blob.name,
+                    function(error, isSuccessful){
+                        console.log((isSuccessful?"Deleted ":"FAILED to delete ") + blob.name);
+                        _cb(null, isSuccessful);
+                    }
+                );
+            }
+        };
+
+        b_service.listBlobs(c_name, function(error, blobs){
+            async.parallel(
+                blobs.map(deleteBlob),
+                next
+            );
+        });
+    },
+
+    __main__ = function(error){
+        if(!error){
+            emptyContainer(
+                blobService,
+                containerName,
+                uploadFiles(blobService, containerName)
+            );
         }
-    }
-);
+    };
+
+blobService.createContainerIfNotExists(containerName, {publicAccessLevel : 'blob'}, __main__);
