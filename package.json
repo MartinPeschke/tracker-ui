@@ -19,18 +19,17 @@
   },
   "dependencies": {
     "express": "latest",
-    "jade": "latest",
-    "lodash": "latest",
-    "view-helpers": "latest",
-    "mean-logger": "latest",
     "bower": "latest",
     "grunt": "latest",
     "grunt-cli": "latest",
     "grunt-env": "latest",
     "forever": "latest",
     "request": "~2.33.0",
-    "winston": "~0.7.2",
-    "http-proxy": "~1.0.2"
+    "http-proxy": "~1.0.2",
+    "async": "~0.2.10",
+    "node-uuid": "~1.4.1",
+    "nconf": "~0.6.9",
+    "azure": "~0.8.1"
   },
   "devDependencies": {
     "supertest": "latest",
