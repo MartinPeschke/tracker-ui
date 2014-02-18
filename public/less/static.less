@@ -2,14 +2,10 @@
     color:#777777;
     background-color: @transp-white-box-color;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.1);
-    width:15%;
-    float:0;
-    position:absolute;
   ul{
     list-style-type: none;
     padding:0;
     margin:0;
-
   }
   li{
     width:100%;
@@ -19,7 +15,6 @@
     font-family: segoe_ui;
     font-weight: 300;
     cursor: pointer;
-    background-color: white;
     &:hover{
       background-color: #29ABE0;
       color:white;
@@ -38,15 +33,17 @@
       text-decoration: none;
     }
   }
+
+  .faq-menu-active li{
+     background-color: #29ABE0;
+     color:white;
+  }
+
 }
 
 .instruction-section{
   background-color: rgba(243,243,244,0.9);
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.1);
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  width:60%;
 }
 
 .instruction-step-container{
