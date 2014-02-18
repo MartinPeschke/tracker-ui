@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/deploy.js" afterPath="$PROJECT_DIR$/deploy/deploy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/account.html" afterPath="$PROJECT_DIR$/public/views/signup/account.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/backend.js" afterPath="$PROJECT_DIR$/public/js/services/backend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/bootstrap/buttons.less" afterPath="$PROJECT_DIR$/public/less/bootstrap/buttons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/forms.less" afterPath="$PROJECT_DIR$/public/less/forms.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/bootstrap/variables.less" afterPath="$PROJECT_DIR$/public/less/bootstrap/variables.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trackerui.iws" />
@@ -26,46 +31,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="7" selection-start="345" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="481">
+            <state line="21" column="9" selection-start="1371" selection-end="1371" vertical-scroll-proportion="-7.9545455" vertical-offset="98" max-vertical-offset="1040">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workflow.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
+      <file leaf-file-name="variables.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="6" selection-start="699" selection-end="699" vertical-scroll-proportion="-10.045455" vertical-offset="0" max-vertical-offset="299">
+            <state line="319" column="36" selection-start="10522" selection-end="10522" vertical-scroll-proportion="0.35953176" vertical-offset="3932" max-vertical-offset="10868">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deploy/deploy.js">
+      <file leaf-file-name="navbar.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/less/bootstrap/navbar.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blobservice.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/services/blob/blobservice.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="742" column="72" selection-start="36224" selection-end="36224" vertical-scroll-proportion="-6.02" vertical-offset="9163" max-vertical-offset="44161">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gruntfile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gruntfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="33" selection-start="1244" selection-end="1250" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="1365">
+            <state line="379" column="30" selection-start="8681" selection-end="8681" vertical-scroll-proportion="-4.8510637" vertical-offset="4699" max-vertical-offset="8086">
               <folding />
             </state>
           </provider>
@@ -92,17 +79,13 @@
         <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/public/js/directives/paint.js" />
         <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/mixins.less" />
         <option value="$PROJECT_DIR$/public/js/directives/keepHeight.js" />
         <option value="$PROJECT_DIR$/public/less/type.less" />
         <option value="$PROJECT_DIR$/public/js/controllers/signup/workflow.js" />
         <option value="$PROJECT_DIR$/public/less/bootstrap/forms.less" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/buttons.less" />
         <option value="$PROJECT_DIR$/public/views/auth/signin.html" />
         <option value="$PROJECT_DIR$/public/views/auth/pwdforgot.html" />
-        <option value="$PROJECT_DIR$/public/views/signup/account.html" />
         <option value="$PROJECT_DIR$/public/views/signup/company.html" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/variables.less" />
         <option value="$PROJECT_DIR$/public/js/controllers/signup/mastercode.js" />
         <option value="$PROJECT_DIR$/public/js/config.js" />
         <option value="$PROJECT_DIR$/public/views/signup/mastercode.html" />
@@ -116,8 +99,6 @@
         <option value="$PROJECT_DIR$/public/views/header.html" />
         <option value="$PROJECT_DIR$/public/views/signup/codes.html" />
         <option value="$PROJECT_DIR$/public/views/signup/events.html" />
-        <option value="$PROJECT_DIR$/public/less/forms.less" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/config/env/development.js" />
         <option value="$PROJECT_DIR$/config/env/production.js" />
         <option value="$PROJECT_DIR$/config/env/test.js" />
@@ -128,6 +109,13 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/less/layout.less" />
         <option value="$PROJECT_DIR$/deploy/deploy.js" />
+        <option value="$PROJECT_DIR$/public/less/forms.less" />
+        <option value="$PROJECT_DIR$/public/js/services/backend.js" />
+        <option value="$PROJECT_DIR$/public/views/signup/account.html" />
+        <option value="$PROJECT_DIR$/public/less/bootstrap/mixins.less" />
+        <option value="$PROJECT_DIR$/public/less/bootstrap/buttons.less" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/less/bootstrap/variables.less" />
       </list>
     </option>
   </component>
@@ -163,6 +151,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,13 +180,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="deploy" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="signup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,7 +236,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../friendfund" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/index.html" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="293" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="967" />
@@ -229,6 +257,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -251,7 +280,7 @@
       <recent name="D:\_projects\trackerui\public\lib\d3-angular" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.express.js">
+  <component name="RunManager" selected="Node.js.Run Node">
     <configuration default="false" name="express.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="express.js" working-dir="$PROJECT_DIR$/config">
       <browser start="false" url="" with-js-debugger="false" />
       <RunnerSettings RunnerId="NodeJS.debug" />
@@ -342,9 +371,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -366,6 +392,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
@@ -413,16 +442,22 @@
       <method />
     </configuration>
     <configuration default="false" name="Run Node" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
-      <browser start="false" url="" with-js-debugger="false" />
+      <browser start="true" url="http://localhost:63342/trackerui/public/index.html" with-js-debugger="true" />
       <RunnerSettings RunnerId="NodeJS.debug" />
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="Run Node JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://localhost:63342/trackerui/public/index.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Node.js.Run Node" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.express.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Run Node JavaScript" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.express.js" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -483,21 +518,21 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32258064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32222223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.13660619" sideWeight="0.67082036" order="0" side_tool="false" content_ui="combo" x="-540" y="0" width="469" height="1079" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3981855" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.13660619" sideWeight="0.67082036" order="0" side_tool="false" content_ui="combo" x="-529" y="-4" width="469" height="1079" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4858586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -515,9 +550,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.13660619" sideWeight="0.67082036" order="0" side_tool="false" content_ui="combo" x="-540" y="0" width="469" height="1079" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -545,28 +580,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="1" selection-start="6038" selection-end="6038" vertical-scroll-proportion="0.0" vertical-offset="2132" max-vertical-offset="10829">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/signup/company.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="64" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/directives/paint.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="773" selection-end="868" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2756" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/directives/keepHeight.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="314" selection-end="314" vertical-scroll-proportion="0.2012384" vertical-offset="0" max-vertical-offset="646" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/less/type.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="8" selection-start="37" selection-end="37" vertical-scroll-proportion="-1.7727273" vertical-offset="0" max-vertical-offset="143" />
@@ -587,18 +600,6 @@
         <state line="116" column="22" selection-start="2483" selection-end="2483" vertical-scroll-proportion="0.3273305" vertical-offset="1199" max-vertical-offset="5512" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/mixins.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="542" column="17" selection-start="16432" selection-end="16432" vertical-scroll-proportion="0.36864406" vertical-offset="6698" max-vertical-offset="12116">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/buttons.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="525" selection-end="525" vertical-scroll-proportion="0.24788135" vertical-offset="0" max-vertical-offset="2145" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/input-groups.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="107" column="0" selection-start="2879" selection-end="2879" vertical-scroll-proportion="1.0847458" vertical-offset="367" max-vertical-offset="2119" />
@@ -616,9 +617,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/glyphicons.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="820" selection-end="1057" vertical-scroll-proportion="0.3141542" vertical-offset="0" max-vertical-offset="3107">
-          <folding />
-        </state>
+        <state line="21" column="0" selection-start="820" selection-end="1057" vertical-scroll-proportion="0.3141542" vertical-offset="0" max-vertical-offset="3107" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
@@ -634,11 +633,6 @@
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/events.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="38" selection-start="1301" selection-end="1308" vertical-scroll-proportion="0.4710145" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/account.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.45755693" vertical-offset="0" max-vertical-offset="966" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
@@ -663,203 +657,194 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="331" selection-end="331" vertical-scroll-proportion="0.10766046" vertical-offset="0" max-vertical-offset="966">
-          <folding />
-        </state>
+        <state line="8" column="31" selection-start="331" selection-end="331" vertical-scroll-proportion="0.10766046" vertical-offset="0" max-vertical-offset="966" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="32" selection-start="321" selection-end="322" vertical-scroll-proportion="0.0942029" vertical-offset="0" max-vertical-offset="966">
-          <folding />
-        </state>
+        <state line="7" column="32" selection-start="321" selection-end="322" vertical-scroll-proportion="0.0942029" vertical-offset="0" max-vertical-offset="966" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/auth/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="104">
-          <folding />
-        </state>
+        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="104" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/auth/pwdforgot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="324" selection-end="324" vertical-scroll-proportion="0.08262712" vertical-offset="0" max-vertical-offset="944">
-          <folding />
-        </state>
+        <state line="6" column="19" selection-start="324" selection-end="324" vertical-scroll-proportion="0.08262712" vertical-offset="0" max-vertical-offset="944" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/grid.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.1273123" vertical-offset="0" max-vertical-offset="1378">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.1273123" vertical-offset="0" max-vertical-offset="1378" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="642" selection-end="642" vertical-scroll-proportion="0.22033899" vertical-offset="0" max-vertical-offset="944">
-          <folding />
-        </state>
+        <state line="16" column="10" selection-start="642" selection-end="642" vertical-scroll-proportion="0.22033899" vertical-offset="0" max-vertical-offset="944" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/list-group.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.31120783" vertical-offset="0" max-vertical-offset="1508">
-          <folding />
-        </state>
+        <state line="22" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.31120783" vertical-offset="0" max-vertical-offset="1508" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/type.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="17" selection-start="2921" selection-end="2948" vertical-scroll-proportion="0.1936888" vertical-offset="1759" max-vertical-offset="3926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/forms.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="23" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.080522306" vertical-offset="706" max-vertical-offset="1625">
-          <folding />
-        </state>
+        <state line="149" column="17" selection-start="2921" selection-end="2948" vertical-scroll-proportion="0.1936888" vertical-offset="1759" max-vertical-offset="3926" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/events.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="710" selection-end="710" vertical-scroll-proportion="0.23411018" vertical-offset="0" max-vertical-offset="944">
-          <folding />
-        </state>
+        <state line="17" column="28" selection-start="710" selection-end="710" vertical-scroll-proportion="0.23411018" vertical-offset="0" max-vertical-offset="944" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/codes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="142" selection-end="142" vertical-scroll-proportion="0.04131356" vertical-offset="0" max-vertical-offset="944">
+        <state line="3" column="5" selection-start="142" selection-end="142" vertical-scroll-proportion="0.04131356" vertical-offset="0" max-vertical-offset="944" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/grunt-nodemon/node_modules/nodemon/oldtests/express/node_modules/express/lib/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="390" column="4" selection-start="8937" selection-end="8937" vertical-scroll-proportion="0.33333334" vertical-offset="4748" max-vertical-offset="7020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="9" selection-start="72" selection-end="72" vertical-scroll-proportion="0.06728779" vertical-offset="0" max-vertical-offset="966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nodemonignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.026915114" vertical-offset="0" max-vertical-offset="966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.jshintignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="156" selection-end="156" vertical-scroll-proportion="0.06728779" vertical-offset="0" max-vertical-offset="966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="14" selection-start="326" selection-end="326" vertical-scroll-proportion="0.1927966" vertical-offset="0" max-vertical-offset="944" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="16" selection-start="652" selection-end="652" vertical-scroll-proportion="0.4243743" vertical-offset="0" max-vertical-offset="919" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/azure.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8307" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/deploy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="116" selection-end="116" vertical-scroll-proportion="0.05383023" vertical-offset="0" max-vertical-offset="975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="699" selection-end="699" vertical-scroll-proportion="0.23411018" vertical-offset="0" max-vertical-offset="944" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="345" selection-end="352" vertical-scroll-proportion="0.16149068" vertical-offset="0" max-vertical-offset="966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/services/blob/blobservice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="742" column="72" selection-start="36224" selection-end="36224" vertical-scroll-proportion="0.33333334" vertical-offset="9163" max-vertical-offset="44161" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="33" selection-start="1244" selection-end="1250" vertical-scroll-proportion="0.51138717" vertical-offset="78" max-vertical-offset="1365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="513" selection-end="513" vertical-scroll-proportion="0.17030568" vertical-offset="0" max-vertical-offset="916" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/account.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="44" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.4979296" vertical-offset="0" max-vertical-offset="966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/forms.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="26" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.10881393" vertical-offset="706" max-vertical-offset="1638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/mixins.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="542" column="23" selection-start="16438" selection-end="16438" vertical-scroll-proportion="0.37867248" vertical-offset="6698" max-vertical-offset="12116" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="30" selection-start="564" selection-end="564" vertical-scroll-proportion="0.43153527" vertical-offset="0" max-vertical-offset="1144">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
+    <entry file="file://$PROJECT_DIR$/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="1" selection-start="6078" selection-end="6078" vertical-scroll-proportion="0.35038084" vertical-offset="2161" max-vertical-offset="10868">
+        <state line="5" column="10" selection-start="242" selection-end="242" vertical-scroll-proportion="0.06900212" vertical-offset="0" max-vertical-offset="942">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/buttons.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.21374045" vertical-offset="519" max-vertical-offset="2145">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="890" selection-end="890" vertical-scroll-proportion="0.2891949" vertical-offset="0" max-vertical-offset="944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/grunt-nodemon/node_modules/nodemon/oldtests/express/node_modules/express/lib/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="390" column="4" selection-start="8937" selection-end="8937" vertical-scroll-proportion="0.33333334" vertical-offset="4748" max-vertical-offset="7020">
+        <state line="30" column="81" selection-start="1417" selection-end="1424" vertical-scroll-proportion="0.41401273" vertical-offset="0" max-vertical-offset="942">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1040">
+        <state line="21" column="9" selection-start="1371" selection-end="1371" vertical-scroll-proportion="-7.9545455" vertical-offset="98" max-vertical-offset="1040">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/navbar.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966">
+        <state line="379" column="30" selection-start="8681" selection-end="8681" vertical-scroll-proportion="-4.8510637" vertical-offset="4699" max-vertical-offset="8086">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="72" selection-end="72" vertical-scroll-proportion="0.06728779" vertical-offset="0" max-vertical-offset="966">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.nodemonignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.026915114" vertical-offset="0" max-vertical-offset="966">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.jshintignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="156" selection-end="156" vertical-scroll-proportion="0.06728779" vertical-offset="0" max-vertical-offset="966">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="33" selection-start="1244" selection-end="1250" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="326" selection-end="326" vertical-scroll-proportion="0.1927966" vertical-offset="0" max-vertical-offset="944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="652" selection-end="652" vertical-scroll-proportion="0.4243743" vertical-offset="0" max-vertical-offset="919">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/azure.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="345" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="481">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="699" selection-end="699" vertical-scroll-proportion="-10.045455" vertical-offset="0" max-vertical-offset="299">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/services/blob/blobservice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="742" column="72" selection-start="36224" selection-end="36224" vertical-scroll-proportion="-6.02" vertical-offset="9163" max-vertical-offset="44161">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/deploy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+        <state line="319" column="36" selection-start="10522" selection-end="10522" vertical-scroll-proportion="0.35953176" vertical-offset="3932" max-vertical-offset="10868">
           <folding />
         </state>
       </provider>
