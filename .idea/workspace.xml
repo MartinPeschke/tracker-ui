@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/static/layout.html" afterPath="$PROJECT_DIR$/public/views/static/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/static.less" afterPath="$PROJECT_DIR$/public/less/static.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="trackerui.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392718942230" ignored="false" />
+    <file path="/Dummy.txt" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392738798842" ignored="false" />
     <file path="/faq.html" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392642445486" ignored="false" />
     <file path="/layout.html" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392732864325" ignored="false" />
     <file path="/layout.less" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392654847792" ignored="false" />
@@ -40,53 +39,7 @@
     <favorites_list name="trackerui" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/static/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="683" selection-end="683" vertical-scroll-proportion="-7.8461537">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="static.less" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/less/static.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="17" selection-start="661" selection-end="661" vertical-scroll-proportion="0.36589405">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="keepHeight.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/directives/keepHeight.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="40" selection-start="83" selection-end="94" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="36" selection-start="3257" selection-end="3257" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="website.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/static/website.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="32" selection-start="2410" selection-end="2410" vertical-scroll-proportion="-21.576923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -124,10 +77,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -155,7 +108,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,20 +200,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="293" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="293" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HackAndCraftWeb" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="293" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="967" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="293" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="291" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -458,16 +411,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13216375" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.216133" sideWeight="0.7754386" order="0" side_tool="false" content_ui="combo" x="20" y="106" width="460" height="881" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22456141" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17757511" sideWeight="0.7754386" order="0" side_tool="false" content_ui="combo" x="20" y="106" width="460" height="881" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22404371" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -475,6 +427,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13216375" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -544,51 +497,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/account.js">
+    <entry file="file://$PROJECT_DIR$/public/js/directives/keepHeight.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.97325104">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.79012346">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/auth/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="142" selection-end="142" vertical-scroll-proportion="0.25247526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="335" selection-end="335" vertical-scroll-proportion="0.1891892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="242" selection-end="242" vertical-scroll-proportion="0.14096186">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="539" selection-end="539" vertical-scroll-proportion="-6.5384617">
+        <state line="3" column="40" selection-start="83" selection-end="94" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -600,11 +511,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/account.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="79" selection-start="3539" selection-end="3539" vertical-scroll-proportion="0.4654088">
+        <state line="29" column="0" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.97325104" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.79012346" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/auth/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="142" selection-end="142" vertical-scroll-proportion="0.25247526" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="39" selection-start="335" selection-end="335" vertical-scroll-proportion="0.1891892" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="242" selection-end="242" vertical-scroll-proportion="0.14096186" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="539" selection-end="539" vertical-scroll-proportion="-6.5384617" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="36" selection-start="3257" selection-end="3257" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="79" selection-start="3539" selection-end="3539" vertical-scroll-proportion="0.4654088" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/directives/keepHeight.js">
@@ -616,28 +567,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/layout.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.85427135">
-          <folding />
-        </state>
+        <state line="40" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.85427135" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/static/website.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="32" selection-start="2410" selection-end="2410" vertical-scroll-proportion="-21.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/static/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="683" selection-end="683" vertical-scroll-proportion="-7.8461537">
+        <state line="60" column="32" selection-start="2410" selection-end="2410" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/static.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="661" selection-end="661" vertical-scroll-proportion="0.36589405">
+        <state line="69" column="20" selection-start="1190" selection-end="1190" vertical-scroll-proportion="1.4166666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/static/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="683" selection-end="683" vertical-scroll-proportion="0.24667473">
           <folding />
         </state>
       </provider>
