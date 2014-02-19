@@ -1,17 +1,24 @@
-<div ng-controller="MasterCodeController">
-  <h3>Here are the master codes for your account: {{ state.account.Name }}</h3>
-  <h4>Platforms:</h4>
-  <ul>
-    <li ng-repeat="platform in state.account.Platforms">{{ platform.Name }}</li>
-  </ul>
-  <hr/>
-  <h4>Events:</h4>
-  <ul>
-    <li ng-repeat="event in state.account.Events">{{ event.Name }}</li>
-  </ul>
-
-
-  <div>
-    <a class="btn btn-primary" href="{{ workflowNextUrl() }}">Next</a>
-  </div>
+<h1 class="box-title">Integrate Tracking into your Website/App</h1>
+<div class="form-box" ng-controller="MasterCodeController">
+  <h3 class="text-center">Master scripts for your {{ state.account.Name }} account.</h3>
+  <div class="row">
+      <ul class="no-style-ul top-offset-small">
+        <li ng-repeat="platform in state.account.Platforms" class="top-offset-small">
+            <div class="col-xs-10">
+                <p class="item-title">{{ platform.Name }}</p>
+            </div>
+            <div class="col-xs-8">
+                <textarea class="pull-left full-width" rows="6">{{masterCode}}</textarea>
+            </div>
+            <div class="col-xs-4 top-offset-tiny ">
+                 <div class="btn btn-primary btn-block">Copy</div>
+                 <div class="btn btn-primary btn-block">Test</div>
+           </div>
+            <div class="clearfix"></div>
+        </li>
+      </ul>
+   </div>
+    <div class="text-center top-offset-small">
+        <a class="btn btn-success btn-wide" href="{{ workflowNextUrl() }}">Next</a>
+    </div>
 </div>

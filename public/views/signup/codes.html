@@ -1,17 +1,30 @@
-<div ng-controller="SignupCodesController">
-  <h3>Your done with Signup for Account: {{ state.account.Name }}</h3>
-  <h4>Platforms:</h4>
-  <ul>
-    <li ng-repeat="platform in state.account.Platforms">{{ platform.Name }}</li>
-  </ul>
-  <hr/>
-  <h4>Events:</h4>
-  <ul>
-    <li ng-repeat="event in state.account.Events">{{ event.Name }}</li>
-  </ul>
-
-
-  <div>
-    <a class="btn btn-primary" href="{{ workflowNextUrl() }}">Done</a>
+<h1 class="box-title">Integrate Tracking</h1>
+<div class="form-box" ng-controller="SignupCodesController">
+  <div class="row">
+    <div class="col-md-5">
+      <div>Your Events</div>
+      <ul class="list-selector list-selectable x-long">
+        <li class="item" ng-repeat="event in state.account.Events" ng-click="displayEventCodes(event)"><i class="glyphicon glyphicon-send"></i> {{ event.Name }}</li>
+      </ul>
+    </div>
+    <div class="col-md-7">
+      <div>Tracking Code</div>
+      <ul class="list-selector x-long">
+          <li ng-repeat="snippet in codeSnippets" class="top-offset-tiny padding-box equal-input-and-button-height">
+              <div class="item-title">{{snippet.platformName }}</div>
+                  <div class="row">
+                      <div class="col-sm-7">
+                        <input type="text" value="{{snippet.code}}" class="form-control"/>
+                      </div>
+                      <div class="col-sm-5">
+                        <div class="btn btn-primary btn-block">Copy</div>
+                      </div>
+                  </div>
+          </li>
+      </ul>
+    </div>
   </div>
+   <div class="text-center top-offset-small">
+        <a class="btn btn-success btn-wide" href="{{ workflowNextUrl() }}">Next</a>
+    </div>
 </div>
