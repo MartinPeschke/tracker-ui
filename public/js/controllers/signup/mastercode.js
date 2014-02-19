@@ -4,5 +4,9 @@ angular.module('trackerui.system').controller('MasterCodeController', ['$scope',
     function ($scope, State, masterCodeService) {
         $scope.state = State;
         $scope.masterCode = masterCodeService;
+
+        $scope.getTextToCopy = function(code){
+            return code;
+        }
     }
 ]);

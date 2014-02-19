@@ -15,5 +15,9 @@ angular.module('trackerui.system').controller('SignupCodesController', ['$scope'
                 $scope.codeSnippets.push(snippet);
             }
         }
+
+        $scope.getTextToCopy = function(code){
+            return code
+        }
     }
 ]);

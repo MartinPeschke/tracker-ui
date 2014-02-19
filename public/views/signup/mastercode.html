@@ -8,10 +8,10 @@
                 <p class="item-title">{{ platform.Name }}</p>
             </div>
             <div class="col-xs-8">
-                <textarea class="pull-left full-width" rows="6">{{masterCode}}</textarea>
+                <textarea disabled class="pull-left full-width" rows="6">{{masterCode}}</textarea>
             </div>
-            <div class="col-xs-4 top-offset-tiny ">
-                 <div class="btn btn-primary btn-block">Copy</div>
+            <div class="col-xs-4 top-offset-tiny">
+                 <div class="btn btn-primary btn-block" clip-copy="getTextToCopy(masterCode)">Copy</div>
                  <div class="btn btn-primary btn-block">Test</div>
            </div>
             <div class="clearfix"></div>
