@@ -59,6 +59,27 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
                 }}
             })
 
+             .state('faq', {
+                abstract: true,
+                templateUrl: 'views/static/layout.html'
+            })
+            .state('faq.android', {
+                url: '/android',
+                templateUrl: 'views/static/android.html'
+            })
+            .state('faq.iphone', {
+                url: '/iphone',
+                templateUrl: 'views/static/android.html'
+            })
+            .state('faq.windows', {
+                url: '/windows',
+                templateUrl: 'views/static/android.html'
+            })
+            .state('faq.website', {
+                url: '/website',
+                templateUrl: 'views/static/website.html'
+            })
+
             .state('index', {
                 url: '/',
                 templateUrl: 'views/index.html'

@@ -1,0 +1,96 @@
+.faq-menu{
+    color:#777777;
+    box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.1);
+  ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+  }
+  li{
+    width:100%;
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 48px;
+    font-family: segoe_ui;
+    font-weight: 300;
+    cursor: pointer;
+    &:hover{
+      background-color: #29ABE0;
+      color:white;
+    }
+    .arrow-icon{
+      float:right;
+      margin-right: 5px;
+    }
+  }
+  a{
+    color:inherit;
+    text-decoration: none;
+    width:100%;
+    &:hover{
+       color:inherit;
+      text-decoration: none;
+    }
+  }
+
+  .faq-menu-active li{
+     background-color: #29ABE0;
+     color:white;
+  }
+
+}
+
+.instruction-section{
+  background-color: rgba(243,243,244,0.9);
+  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.1), 0px -4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.instruction-step-container{
+  padding:20px 10% 60px 5%;
+
+}
+
+.instruction-step{
+
+  font-family: segoe_ui;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 40px;
+  width:40px;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  text-align: center;
+  color:#777777;
+  float:left;
+  margin-right: 2%;
+}
+
+.instruction-step-text{
+  float: left;
+  font-family: segoe_ui;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color:#777777;
+  margin-right: 2%;
+  width:79%;
+}
+
+.instruction-text-and-image{
+  width: 30%;
+}
+
+.instruction-step-image{
+  float:left;
+  margin-right: 2%;
+  width: 49%;
+  img{
+    max-width: 100%;
+    width:auto;
+    height:auto;
+  }
+}
+
+.faq-background{
+ background-color: @transp-white-box-color;
+}

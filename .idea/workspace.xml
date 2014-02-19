@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/selenium/runtests.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/static/layout.html" afterPath="$PROJECT_DIR$/public/views/static/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/static.less" afterPath="$PROJECT_DIR$/public/less/static.less" />
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
     </list>
     <ignored path="trackerui.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392718942230" ignored="false" />
+    <file path="/faq.html" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392642445486" ignored="false" />
+    <file path="/layout.html" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392732864325" ignored="false" />
+    <file path="/layout.less" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392654847792" ignored="false" />
+    <file path="/a.dummy" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392728926428" ignored="false" />
+    <file path="/text.less" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392655464963" ignored="false" />
+    <file path="/static.less" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392734761598" ignored="false" />
+    <file path="/workflow.html" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392644610354" ignored="false" />
+    <file path="/site.less" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392644772859" ignored="false" />
+    <file path="/foot.jade" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392645406897" ignored="false" />
+    <file path="/android.html" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392646183938" ignored="false" />
+    <file path="/website.html" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392653919709" ignored="false" />
+    <file path="/sameHight.js" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392725363293" ignored="false" />
+    <file path="/index.html" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392729020565" ignored="false" />
+    <file path="/sameHeight.js" changelist="bb098872-dd11-4aa5-82c2-59a80b2cdc27" time="1392728458441" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,28 +46,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="account.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/signup/account.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="36" selection-start="60" selection-end="83" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="520">
+=======
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/static/layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="41" selection-start="683" selection-end="683" vertical-scroll-proportion="-7.8461537">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="runtests.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/selenium/runtests.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="14" selection-start="647" selection-end="647" vertical-scroll-proportion="0.29803494" vertical-offset="0" max-vertical-offset="916">
+=======
+      <file leaf-file-name="static.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/less/static.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="17" selection-start="661" selection-end="661" vertical-scroll-proportion="0.36589405">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/less/bootstrap/navbar.less">
+      <file leaf-file-name="keepHeight.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/directives/keepHeight.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="379" column="30" selection-start="8681" selection-end="8681" vertical-scroll-proportion="0.0" vertical-offset="4699" max-vertical-offset="8086">
+=======
+            <state line="3" column="40" selection-start="83" selection-end="94" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="36" selection-start="3257" selection-end="3257" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="website.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/static/website.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="32" selection-start="2410" selection-end="2410" vertical-scroll-proportion="-21.576923">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
               <folding />
             </state>
           </provider>
@@ -71,55 +127,35 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/public/js/directives/paint.js" />
-        <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
-        <option value="$PROJECT_DIR$/public/js/directives/keepHeight.js" />
-        <option value="$PROJECT_DIR$/public/less/type.less" />
-        <option value="$PROJECT_DIR$/public/js/controllers/signup/workflow.js" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/forms.less" />
-        <option value="$PROJECT_DIR$/public/views/auth/signin.html" />
-        <option value="$PROJECT_DIR$/public/views/auth/pwdforgot.html" />
-        <option value="$PROJECT_DIR$/public/views/signup/company.html" />
-        <option value="$PROJECT_DIR$/public/js/controllers/signup/mastercode.js" />
-        <option value="$PROJECT_DIR$/public/js/config.js" />
-        <option value="$PROJECT_DIR$/public/views/signup/mastercode.html" />
+        <option value="$PROJECT_DIR$/public/views/static/faq.html" />
+        <option value="$PROJECT_DIR$/public/less/site.less" />
         <option value="$PROJECT_DIR$/app/views/includes/foot.jade" />
-        <option value="$PROJECT_DIR$/public/js/controllers/signup/events.js" />
-        <option value="$PROJECT_DIR$/public/js/controllers/signup/account.js" />
-        <option value="$PROJECT_DIR$/public/views/auth/pwdreset.html" />
-        <option value="$PROJECT_DIR$/config/routes.js" />
-        <option value="$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js" />
-        <option value="$PROJECT_DIR$/public/views/signup/workflow.html" />
-        <option value="$PROJECT_DIR$/public/views/header.html" />
-        <option value="$PROJECT_DIR$/public/views/signup/codes.html" />
-        <option value="$PROJECT_DIR$/public/views/signup/events.html" />
-        <option value="$PROJECT_DIR$/config/env/development.js" />
-        <option value="$PROJECT_DIR$/config/env/production.js" />
-        <option value="$PROJECT_DIR$/config/env/test.js" />
-        <option value="$PROJECT_DIR$/config/env/all.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/config/express.js" />
-        <option value="$PROJECT_DIR$/config/config.js" />
-        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/views/static/android.html" />
+        <option value="$PROJECT_DIR$/public/js/config.js" />
         <option value="$PROJECT_DIR$/public/less/layout.less" />
-        <option value="$PROJECT_DIR$/deploy/deploy.js" />
-        <option value="$PROJECT_DIR$/public/less/forms.less" />
-        <option value="$PROJECT_DIR$/public/js/services/backend.js" />
-        <option value="$PROJECT_DIR$/public/views/signup/account.html" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/mixins.less" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/buttons.less" />
+        <option value="$PROJECT_DIR$/public/less/text.less" />
+        <option value="$PROJECT_DIR$/public/views/signup/workflow.html" />
+        <option value="$PROJECT_DIR$/public/js/controllers/static/faq.js" />
+        <option value="$PROJECT_DIR$/public/js/directives/sameHight.js" />
+        <option value="$PROJECT_DIR$/public/js/directives/sameHeight.js" />
+        <option value="$PROJECT_DIR$/public/js/directives/siblingHeight.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/public/less/bootstrap/variables.less" />
         <option value="$PROJECT_DIR$/test/selenium/runtests.js" />
+=======
+        <option value="$PROJECT_DIR$/public/views/static/website.html" />
+        <option value="$PROJECT_DIR$/public/views/static/layout.html" />
+        <option value="$PROJECT_DIR$/public/less/static.less" />
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -162,7 +198,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
+              <option name="myItemId" value="tracker-ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -172,7 +208,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
+              <option name="myItemId" value="tracker-ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -218,7 +254,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
+              <option name="myItemId" value="tracker-ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -236,7 +272,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
+              <option name="myItemId" value="tracker-ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -248,7 +284,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="signup" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,7 +336,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="293" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="967" />
@@ -298,41 +352,12 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="settings" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
-    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
-    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
-  </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings />
-    </option>
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\_projects\trackerui\public\js\controllers\signup" />
-      <recent name="D:\_projects\trackerui\public\views\signup" />
-      <recent name="D:\_projects\trackerui\public\js\services" />
-      <recent name="D:\_projects\trackerui\public\js\controllers\auth" />
-      <recent name="D:\_projects\trackerui\public\js\controllers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\_projects\trackerui\public\js\controllers\signup" />
-      <recent name="D:\_projects\trackerui\public\js\controllers\auth" />
-      <recent name="D:\_projects\trackerui\public\views\signup" />
-      <recent name="D:\_projects\trackerui\public\views\auth" />
-      <recent name="D:\_projects\trackerui\public\lib\d3-angular" />
-    </key>
   </component>
   <component name="RunManager" selected="Node.js.Run Node">
-    <configuration default="false" name="express.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="express.js" working-dir="$PROJECT_DIR$/config">
-      <browser start="false" url="" with-js-debugger="false" />
-      <RunnerSettings RunnerId="NodeJS.debug" />
-      <ConfigurationWrapper RunnerId="NodeJS.debug" />
-      <method />
-    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -443,8 +468,12 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <browser start="false" url="" with-js-debugger="false" />
+=======
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -465,6 +494,13 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -488,47 +524,17 @@
       <method />
     </configuration>
     <configuration default="false" name="Run Node" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
-      <browser start="true" url="http://localhost:63342/trackerui/public/index.html" with-js-debugger="true" />
       <RunnerSettings RunnerId="NodeJS.debug" />
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <configuration default="false" name="Run Node JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://localhost:63342/trackerui/public/index.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <list size="3">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Node.js.Run Node" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Run Node JavaScript" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.express.js" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.express.js" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bb098872-dd11-4aa5-82c2-59a80b2cdc27" name="Default" comment="" />
@@ -537,42 +543,30 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.13660619" sideWeight="0.67082036" order="0" side_tool="false" content_ui="combo" x="-1253" y="0" width="469" height="1079" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4858586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13216375" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.216133" sideWeight="0.7754386" order="0" side_tool="false" content_ui="combo" x="20" y="106" width="460" height="881" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22456141" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32222223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -580,6 +574,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+<<<<<<< HEAD
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -605,27 +600,73 @@
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
+=======
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
     </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/config/express.js</url>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/glyphicons.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="820" selection-end="1057" vertical-scroll-proportion="0.3141542" vertical-offset="0" max-vertical-offset="3107" />
@@ -652,120 +693,51 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
+=======
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/account.js">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="66" selection-start="119" selection-end="133" vertical-scroll-proportion="0.04037267" vertical-offset="0" max-vertical-offset="966" />
+        <state line="29" column="0" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.97325104">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="3" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.39026916" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdforgot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="331" selection-end="331" vertical-scroll-proportion="0.10766046" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="32" selection-start="321" selection-end="322" vertical-scroll-proportion="0.0942029" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966" />
+        <state line="31" column="0" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.79012346">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/auth/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="104" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/auth/pwdforgot.html">
+    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="324" selection-end="324" vertical-scroll-proportion="0.08262712" vertical-offset="0" max-vertical-offset="944" />
+        <state line="9" column="1" selection-start="142" selection-end="142" vertical-scroll-proportion="0.25247526">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/grid.less">
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.1273123" vertical-offset="0" max-vertical-offset="1378" />
+        <state line="7" column="39" selection-start="335" selection-end="335" vertical-scroll-proportion="0.1891892">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/header.html">
+    <entry file="file://$PROJECT_DIR$/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="642" selection-end="642" vertical-scroll-proportion="0.22033899" vertical-offset="0" max-vertical-offset="944" />
+        <state line="5" column="10" selection-start="242" selection-end="242" vertical-scroll-proportion="0.14096186">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/list-group.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="451" selection-end="451" vertical-scroll-proportion="0.31120783" vertical-offset="0" max-vertical-offset="1508" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/type.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="17" selection-start="2921" selection-end="2948" vertical-scroll-proportion="0.1936888" vertical-offset="1759" max-vertical-offset="3926" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/signup/events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="710" selection-end="710" vertical-scroll-proportion="0.23411018" vertical-offset="0" max-vertical-offset="944" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/signup/codes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="142" selection-end="142" vertical-scroll-proportion="0.04131356" vertical-offset="0" max-vertical-offset="944" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/grunt-nodemon/node_modules/nodemon/oldtests/express/node_modules/express/lib/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="390" column="4" selection-start="8937" selection-end="8937" vertical-scroll-proportion="0.33333334" vertical-offset="4748" max-vertical-offset="7020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="72" selection-end="72" vertical-scroll-proportion="0.06728779" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.nodemonignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.026915114" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.jshintignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="156" selection-end="156" vertical-scroll-proportion="0.06728779" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="326" selection-end="326" vertical-scroll-proportion="0.1927966" vertical-offset="0" max-vertical-offset="944" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="652" selection-end="652" vertical-scroll-proportion="0.4243743" vertical-offset="0" max-vertical-offset="919" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/azure/lib/azure.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8307" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy/deploy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="116" selection-end="116" vertical-scroll-proportion="0.05383023" vertical-offset="0" max-vertical-offset="975" />
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="7" selection-start="345" selection-end="352" vertical-scroll-proportion="0.16149068" vertical-offset="0" max-vertical-offset="966" />
@@ -799,44 +771,80 @@
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/mixins.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="542" column="23" selection-start="16438" selection-end="16438" vertical-scroll-proportion="0.37867248" vertical-offset="6698" max-vertical-offset="12116" />
+=======
+    <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="539" selection-end="539" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/express.js">
+    <entry file="file://$PROJECT_DIR$/public/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="32" column="30" selection-start="564" selection-end="564" vertical-scroll-proportion="0.43153527" vertical-offset="0" max-vertical-offset="1144" />
+=======
+        <state line="84" column="36" selection-start="3257" selection-end="3257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/index.html">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="5" column="10" selection-start="242" selection-end="242" vertical-scroll-proportion="0.06900212" vertical-offset="0" max-vertical-offset="942" />
+=======
+        <state line="52" column="79" selection-start="3539" selection-end="3539" vertical-scroll-proportion="0.4654088">
+          <folding />
+        </state>
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/buttons.less">
+    <entry file="file://$PROJECT_DIR$/public/js/directives/keepHeight.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="55" column="0" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.21374045" vertical-offset="519" max-vertical-offset="2145" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/navbar.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="379" column="30" selection-start="8681" selection-end="8681" vertical-scroll-proportion="0.0" vertical-offset="4699" max-vertical-offset="8086">
+=======
+        <state line="3" column="40" selection-start="83" selection-end="94" vertical-scroll-proportion="0.0">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/node_modules/karma-coverage/node_modules/ibrik/node_modules/coffee-script-redux/node_modules/esmangle/lib/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="148" column="13" selection-start="13869" selection-end="13869" vertical-scroll-proportion="0.3322785" vertical-offset="1415" max-vertical-offset="8099">
+=======
+    <entry file="file://$PROJECT_DIR$/public/less/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.85427135">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/node_modules/stylus/lib/parser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="203" column="2" selection-start="3370" selection-end="3370" vertical-scroll-proportion="0.33333334" vertical-offset="2424" max-vertical-offset="22997">
+=======
+    <entry file="file://$PROJECT_DIR$/public/views/static/website.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="32" selection-start="2410" selection-end="2410" vertical-scroll-proportion="-21.576923">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/node_modules/chai/lib/chai/interface/assert.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="0" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.020155039" vertical-offset="1261" max-vertical-offset="13806" />
@@ -891,6 +899,18 @@
     <entry file="file://$PROJECT_DIR$/test/selenium/runtests.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="14" selection-start="647" selection-end="647" vertical-scroll-proportion="0.29803494" vertical-offset="0" max-vertical-offset="916">
+=======
+    <entry file="file://$PROJECT_DIR$/public/views/static/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="683" selection-end="683" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/static.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="17" selection-start="661" selection-end="661" vertical-scroll-proportion="0.36589405">
+>>>>>>> 9dfac8676a60938a36ba05c095f908aba3bdf548
           <folding />
         </state>
       </provider>
