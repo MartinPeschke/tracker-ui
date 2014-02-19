@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38273dea-62f6-41e5-b11b-82f09ec3acb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/directives/ng-clip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/codes.html" afterPath="$PROJECT_DIR$/public/views/signup/codes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/signup/codes.js" afterPath="$PROJECT_DIR$/public/js/controllers/signup/codes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/bootstrap/forms.less" afterPath="$PROJECT_DIR$/public/less/bootstrap/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/mastercode.html" afterPath="$PROJECT_DIR$/public/views/signup/mastercode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/signup/mastercode.js" afterPath="$PROJECT_DIR$/public/js/controllers/signup/mastercode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/workflow.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/config.js" afterPath="$PROJECT_DIR$/public/js/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/helpers.less" afterPath="$PROJECT_DIR$/public/less/helpers.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/site.less" afterPath="$PROJECT_DIR$/public/less/site.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/workflow.html" afterPath="$PROJECT_DIR$/public/views/signup/workflow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/signup/workflow.js" afterPath="$PROJECT_DIR$/public/js/controllers/signup/workflow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tracker-ui.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392809546811" ignored="false" />
     <file path="/mastercode.html" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392828011739" ignored="false" />
-    <file path="/site.less" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392815833454" ignored="false" />
-    <file path="/helpers.less" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392826254857" ignored="false" />
+    <file path="/site.less" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392830209852" ignored="false" />
+    <file path="/helpers.less" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392830181047" ignored="false" />
     <file path="/text.less" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392816740334" ignored="false" />
     <file path="/a.dummy" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392828066210" ignored="false" />
     <file path="/layout.html" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392817139884" ignored="false" />
@@ -33,6 +31,10 @@
     <file path="/codes.js" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392827669374" ignored="false" />
     <file path="/eventCode.js" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392825568366" ignored="false" />
     <file path="/app.js" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392827127741" ignored="false" />
+    <file path="/config.js" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392829620861" ignored="false" />
+    <file path="/workflow.html" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392832783041" ignored="false" />
+    <file path="/workflow.less" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392831293321" ignored="false" />
+    <file path="/workflow.js" changelist="38273dea-62f6-41e5-b11b-82f09ec3acb3" time="1392833303722" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,37 +54,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="codes.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/signup/codes.html">
+      <file leaf-file-name="workflow.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/less/workflow.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="454" selection-end="454" vertical-scroll-proportion="-5.8846154">
+            <state line="7" column="12" selection-start="142" selection-end="142" vertical-scroll-proportion="-4.76">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/less/bootstrap/forms.less">
+      <file leaf-file-name="workflow.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="14" selection-start="3536" selection-end="3536" vertical-scroll-proportion="-6.44">
+            <state line="21" column="14" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.23483366">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="codes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/codes.js">
+      <file leaf-file-name="workflow.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="709" selection-end="789" vertical-scroll-proportion="0.0">
+            <state line="28" column="58" selection-start="1242" selection-end="1242" vertical-scroll-proportion="-16.384615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mastercode.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/mastercode.js">
+      <file leaf-file-name="pwdreset.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="332" selection-end="332" vertical-scroll-proportion="0.31336406">
+            <state line="2" column="116" selection-start="121" selection-end="131" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="29" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,14 +117,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/less/static.less" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/mixins.less" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/variables.less" />
-        <option value="$PROJECT_DIR$/public/less/bootstrap/buttons.less" />
-        <option value="$PROJECT_DIR$/public/less/layout.less" />
         <option value="$PROJECT_DIR$/public/js/services/masterCode.js" />
         <option value="$PROJECT_DIR$/public/js/services/eventCode.js" />
-        <option value="$PROJECT_DIR$/public/less/helpers.less" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
         <option value="$PROJECT_DIR$/public/js/directives/ng-clip.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
@@ -122,6 +127,12 @@
         <option value="$PROJECT_DIR$/public/views/signup/mastercode.html" />
         <option value="$PROJECT_DIR$/public/views/signup/codes.html" />
         <option value="$PROJECT_DIR$/public/less/bootstrap/forms.less" />
+        <option value="$PROJECT_DIR$/public/js/config.js" />
+        <option value="$PROJECT_DIR$/public/less/helpers.less" />
+        <option value="$PROJECT_DIR$/public/less/site.less" />
+        <option value="$PROJECT_DIR$/public/views/signup/workflow.html" />
+        <option value="$PROJECT_DIR$/public/less/workflow.less" />
+        <option value="$PROJECT_DIR$/public/js/controllers/signup/workflow.js" />
       </list>
     </option>
   </component>
@@ -251,6 +262,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -300,6 +329,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="signup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,16 +446,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="1912" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4526316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4116959" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2044335" sideWeight="0.5473684" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3625731" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2044335" sideWeight="0.6374269" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3625731" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -476,116 +531,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="413" selection-end="413" vertical-scroll-proportion="0.35253456">
+        <state line="123" column="23" selection-start="3271" selection-end="3271" vertical-scroll-proportion="0.33286715">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/masterCode.js">
+    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="487" vertical-scroll-proportion="0.0">
+        <state line="9" column="1" selection-start="142" selection-end="142" vertical-scroll-proportion="0.3148148">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/eventCode.js">
+    <entry file="file://$PROJECT_DIR$/public/js/directives/keepHeight.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+        <state line="8" column="27" selection-start="302" selection-end="302" vertical-scroll-proportion="0.2661448">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="993" selection-end="993" vertical-scroll-proportion="0.28266034">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/directives/ng-clip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="324" selection-end="324" vertical-scroll-proportion="0.47004607">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/helpers.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="133" selection-end="133" vertical-scroll-proportion="-7.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="38" selection-start="4922" selection-end="4922" vertical-scroll-proportion="1.5833334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/signup/events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.1392405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0">
+        <state line="17" column="13" selection-start="198" selection-end="198" vertical-scroll-proportion="0.5946502">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/codes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="709" selection-end="789" vertical-scroll-proportion="0.0">
+        <state line="4" column="29" selection-start="188" selection-end="210" vertical-scroll-proportion="0.1330724">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/forms.less">
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/account.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="14" selection-start="3536" selection-end="3536" vertical-scroll-proportion="-6.44">
+        <state line="7" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.23287672">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/signup/codes.html">
+    <entry file="file://$PROJECT_DIR$/public/views/signup/events.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="454" selection-end="454" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/signup/mastercode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="34" selection-start="549" selection-end="557" vertical-scroll-proportion="0.41666666">
+        <state line="5" column="50" selection-start="192" selection-end="210" vertical-scroll-proportion="0.18008475">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/mastercode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="332" selection-end="332" vertical-scroll-proportion="0.31336406">
+        <state line="2" column="95" selection-start="96" selection-end="110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/site.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="19" selection-start="2247" selection-end="2247" vertical-scroll-proportion="0.84156376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/signup/mastercode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="58" selection-start="334" selection-end="343" vertical-scroll-proportion="0.17525773">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/signup/codes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="35" selection-start="748" selection-end="748" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="29" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="116" selection-start="121" selection-end="131" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="58" selection-start="1242" selection-end="1242" vertical-scroll-proportion="-16.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/workflow.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="142" selection-end="142" vertical-scroll-proportion="-4.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="14" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.23483366">
           <folding />
         </state>
       </provider>

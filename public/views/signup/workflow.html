@@ -1,4 +1,4 @@
-<div ng-controller="SignupWorkflowController">
+<div ng-controller="SignupWorkflowController" class="position-relative">
   <div class="context-menu expanded" data-keep-height>
     <h4 class="context-menu-title">Information</h4>
     <ol class="workflow-steps mar-top">
@@ -8,11 +8,24 @@
       </li>
     </ol>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
-        <div class="top-offset-large" ui-view></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+              <div class="top-offset-large" ui-view></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+
+       <div ng-show="currentStep.cart" class="cart-holder">
+            <div class="account-name">Your account</div>
+            <hr>
+           <div class="cart-title">Account:</div>
+           <div class="cart-item">{{accountName}}</div>
+           <hr>
+           <div class="cart-title">Platforms:</div>
+           <div class="cart-item">{{ platformString }}</div>
+           <hr>
+           <div class="cart-title">Events:</div>
+           <div class="cart-item">{{ eventsString }}</div>
+       </div>
 </div>
