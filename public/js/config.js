@@ -1,6 +1,6 @@
 'use strict';
 
-//Setting up route
+//Setting up route with https://github.com/angular-ui/ui-router
 angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
@@ -54,13 +54,14 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
                 templateUrl: function (stateParams) {
                     return 'views/signup/' + stateParams.step + '.html';
                 },
+                // see for rules: https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#wiki-how-to-create-rules-to-prevent-access-to-a-state
                 data: {rule: function(state){
                     if(!state.isAuthenticated()) return {to:'signup.start'};
                 }}
             })
 
              .state('faq', {
-                abstract: true,
+                url: '/faq',
                 templateUrl: 'views/static/layout.html'
             })
             .state('faq.android', {
