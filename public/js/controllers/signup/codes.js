@@ -9,15 +9,15 @@ angular.module('trackerui.system').controller('SignupCodesController', ['$scope'
         $scope.displayEventCodes = function(event){
             $scope.codeSnippets = [];
             for (var i=0; i<$scope.state.account.Platforms.length;i++){
-                var snippet = new Object();
+                var snippet = {};
                 snippet.platformName = $scope.state.account.Platforms[i].Name;
                 snippet.code = eventCodeService.createCodeSnippet(event.Name,snippet.platformName );
                 $scope.codeSnippets.push(snippet);
             }
-        }
+        };
 
         $scope.getTextToCopy = function(code){
-            return code
-        }
+            return code;
+        };
     }
 ]);

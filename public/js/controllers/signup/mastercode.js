@@ -7,6 +7,6 @@ angular.module('trackerui.system').controller('MasterCodeController', ['$scope',
 
         $scope.getTextToCopy = function(code){
             return code;
-        }
+        };
     }
 ]);

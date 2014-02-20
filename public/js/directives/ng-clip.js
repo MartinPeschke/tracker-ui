@@ -25,7 +25,7 @@ angular.module('ngClipboard', []).
       forceHandCursor: true
     });
   }]).
-  directive('clipCopy', ['$window', 'ngClip', function ($window, ngClip) {
+  directive('clipCopy', function () {
     return {
       scope: {
         clipCopy: '&',
@@ -51,4 +51,4 @@ angular.module('ngClipboard', []).
         });
       }
     };
-  }]);
+  });
