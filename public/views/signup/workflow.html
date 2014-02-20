@@ -1,8 +1,8 @@
 <div ng-controller="SignupWorkflowController" class="position-relative">
-  <div class="context-menu expanded" data-keep-height>
+  <div class="context-menu expanded" ng-show="currentStep.workflow" data-keep-height>
     <h4 class="context-menu-title">Information</h4>
     <ol class="workflow-steps mar-top">
-      <li ng-repeat="step in allSteps" ng-class="{active: step.key == currentStep.key, done: $index < currentStepIdx}" class="workflow-step">
+      <li ng-repeat="step in allSteps" ng-class="{active: step.key == currentStep.key, done: $index < currentStepIdx}" ng-if="step.key != 'subscription'" class="workflow-step">
         <div class="item-title">{{ step.label }}</div>
         <div class="small" ng-if="step.key == currentStep.key">{{ step.description }}</div>
       </li>
