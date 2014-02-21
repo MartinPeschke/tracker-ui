@@ -15,19 +15,19 @@
       <div>Add Platforms</div>
 
       <ul class="list-selector list-selectable">
-        <li class="item" ng-click="addPlatform(device)" ng-repeat="device in defaultPlatforms"><i class="glyphicon glyphicon-send"></i> {{ device.Name }}</li>
+        <li class="item" ng-click="addPlatform(device)" ng-repeat="device in defaultPlatforms"><i class="convins-font convins-arrow-front"></i> {{ device.Name }}</li>
       </ul>
     </div>
     <div class="col-md-6">
       <div>Selected Platforms</div>
       <ul class="list-selector list-removeable">
-        <li class="item" ng-click="removePlatform(device)" ng-repeat="device in selectedPlatforms"><i class="glyphicon glyphicon-remove-circle"></i>  {{ device.Name }}</li>
+        <li class="item" ng-click="removePlatform(device)" ng-repeat="device in selectedPlatforms"><i class="convins-font convins-close"></i>  {{ device.Name }}</li>
       </ul>
     </div>
   </div>
 
   <div class="form-actions">
-    <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_"><i class="glyphicon glyphicon-send"></i> Create Account</button>
+    <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_"><i class="convins-font convins-arrow-front ico-in-btn"></i> Create Account</button>
     <button class="btn btn-default btn-wide" ng-show="_LOADING_" disabled>Loading</button>
   </div>
 

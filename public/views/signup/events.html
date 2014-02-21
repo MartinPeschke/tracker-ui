@@ -1,17 +1,17 @@
-<h1 class="box-title">Set up your account</h1>
+<h1 class="box-title">Please Select Events</h1>
 <div class="form-box" ng-controller="SignupEventsController">
   <div class="row">
     <div class="col-md-6">
       <div>Add Events</div>
       <ul class="list-selector list-selectable x-long">
-        <li class="item" ng-click="addEvent(event)" ng-repeat="event in defaultEvents"><i class="glyphicon glyphicon-send"></i> {{ event.Name }}</li>
+        <li class="item" ng-click="addEvent(event)" ng-repeat="event in defaultEvents"><i class="convins-font convins-arrow-front"></i> {{ event.Name }}</li>
       </ul>
       <form name="event_form" ng-submit="appendEvent(customEvent, event_form)">
         <div class="form-group">
           <div class="input-group">
             <input type="text" ng-model="customEvent.Name" value="{{ customEvent.Name }}" name="event_name" id="event_name" class="form-control" required placeholder="Add custom event">
             <span class="input-group-btn">
-              <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-send"></i></button>
+              <button type="submit" class="btn-ico btn-primary"><i class="convins-font convins-arrow-front"></i></button>
             </span>
           </div>
         </div>
@@ -20,15 +20,15 @@
     <div class="col-md-6">
       <div>Selected Events</div>
       <ul class="list-selector list-removeable xx-long">
-        <li class="item" ng-click="removeEvent(event)" ng-repeat="event in selectedEvents"><i class="glyphicon glyphicon-remove-circle"></i> {{ event.Name }}</li>
+        <li class="item" ng-click="removeEvent(event)" ng-repeat="event in selectedEvents"><i class="convins-font convins-close"></i> {{ event.Name }}</li>
       </ul>
     </div>
   </div>
 
   <form name="submit_form" ng-submit="submit(model, submit_form)">
     <div class="form-actions">
-      <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_">Submit</button>
-      <button class="btn btn-success btn-wide" ng-show="_LOADING_" disabled>Loading</button>
+    <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_"><i class="convins-font convins-arrow-front ico-in-btn"></i> Next</button>
+    <button class="btn btn-default btn-wide" ng-show="_LOADING_" disabled>Loading</button>
     </div>
   </form>
 </div>

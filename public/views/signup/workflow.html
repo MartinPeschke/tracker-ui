@@ -19,13 +19,22 @@
        <div ng-show="currentStep.cart" class="cart-holder">
             <div class="account-name">Your account</div>
             <hr>
-           <div class="cart-title">Account:</div>
-           <div class="cart-item">{{accountName}}</div>
+           <div class="cart-section">
+           <i class="convins-font convins-account"></i>
+               <div class="cart-title">Account:</div>
+               <div class="cart-item">{{accountName}}</div>
+           </div>
            <hr>
-           <div class="cart-title">Platforms:</div>
-           <div class="cart-item">{{ platformString }}</div>
+            <div class="cart-section">
+               <i class="convins-font convins-platform"></i>
+               <div class="cart-title">Platforms:</div>
+               <div class="cart-item">{{ platformString }}</div>
+           </div>
            <hr>
-           <div class="cart-title">Events:</div>
-           <div class="cart-item">{{ eventsString }}</div>
+           <div class="cart-section">
+               <i class="convins-font convins-event"></i>
+               <div class="cart-title">Events:</div>
+               <div class="cart-item">{{ eventsString }}</div>
+            </div>
        </div>
 </div>
