@@ -4,7 +4,7 @@
     <div class="col-md-5">
       <div>Your Events</div>
       <ul class="list-selector list-selectable x-long">
-        <li class="item" ng-repeat="event in state.account.Events" ng-click="displayEventCodes(event)"><i class="convins-font convins-arrow-front"></i> {{ event.Name }}</li>
+        <li class="item" ng-repeat="event in state.account.Events" ng-class="{active: event == selected}"  ng-click="displayEventCodes(event)"><i class="convins-font convins-arrow-front"></i> {{ event.Name }}</li>
       </ul>
     </div>
     <div class="col-md-7">

@@ -5,8 +5,8 @@ angular.module('trackerui.system').controller('SignupCodesController', ['$scope'
         $scope.state = State;
 
         $scope.codeSnippets = [];
-
         $scope.displayEventCodes = function(event){
+            $scope.selected = event;
             $scope.codeSnippets = [];
             for (var i=0; i<$scope.state.account.Platforms.length;i++){
                 var snippet = {};
@@ -15,6 +15,9 @@ angular.module('trackerui.system').controller('SignupCodesController', ['$scope'
                 $scope.codeSnippets.push(snippet);
             }
         };
+        //preselected first event
+        $scope.selected = $scope.state.account.Events[0];
+        $scope.displayEventCodes($scope.selected);
 
         $scope.getTextToCopy = function(code){
             return code;
