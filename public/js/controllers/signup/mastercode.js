@@ -1,12 +1,17 @@
 'use strict';
 
-angular.module('trackerui.system').controller('MasterCodeController', ['$scope', 'StateService', 'masterCodeService',
-    function ($scope, State, masterCodeService) {
+angular.module('trackerui.system').controller('MasterCodeController', ['$scope', 'StateService', 'codeService',
+    function ($scope, State, codeService) {
         $scope.state = State;
-        $scope.masterCode = masterCodeService;
+        $scope.copyState = {};
 
-        $scope.getTextToCopy = function(code){
-            return code;
+        $scope.getCode = function(platform){
+            return codeService.getMasterCode(platform.Name);
         };
+        $scope.getCodeToCopy = function(platform){
+            // TODO: how to mark button as copied?
+            $scope.copyState[platform.Name] = true;
+            return $scope.getCode(platform)
+        }
     }
 ]);

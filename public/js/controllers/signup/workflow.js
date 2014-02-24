@@ -3,13 +3,15 @@
 angular.module('trackerui.system').controller('SignupWorkflowController', ['$rootScope', '$scope', '$state', '$stateParams','StateService','underscore',
     function ($rootScope, $scope, $state, $stateParams, State, _) {
 
-        function updateCart(){
-            $scope.accountName = State.account.Name;
-            $scope.platformString = _.pluck(State.account.Platforms, 'Name').join(', ');
-            $scope.eventsString = _.pluck(State.account.Events, 'Name').join(', ');
-        }
 
-        updateCart();
+        $scope.account = State.account;
+        $scope.platformString = function(){
+            return _.pluck(State.account.Platforms, 'Name').join(', ');
+        };
+        $scope.eventString = function(){
+            return _.pluck(State.account.Events, 'Name').join(', ');
+        };
+
         var steps = $scope.allSteps = $state.current.data.steps,
             stepIdxLookup = [],
             getStepIdx = function(key){
@@ -34,11 +36,9 @@ angular.module('trackerui.system').controller('SignupWorkflowController', ['$roo
 
         $scope.totalSteps = steps.length;
         $scope.workflowNextUrl = function(){
-            updateCart();
             return $state.href.apply($state, $scope.nextStepParams);
         };
         $scope.workflowGoNext = function(){
-            updateCart();
             return $state.go.apply($state, $scope.nextStepParams);
         };
 

@@ -46,11 +46,14 @@ module.exports = function(config) {
             'public/js/directives/sameas.js',
             'public/js/directives/servervalid.js',
             'public/js/directives/keepHeight.js',
+            'public/js/directives/ngClip.js',
+            'public/js/directives/selectOnClick.js',
 
             'public/js/services/backend.js',
             'public/js/services/state.js',
             'public/js/services/config.js',
             'public/js/services/auth.js',
+            'public/js/services/codes.js',
 
             'public/js/controllers/index.js',
             'public/js/controllers/header.js',

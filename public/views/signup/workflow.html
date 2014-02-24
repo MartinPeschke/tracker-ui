@@ -22,19 +22,19 @@
            <div class="cart-section">
            <i class="convins-font convins-account"></i>
                <div class="cart-title">Account:</div>
-               <div class="cart-item">{{accountName}}</div>
+               <div class="cart-item">{{ account.Name }}</div>
            </div>
            <hr>
             <div class="cart-section">
                <i class="convins-font convins-platform"></i>
                <div class="cart-title">Platforms:</div>
-               <div class="cart-item">{{ platformString }}</div>
+               <div class="cart-item">{{ platformString() }}</div>
            </div>
            <hr>
            <div class="cart-section">
                <i class="convins-font convins-event"></i>
                <div class="cart-title">Events:</div>
-               <div class="cart-item">{{ eventsString }}</div>
+               <div class="cart-item">{{ eventString() }}</div>
             </div>
        </div>
 </div>

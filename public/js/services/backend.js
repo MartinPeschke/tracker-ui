@@ -7,7 +7,7 @@ angular.module('trackerui.system').factory('BackendService', ['$rootScope', '$ht
         return {
             post: function (path, data, success, error) {
                 error = error || function (title, msg) {
-                    return function () {
+                    return function() {
                         toaster.pop('error', title, msg);
                     };
                 };

@@ -8,11 +8,11 @@
                 <p class="item-title">{{ platform.Name }}</p>
             </div>
             <div class="col-xs-8">
-                <textarea disabled class="pull-left full-width" rows="6">{{masterCode}}</textarea>
+                <textarea readonly class="pull-left full-width" data-select-on-click rows="6">{{ getCode(platform) }}</textarea>
             </div>
             <div class="col-xs-4 top-offset-tiny">
-                 <div class="btn btn-primary btn-block" clip-copy="getTextToCopy(masterCode)">Copy</div>
-                 <div class="btn btn-primary btn-block">Test</div>
+                 <div class="btn btn-primary btn-block" clip-copy="getCodeToCopy(platform)">Copy</div>
+                 <div class="btn btn-default btn-block">Test</div>
            </div>
             <div class="clearfix"></div>
         </li>

@@ -24,31 +24,31 @@ describe('RUN TrackerUI Integration Tests', function(){
     });
     it('create company record',function(done) {
         client
-            .getText(".workflow-step.ng-scope.active", function(err,text) {
+            .getText('.workflow-step.ng-scope.active', function(err,text) {
                 expect(err).to.be.null;
-                assert.include(text, "Sign Up");
+                assert.include(text, 'Sign Up');
             })
-            .setValue("#company_name", "Escapado Corp")
-            .setValue("#user_name", "Joe Excapado")
-            .setValue("#user_email", "test-"+uuid.v4()+"@friendfund.com")
-            .setValue("#password", "maropa2M")
-            .submitForm(".form-validated.form-box", function(err){
+            .setValue('#company_name', 'Escapado Corp')
+            .setValue('#user_name', 'Joe Excapado')
+            .setValue('#user_email', 'test-'+uuid.v4()+'@friendfund.com')
+            .setValue('#password', 'maropa2M')
+            .submitForm('.form-validated.form-box', function(err){
                 expect(err).to.be.null;
             })
             .call(done);
     });
 
     it('create account with one event',function(done) {
-        client.setValue("#account_name", "Account "+uuid.v4())
-            .click(".list-selector.list-selectable .item:first-child")
-            .getText(".list-selector.list-removeable .item", function(err, text){
-                console.log(arguments)
+        client.setValue('#account_name', 'Account '+uuid.v4())
+            .click('.list-selector.list-selectable .item:first-child')
+            .getText('.list-selector.list-removeable .item', function(err, text){
+                console.log(arguments);
                 expect(err).to.be.null;
             })
-            .getText(".workflow-step.ng-scope.active", function(err,text) {
-                console.log(arguments)
+            .getText('.workflow-step.ng-scope.active', function(err,text) {
+                console.log(arguments);
                 expect(err).to.be.null;
-                assert.include(text, "Create Account");
+                assert.include(text, 'Create Account');
             })
             .call(done);
     });

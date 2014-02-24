@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/tracker-ui.iml" filepath="$PROJECT_DIR$/.idea/tracker-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/trackerui.iml" filepath="$PROJECT_DIR$/.idea/trackerui.iml" />
     </modules>
   </component>
 </project>

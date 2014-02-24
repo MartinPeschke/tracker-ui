@@ -29,6 +29,11 @@
     <div class="form-actions">
     <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_"><i class="convins-font convins-arrow-front ico-in-btn"></i> Next</button>
     <button class="btn btn-default btn-wide" ng-show="_LOADING_" disabled>Loading</button>
+    <div ng-show="errors.length">
+      <div ng-repeat="error in errors">
+        {{ error }}
+      </div>
+    </div>
     </div>
   </form>
 </div>

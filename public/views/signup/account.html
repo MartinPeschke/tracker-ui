@@ -6,7 +6,7 @@
 
   <div class="form-group mar-top">
     <div class="controls">
-      <input type="text" ng-model="model.Account.name" name="account_name" id="account_name" class="form-control" required placeholder="Account name">
+      <input type="text" ng-model="model.Account.Name" name="account_name" id="account_name" class="form-control" required placeholder="Account name">
     </div>
   </div>
 
@@ -29,6 +29,10 @@
   <div class="form-actions">
     <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_"><i class="convins-font convins-arrow-front ico-in-btn"></i> Create Account</button>
     <button class="btn btn-default btn-wide" ng-show="_LOADING_" disabled>Loading</button>
+    <div ng-show="errors.length">
+      <div ng-repeat="error in errors">
+        {{ error }}
+      </div>
+    </div>
   </div>
-
 </form>
