@@ -31,7 +31,7 @@ angular.module('trackerui.system').controller('SignupAccountController', ['$scop
 
         $scope.submit = function(model, form){
             if(!$scope.selectedPlatforms.length){
-                $scope.errors = ["You need to add at least one Platform!"];
+                $scope.errors = ['You need to add at least one Platform!'];
             } else  if(form.$valid && !$scope._LOADING_){
                 $scope.errors = [];
 

@@ -19,7 +19,8 @@ angular.module('trackerui.system').factory('StateService', ['localStorageService
                     this.account = {};
                     return localStorageService.clearAll();
                 },
-                isAuthenticated: function(){return this.user?!!this.user.Id:false;}
+                isAuthenticated: function(){return this.user?!!this.user.Id:false;},
+                accountSetup: function(){return this.account?!!this.account.Id:false;}
             };
     }
 ]);

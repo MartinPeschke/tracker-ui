@@ -3,8 +3,13 @@
 angular.module('trackerui.system').controller('SignupEventsController', ['$scope', '$state', 'underscore', 'BackendService', 'ConfigService', 'StateService',
     function ($scope, $state, _, backend, ConfigService, State) {
         $scope.errors = [];
-
         $scope.state = State;
+        if(!State.accountSetup()){
+            return $state.go.apply($state, $scope.prevStepParams);
+        }
+
+
+
         $scope.customEvent = {'Name': ''};
 
         $scope.defaultEvents = [];
@@ -34,7 +39,7 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
 
         $scope.submit = function(model, form){
             if(!$scope.selectedEvents.length){
-                $scope.errors = ["You need to add at least one Event!"];
+                $scope.errors = ['You need to add at least one Event!'];
             } else if(!$scope._LOADING_){
                 $scope.errors = [];
 

@@ -27,6 +27,14 @@ angular.module('trackerui.system').controller('SignupWorkflowController', ['$roo
                     $scope.nextStep = stepIdxLookup[($scope.currentStepIdx + 1)%stepIdxLookup.length];
                     $scope.nextStepParams = ['signup.step', {step:$scope.nextStep}];
                 }
+
+                if($scope.currentStepIdx == 0 ){
+                    $scope.prevStepParams = ['index'];
+                } else {
+                    $scope.prevStep = stepIdxLookup[$scope.currentStepIdx - 1];
+                    $scope.prevStepParams = ['signup.step', {step:$scope.prevStep}];
+                }
+
                 return $scope.currentStepIdx < 0;
             };
 

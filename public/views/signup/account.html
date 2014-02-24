@@ -27,7 +27,10 @@
   </div>
 
   <div class="form-actions">
-    <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_"><i class="convins-font convins-arrow-front ico-in-btn"></i> Create Account</button>
+    <button class="btn btn-success btn-wide" type='submit' ng-show="!_LOADING_"><i class="convins-font convins-arrow-front ico-in-btn"></i>
+      <span ng-if="!state.accountSetup()">Create Account</span>
+      <span ng-if="state.accountSetup()">Save</span>
+    </button>
     <button class="btn btn-default btn-wide" ng-show="_LOADING_" disabled>Loading</button>
     <div ng-show="errors.length">
       <div ng-repeat="error in errors">
