@@ -16,17 +16,15 @@
                 });
             }));
 
-            it('should expose a user object globally', function() {
+            it('should return name as ""', function() {
 
-                expect(scope.user).toBeTruthy();
+                expect(scope.getName()).toBe('');
 
             });
 
-            it('setting user should set authenticated to true', function() {
+            it('should expose logout function', function() {
 
-                scope.user.Id = 1;
-                scope.$apply();
-                expect(scope.authenticated).toBe(true);
+                expect(scope.isAuthenticated()).toBe(false);
 
             });
         });

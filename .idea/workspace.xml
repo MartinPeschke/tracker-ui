@@ -2,8 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38273dea-62f6-41e5-b11b-82f09ec3acb3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/karma/unit/services/auth.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/karma/unit/services/backend.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.bower.json" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.gitignore" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.jshintrc" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/.jshintrc" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.npmignore" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.travis.yml" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/Gruntfile.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/LICENSE.tmpl" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/LICENSE.tmpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/LICENSE" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/README.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/flash/ZeroClipboard.as" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/flash/ZeroClipboard.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/ZeroClipboard.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/ZeroClipboard.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/ZeroClipboard.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/ZeroClipboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.min.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/account.html" afterPath="$PROJECT_DIR$/public/views/signup/account.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/backend.js" afterPath="$PROJECT_DIR$/public/js/services/backend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/bower.json.tmpl" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/bower.json.tmpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/bower.json" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/client.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/client.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/client.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/client.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/composer.json.tmpl" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/composer.json.tmpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/composer.json" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/core.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/core.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/core.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/core.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/deprecated.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/deprecated.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/dom.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/dom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/end.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/end.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/event.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/event.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/event.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/event.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/signup/events.js" afterPath="$PROJECT_DIR$/public/js/controllers/signup/events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/flash.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/flash.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/flash.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/flash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/flash.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/flash.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/header.html" afterPath="$PROJECT_DIR$/public/views/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/header.js" afterPath="$PROJECT_DIR$/public/js/controllers/header.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/selenium/runtests.js" afterPath="$PROJECT_DIR$/test/selenium/runtests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/index.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/index.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/instructions.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/instructions.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/lib/jquery.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/lib/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/karma.conf.js" afterPath="$PROJECT_DIR$/test/karma/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/package.json" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/roadmap.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/roadmap.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/security.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/security.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/auth/signin.js" afterPath="$PROJECT_DIR$/public/js/controllers/auth/signin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/source-banner.tmpl" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/source-banner.tmpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/start.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/start.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/state.js" afterPath="$PROJECT_DIR$/public/js/services/state.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/state.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/state.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/utils.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/utils.js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/utils.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/utils.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\_projects\trackerui\test\selenium\runtests.js" afterPath="$PROJECT_DIR$/test/selenium/signupWorkflowSpec.js" />
     </list>
     <ignored path="tracker-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,35 +88,79 @@
     <favorites_list name="tracker-ui" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="runtests.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/selenium/runtests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="31" selection-start="2968" selection-end="2968" vertical-scroll-proportion="0.7033195" vertical-offset="388" max-vertical-offset="1417">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="headers.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="507">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stateMock.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/karma/mocks/stateMock.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="34" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="signup.spec.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="81" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="auth.spec.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/karma/unit/services/auth.spec.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="19" column="79" selection-start="715" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="karma.conf.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="42" column="31" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="1937">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="signin.spec.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="34" column="16" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.45850623" vertical-offset="0" max-vertical-offset="964">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="signin.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="52" selection-start="523" selection-end="523" vertical-scroll-proportion="0.16182573" vertical-offset="0" max-vertical-offset="964">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="state.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="21" column="72" selection-start="899" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="28" selection-start="281" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -82,7 +189,6 @@
         <option value="$PROJECT_DIR$/public/less/forms.less" />
         <option value="$PROJECT_DIR$/public/js/directives/ng-clip.js" />
         <option value="$PROJECT_DIR$/public/views/auth/signin.html" />
-        <option value="$PROJECT_DIR$/public/js/services/backend.js" />
         <option value="$PROJECT_DIR$/public/views/signup/workflow.html" />
         <option value="$PROJECT_DIR$/public/views/signup/events.html" />
         <option value="$PROJECT_DIR$/public/js/services/eventCode.js" />
@@ -91,7 +197,6 @@
         <option value="$PROJECT_DIR$/public/js/directives/sameas.js" />
         <option value="$PROJECT_DIR$/public/js/directives/selectOnClick.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
         <option value="$PROJECT_DIR$/public/views/signup/mastercode.html" />
         <option value="$PROJECT_DIR$/public/views/signup/codes.html" />
         <option value="$PROJECT_DIR$/public/views/signup/subscription.html" />
@@ -99,11 +204,25 @@
         <option value="$PROJECT_DIR$/public/js/controllers/signup/workflow.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/signup/codes.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/signup/mastercode.js" />
-        <option value="$PROJECT_DIR$/public/js/services/state.js" />
         <option value="$PROJECT_DIR$/public/views/signup/account.html" />
         <option value="$PROJECT_DIR$/public/js/controllers/signup/events.js" />
-        <option value="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" />
         <option value="$PROJECT_DIR$/test/selenium/runtests.js" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/public/views/header.html" />
+        <option value="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" />
+        <option value="$PROJECT_DIR$/public/js/services/state.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/header.js" />
+        <option value="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" />
+        <option value="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" />
+        <option value="$PROJECT_DIR$/public/js/config.js" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/public/js/services/backend.js" />
+        <option value="$PROJECT_DIR$/test/karma/unit/services/backend.spec.js" />
+        <option value="$PROJECT_DIR$/test/karma/mocks/backendMock.js" />
+        <option value="$PROJECT_DIR$/test/karma/unit/services/auth.spec.js" />
+        <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/auth/signin.js" />
+        <option value="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" />
       </list>
     </option>
   </component>
@@ -139,6 +258,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -214,6 +334,32 @@
               <option name="myItemId" value="unit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="karma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -263,9 +409,128 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracker-ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trackerui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,14 +548,13 @@
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <PyConsoleSettings />
-    </option>
-    <option name="myDjangoConsoleState">
-      <PyConsoleSettings />
+      <console-settings />
     </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_projects\trackerui\test\karma\mocks" />
+      <recent name="D:\_projects\trackerui\test\karma\unit\services" />
       <recent name="C:\Projects\tracker-ui\public\fonts" />
       <recent name="C:\Projects\tracker-ui\public\img\icons" />
     </key>
@@ -299,6 +563,51 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.Unnamed">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="trackerui" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="trackerui" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -319,6 +628,49 @@
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="trackerui" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="trackerui" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
@@ -345,6 +697,26 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="trackerui" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="public/js/app.js" node-parameters="server.js" working-dir="$PROJECT_DIR$">
       <browser start="false" url="" with-js-debugger="false" />
       <RunnerSettings RunnerId="NodeJS.debug" />
@@ -358,6 +730,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="38273dea-62f6-41e5-b11b-82f09ec3acb3" name="Default" comment="" />
@@ -371,12 +760,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41111112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24068157" sideWeight="0.6269006" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24334398" sideWeight="0.6269006" order="0" side_tool="false" content_ui="combo" x="-451" y="-1" width="390" height="1075" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3721619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -384,10 +772,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41111112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -409,235 +798,119 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/views/signup/codes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/static/website.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="871">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/static/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/codes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="33" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="403">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/bootstrap/less/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="1" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="58" column="1" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/type.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="36" selection-start="481" selection-end="481" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="26" column="36" selection-start="481" selection-end="481" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/forms.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="37" selection-start="566" selection-end="566" vertical-scroll-proportion="-15.12" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="24" column="37" selection-start="566" selection-end="566" vertical-scroll-proportion="-15.12" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/layout.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="34" selection-start="465" selection-end="465" vertical-scroll-proportion="0.7021739" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="19" column="34" selection-start="465" selection-end="465" vertical-scroll-proportion="0.7021739" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="11" column="46" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/site.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="23" selection-start="1655" selection-end="1655" vertical-scroll-proportion="-15.44" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="38" column="23" selection-start="1655" selection-end="1655" vertical-scroll-proportion="-15.44" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/workflow.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="353" selection-end="353" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="13" column="18" selection-start="353" selection-end="353" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/less/forms.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="3" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.6436059" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="93" column="3" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.6436059" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/static/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="641" selection-end="641" vertical-scroll-proportion="0.15148304" vertical-offset="0" max-vertical-offset="944">
-          <folding />
-        </state>
+        <state line="11" column="14" selection-start="641" selection-end="641" vertical-scroll-proportion="0.15148304" vertical-offset="0" max-vertical-offset="944" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/static/website.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="6" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.35805085" vertical-offset="0" max-vertical-offset="944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="58" selection-start="975" selection-end="981" vertical-scroll-proportion="0.513465" vertical-offset="0" max-vertical-offset="557">
-          <folding />
-        </state>
+        <state line="26" column="6" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.35805085" vertical-offset="0" max-vertical-offset="944" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/company.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.110403396" vertical-offset="0" max-vertical-offset="942">
-          <folding />
-        </state>
+        <state line="8" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="0.110403396" vertical-offset="0" max-vertical-offset="942" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/auth/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="214" selection-end="327" vertical-scroll-proportion="0.055201698" vertical-offset="0" max-vertical-offset="942">
-          <folding />
-        </state>
+        <state line="4" column="0" selection-start="214" selection-end="327" vertical-scroll-proportion="0.055201698" vertical-offset="0" max-vertical-offset="942" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/events.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="4" selection-start="1641" selection-end="1754" vertical-scroll-proportion="0.42781317" vertical-offset="0" max-vertical-offset="942">
-          <folding />
-        </state>
+        <state line="31" column="4" selection-start="1641" selection-end="1754" vertical-scroll-proportion="0.42781317" vertical-offset="0" max-vertical-offset="942" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/workflow.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="53" selection-start="1139" selection-end="1151" vertical-scroll-proportion="0.3312102" vertical-offset="0" max-vertical-offset="942">
-          <folding />
-        </state>
+        <state line="24" column="53" selection-start="1139" selection-end="1151" vertical-scroll-proportion="0.3312102" vertical-offset="0" max-vertical-offset="942" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bower/node_modules/semver/foot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.080912866" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="52" selection-start="1711" selection-end="1711" vertical-scroll-proportion="0.5394191" vertical-offset="117" max-vertical-offset="1872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="55" selection-start="3762" selection-end="3775" vertical-scroll-proportion="0.6369427" vertical-offset="115" max-vertical-offset="1092">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.41804978" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.080912866" vertical-offset="0" max-vertical-offset="964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/directives/selectOnClick.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="70" selection-end="83" vertical-scroll-proportion="0.040456433" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
+        <state line="3" column="29" selection-start="70" selection-end="83" vertical-scroll-proportion="0.040456433" vertical-offset="0" max-vertical-offset="964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/directives/sameas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="304" selection-end="304" vertical-scroll-proportion="0.13485478" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
+        <state line="10" column="41" selection-start="304" selection-end="304" vertical-scroll-proportion="0.13485478" vertical-offset="0" max-vertical-offset="964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/directives/ngClip.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="26" selection-start="923" selection-end="923" vertical-scroll-proportion="0.44502074" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
+        <state line="33" column="26" selection-start="923" selection-end="923" vertical-scroll-proportion="0.44502074" vertical-offset="0" max-vertical-offset="964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/subscription.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="536" selection-end="536" vertical-scroll-proportion="0.15180467" vertical-offset="0" max-vertical-offset="1001">
-          <folding />
-        </state>
+        <state line="11" column="48" selection-start="536" selection-end="536" vertical-scroll-proportion="0.15180467" vertical-offset="0" max-vertical-offset="1001" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/codes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="61" selection-start="903" selection-end="903" vertical-scroll-proportion="0.22080679" vertical-offset="0" max-vertical-offset="942">
-          <folding />
-        </state>
+        <state line="16" column="61" selection-start="903" selection-end="903" vertical-scroll-proportion="0.22080679" vertical-offset="0" max-vertical-offset="942" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/mastercode.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="85" selection-start="587" selection-end="608" vertical-scroll-proportion="0.13800424" vertical-offset="0" max-vertical-offset="942">
-          <folding />
-        </state>
+        <state line="10" column="85" selection-start="587" selection-end="608" vertical-scroll-proportion="0.13800424" vertical-offset="0" max-vertical-offset="942" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/services/codes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="44" selection-start="143" selection-end="151" vertical-scroll-proportion="0.06834911" vertical-offset="0" max-vertical-offset="951">
-          <folding />
-        </state>
+        <state line="5" column="44" selection-start="143" selection-end="151" vertical-scroll-proportion="0.06834911" vertical-offset="0" max-vertical-offset="951" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="65" selection-start="2034" selection-end="2080" vertical-scroll-proportion="0.66078836" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="5" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.43153527" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="880" selection-end="880" vertical-scroll-proportion="0.12344398" vertical-offset="206" max-vertical-offset="1326">
-          <folding />
-        </state>
+        <state line="49" column="65" selection-start="2034" selection-end="2080" vertical-scroll-proportion="0.66078836" vertical-offset="0" max-vertical-offset="964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/events.js">
@@ -661,44 +934,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="932" selection-end="944" vertical-scroll-proportion="0.2966805" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/mastercode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="77" selection-start="296" selection-end="296" vertical-scroll-proportion="0.06742739" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
+        <state line="5" column="77" selection-start="296" selection-end="296" vertical-scroll-proportion="0.06742739" vertical-offset="0" max-vertical-offset="964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/codes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="319" selection-end="319" vertical-scroll-proportion="0.080912866" vertical-offset="0" max-vertical-offset="964">
+        <state line="6" column="19" selection-start="319" selection-end="319" vertical-scroll-proportion="0.080912866" vertical-offset="0" max-vertical-offset="964" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/selenium/signupWorkflowSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="14" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.16390042" vertical-offset="388" max-vertical-offset="1417" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="4" selection-start="2124" selection-end="2210" vertical-scroll-proportion="0.33295965" vertical-offset="132" max-vertical-offset="1092" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="396" selection-end="396" vertical-scroll-proportion="0.14834026" vertical-offset="0" max-vertical-offset="964">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="507">
+        <state line="20" column="33" selection-start="646" selection-end="646" vertical-scroll-proportion="0.26970956" vertical-offset="0" max-vertical-offset="964" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="26" selection-start="653" selection-end="653" vertical-scroll-proportion="0.23460722" vertical-offset="0" max-vertical-offset="942" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="311" selection-end="311" vertical-scroll-proportion="0.10788382" vertical-offset="0" max-vertical-offset="964" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="49" selection-start="719" selection-end="719" vertical-scroll-proportion="0.26970956" vertical-offset="0" max-vertical-offset="964" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="41" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.39315352" vertical-offset="401" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="440" selection-end="440" vertical-scroll-proportion="0.17770767" vertical-offset="0" max-vertical-offset="1326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="259" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="47" selection-start="774" selection-end="774" vertical-scroll-proportion="0.16403785" vertical-offset="0" max-vertical-offset="951">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/angular-notify-toaster/toaster.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="54" selection-start="395" selection-end="395" vertical-scroll-proportion="0.16403785" vertical-offset="0" max-vertical-offset="1963" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/services/backend.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="56" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0" vertical-offset="583" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="58" selection-start="97" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/services/state.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="611">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/services/auth.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="79" selection-start="715" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="28" selection-start="281" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="72" selection-start="899" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="31" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="1937">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/karma/mocks/stateMock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
+        <state line="5" column="25" selection-start="211" selection-end="211" vertical-scroll-proportion="0.06742739" vertical-offset="0" max-vertical-offset="964">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/selenium/runtests.js">
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="31" selection-start="2968" selection-end="2968" vertical-scroll-proportion="0.7033195" vertical-offset="388" max-vertical-offset="1417">
+        <state line="25" column="81" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="52" selection-start="523" selection-end="523" vertical-scroll-proportion="0.16182573" vertical-offset="0" max-vertical-offset="964">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="16" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.45850623" vertical-offset="0" max-vertical-offset="964">
           <folding />
         </state>
       </provider>

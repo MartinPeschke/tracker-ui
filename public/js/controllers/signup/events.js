@@ -4,7 +4,7 @@ angular.module('trackerui.system').controller('SignupEventsController', ['$scope
     function ($scope, $state, _, backend, ConfigService, State) {
         $scope.errors = [];
         $scope.state = State;
-        if(!State.accountSetup()){
+        if(!State.isAccountSetup()){
             return $state.go.apply($state, $scope.prevStepParams);
         }
 

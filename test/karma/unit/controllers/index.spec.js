@@ -16,9 +16,9 @@
                     $scope: scope
                 });
             }));
-            it('should expose numerical information scope', function() {
-                expect(scope.distance).toBeGreaterThan(0);
-                expect(scope.radius).toBeGreaterThan(0);
+            it('should expose basic 3 circle info', function() {
+                expect(scope.d3Data.length).toBe(3);
+                expect(scope.d3Data[0].id).toBe(1);
             });
         });
     });

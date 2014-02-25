@@ -21,6 +21,7 @@ module.exports = function(config) {
         files: [
             'public/lib/underscore/underscore-min.js',
             'public/lib/colorjs/color.js',
+            'public/lib/zeroclipboard/ZeroClipboard.min.js',
             'public/lib/angular/angular.js',
             'public/lib/angular-mocks/angular-mocks.js',
             'public/lib/angular-cookies/angular-cookies.js',
@@ -71,7 +72,11 @@ module.exports = function(config) {
             'public/js/init.js',
 
             'test/karma/mocks/*.js',
-            'test/karma/unit/**/*.js'
+//            'test/karma/unit/**/*.js'
+            'test/karma/unit/services/state.spec.js',
+            'test/karma/unit/services/backend.spec.js',
+            'test/karma/unit/services/auth.spec.js',
+            'test/karma/unit/controllers/signin.spec.js'
         ],
 
 

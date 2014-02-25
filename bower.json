@@ -13,6 +13,7 @@
     "colorjs": "~1.0.1",
     "underscore": "~1.5.2",
     "angular-local-storage": "*",
-    "angular-notify-toaster": "~0.4.1"
+    "angular-notify-toaster": "~0.4.1",
+    "zeroclipboard": "~1.3.2"
   }
 }

@@ -3,77 +3,56 @@
 (function() {
     describe('trackerui controllers', function() {
         describe('SigninController', function() {
-            // Load the controllers module
-            beforeEach(module('stateMock'));
+
+            var authServiceMock = {}, scope, signinController, stateService, router;
+
             beforeEach(module('trackerui'));
+            beforeEach(function(){
 
-            var httpBackend, SigninController, scope, uistate;
+                module(function($provide) {
+                    $provide.value('AuthService', authServiceMock);
+                    // rootScope.apply combined with ui-router will crash this otherwise.
+                    $provide.value('$httpBackend', function(){});
+                });
+            });
 
-            beforeEach(inject(function($httpBackend, $controller, $rootScope, $state) {
-                uistate = $state;
-                httpBackend = $httpBackend;
-                httpBackend.when('POST', '/users/session').respond({User:{Id: '1'}});
+            beforeEach(inject(function($controller, $rootScope, $q, StateService, $state){
+                authServiceMock.authenticateUser = function(email, password){
+                    var deferred = $q.defer();
+                    deferred.resolve(email=='mapa@friendfund.com');
+                    return deferred.promise;
+                };
+                spyOn(authServiceMock, "authenticateUser").andCallThrough();
+
+                router = $state;
+                spyOn(router, "go").andReturn(null);
+
+                stateService = StateService;
                 scope = $rootScope.$new();
-                SigninController = $controller('SigninController', {
+                signinController = $controller('SigninController', {
                     $scope: scope
                 });
             }));
-            afterEach(function() {
-                httpBackend.verifyNoOutstandingExpectation();
-                httpBackend.verifyNoOutstandingRequest();
-            });
 
-            var user = {email:'mapa@hackandcraft.com', pwd:'mapa'},
-                error = {'errorMessage':'ERROR'},
-                valid_reply = {
-                    'DbMessage' : null,
-                    'Status' : '0',
-                    'ErrorMessage' : null,
-                    'EndPoint' : '/0.0.1/web/user/signup',
-                    'User' : {
-                        'Id' : 'users/1',
-                        'Name' : 'maropa@',
-                        'Email' : 'maropa@friendfund.com',
-                        'Pwd' : 'maropa2M',
-                        'Role' : null,
-                        'CompanyReference' : {
-                            'Id' : 'companies/65',
-                            'Name' : 'COMPANY CORP'
-                        },
-                        'PwdForgetTokens' : null
-                    }
-                };
+            describe('submit', function() {
+                it("will Login user with correct info!", function(){
+                    var req = {email:'mapa@friendfund.com', pwd:'mapa'};
+                    scope.submit(req, {'$valid':true});
 
-            it('should start out non loading', function() {
-                expect(scope.loading).toBe(false);
-            });
-            it('should not send if form invalid', function() {
-                var form = {$valid : false};
-                expect(scope.submit({}, {}, form)).toBeFalsy();
-            });
-            it('should signup successfully', function() {
-                var form = {$valid : true};
-                expect(scope.submit(user, form)).toBeFalsy();
-                httpBackend.expectPOST('/users/session').respond(200, valid_reply);
-                httpBackend.flush();
-                expect(location.path()).toBe('/');
-            });
-            it('should push out error, if signup not successful', function() {
-                var form = {$valid : true};
-                expect(scope.submit(user, form)).toBeFalsy();
-                httpBackend.expectPOST('/users/session').respond(200, error);
-                httpBackend.flush();
-                expect(scope.errors[0]).toBeTruthy();
-            });
-            it('should push out error, if network failure', function() {
-                var form = {$valid : true};
-                expect(scope.submit(user, form)).toBeFalsy();
-                httpBackend.expectPOST('/users/session').respond(500, error);
-                httpBackend.flush();
-                expect(scope.errors[0]).toBeTruthy();
-            });
+                    scope.$apply();
+                    expect(authServiceMock.authenticateUser).toHaveBeenCalledWith('mapa@friendfund.com', 'mapa');
+                    expect(router.go).toHaveBeenCalledWith('index');
+                });
 
+                it("will not Login user with wrong info!", function(){
+                    var req = {email:'false@login.com', pwd:'mapa'};
+                    scope.submit(req, {'$valid':true});
+                    scope.$apply();
+                    expect(scope.errors.length).toBe(1);
+                    expect(router.go).not.toHaveBeenCalled();
+                });
 
+            });
         });
     });
 })();

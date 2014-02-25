@@ -1,18 +1,15 @@
 'use strict';
 
 (function() {
-    describe('trackerui controllers', function() {
+    describe('trackerui services', function() {
         describe('StateService', function() {
             // Load the controllers module
             beforeEach(module('trackerui'));
-            beforeEach(module('stateMock'));
 
+            var state_service;
 
-            var state_service, state;
-
-            beforeEach(inject(function(StateService, $state) {
+            beforeEach(inject(function(StateService) {
                 state_service = StateService;
-                state = $state;
             }));
 
             it('isAnon = true when no Company', function() {

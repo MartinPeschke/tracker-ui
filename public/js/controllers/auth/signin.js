@@ -10,7 +10,7 @@ angular.module('trackerui.system').controller('SigninController', ['$scope', '$h
 
                 AuthService.authenticateUser(loginReq.email, loginReq.pwd)
                     .then(function resolve(success){
-                        if(success)$state.go( 'index' );
+                        if(success)$state.go('index');
                         else $scope.errors.push('Unknown Email or Login');
                     });
             }
