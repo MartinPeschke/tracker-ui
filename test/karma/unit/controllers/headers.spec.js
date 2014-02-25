@@ -29,8 +29,6 @@
                 expect(scope.authenticated).toBe(true);
 
             });
-
-
         });
     });
 })();
