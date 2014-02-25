@@ -2,71 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38273dea-62f6-41e5-b11b-82f09ec3acb3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/karma/unit/services/auth.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/karma/unit/services/backend.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.bower.json" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.gitignore" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.jshintrc" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/.jshintrc" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.npmignore" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/.travis.yml" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/Gruntfile.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/LICENSE.tmpl" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/LICENSE.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/LICENSE" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/README.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/flash/ZeroClipboard.as" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/flash/ZeroClipboard.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/ZeroClipboard.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/ZeroClipboard.js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/ZeroClipboard.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/ZeroClipboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.min.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/ZeroClipboard.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/signup/account.html" afterPath="$PROJECT_DIR$/public/views/signup/account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/backend.js" afterPath="$PROJECT_DIR$/public/js/services/backend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/bower.json.tmpl" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/bower.json.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/bower.json" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/client.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/client.js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/client.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/client.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/composer.json.tmpl" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/composer.json.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/composer.json" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/core.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/core.js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/core.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/core.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/deprecated.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/dom.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/dom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/end.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/end.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/event.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/event.js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/event.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/event.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/signup/events.js" afterPath="$PROJECT_DIR$/public/js/controllers/signup/events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/flash.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/flash.js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/flash.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/flash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/flash.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/flash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/header.html" afterPath="$PROJECT_DIR$/public/views/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/header.js" afterPath="$PROJECT_DIR$/public/js/controllers/header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/index.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/index.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/instructions.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/instructions.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/lib/jquery.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/lib/jquery.js" />
+      <change type="DELETED" beforePath="D:\_projects\trackerui\test\karma\unit\controllers\signup.spec.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/services/auth.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/services/auth.spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/karma.conf.js" afterPath="$PROJECT_DIR$/test/karma/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/package.json" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/roadmap.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/roadmap.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/security.md" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/docs/security.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/auth/signin.js" afterPath="$PROJECT_DIR$/public/js/controllers/auth/signin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/source-banner.tmpl" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/meta/source-banner.tmpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/start.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/start.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/state.js" afterPath="$PROJECT_DIR$/public/js/services/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/state.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/state.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/utils.js.html" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/utils.js.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/utils.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/src/javascript/ZeroClipboard/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/zeroclipboard/test/utils.js" afterPath="$PROJECT_DIR$/public/lib/zeroclipboard/test/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\_projects\trackerui\test\selenium\runtests.js" afterPath="$PROJECT_DIR$/test/selenium/signupWorkflowSpec.js" />
     </list>
     <ignored path="tracker-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,79 +26,44 @@
     <favorites_list name="tracker-ui" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="signup.spec.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="81" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="auth.spec.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/karma/unit/services/auth.spec.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="79" selection-start="715" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="karma.conf.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="31" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="1937">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="signin.spec.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="34" column="16" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.45850623" vertical-offset="0" max-vertical-offset="964">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="signin.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="52" selection-start="523" selection-end="523" vertical-scroll-proportion="0.16182573" vertical-offset="0" max-vertical-offset="964">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="state.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="72" selection-start="899" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="28" selection-start="281" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="signin.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="3" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="72" selection-start="899" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="company.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/company.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="3" selection-start="641" selection-end="641" vertical-scroll-proportion="0.24273859" vertical-offset="0" max-vertical-offset="964">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="28" selection-start="281" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -219,10 +122,10 @@
         <option value="$PROJECT_DIR$/public/js/services/backend.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/services/backend.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/mocks/backendMock.js" />
-        <option value="$PROJECT_DIR$/test/karma/unit/services/auth.spec.js" />
-        <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/auth/signin.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" />
+        <option value="$PROJECT_DIR$/test/karma/unit/services/auth.spec.js" />
+        <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
       </list>
     </option>
   </component>
@@ -477,7 +380,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -500,6 +403,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="signup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -757,14 +664,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24334398" sideWeight="0.6269006" order="0" side_tool="false" content_ui="combo" x="-451" y="-1" width="390" height="1075" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24334398" sideWeight="0.6269006" order="0" side_tool="false" content_ui="combo" x="-451" y="-1" width="390" height="1075" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3721619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -778,6 +685,26 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41111112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3721619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24334398" sideWeight="0.6269006" order="0" side_tool="false" content_ui="combo" x="-451" y="-1" width="390" height="1075" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39298245" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -798,11 +725,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/lib/bootstrap/less/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="1" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/less/bootstrap/type.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="36" selection-start="481" selection-end="481" vertical-scroll-proportion="-11.56" vertical-offset="0" max-vertical-offset="0" />
@@ -1033,16 +955,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/services/auth.spec.js">
+    <entry file="file://$PROJECT_DIR$/test/karma/mocks/stateMock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="79" selection-start="715" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
+        <state line="5" column="25" selection-start="211" selection-end="211" vertical-scroll-proportion="0.06742739" vertical-offset="0" max-vertical-offset="964">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/services/auth.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="281" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+        <state line="12" column="43" selection-start="388" selection-end="388" vertical-scroll-proportion="0.16182573" vertical-offset="0" max-vertical-offset="1482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="47" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.82261413" vertical-offset="234" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="45" selection-start="545" selection-end="545" vertical-scroll-proportion="0.18879668" vertical-offset="0" max-vertical-offset="964">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="3" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
           <folding />
         </state>
       </provider>
@@ -1054,37 +997,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
+    <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="31" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="1937">
+        <state line="7" column="28" selection-start="281" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/mocks/stateMock.js">
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/company.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="211" selection-end="211" vertical-scroll-proportion="0.06742739" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signup.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="81" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="52" selection-start="523" selection-end="523" vertical-scroll-proportion="0.16182573" vertical-offset="0" max-vertical-offset="964">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="16" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.45850623" vertical-offset="0" max-vertical-offset="964">
+        <state line="18" column="3" selection-start="641" selection-end="641" vertical-scroll-proportion="0.24273859" vertical-offset="0" max-vertical-offset="964">
           <folding />
         </state>
       </provider>

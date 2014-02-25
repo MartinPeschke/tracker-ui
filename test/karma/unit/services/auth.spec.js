@@ -17,7 +17,7 @@
                  });
             });
 
-            beforeEach(inject(function($rootScope, BackendService, StateService, AuthService) {
+            beforeEach(inject(function($rootScope, StateService, AuthService, BackendService) {
                 rootScope = $rootScope;
                 stateService = StateService;
                 authService = AuthService;
