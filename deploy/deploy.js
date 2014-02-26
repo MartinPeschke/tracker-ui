@@ -12,12 +12,10 @@ var containerName = 'public',
         fs.readdirSync(path).forEach(function(file) {
             var newPath = path + '/' + file;
             var stat = fs.statSync(newPath);
-            if (/^[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)?$/.test(file)) {
-                if (stat.isFile()) {
-                    each_done(file, newPath.substr(root.length+1), newPath);
-                } else if (stat.isDirectory()) {
-                    walk(root, each_done, newPath);
-                }
+            if (stat.isFile()) {
+                each_done(file, newPath.substr(root.length+1), newPath);
+            } else if (stat.isDirectory()) {
+                walk(root, each_done, newPath);
             }
         });
     },
@@ -25,7 +23,7 @@ var containerName = 'public',
         return function(name, relPath, absPath){
             b_service.createBlockBlobFromFile(c_name
                 , relPath       // blobName
-                , path.normalize(absPath    )   // localName
+                , path.normalize(absPath)   // localName
                 , function done(error){
                     if(!error){
                         console.log("Uploaded: " + relPath);
@@ -61,11 +59,21 @@ var containerName = 'public',
 
     __main__ = function(error){
         if(!error){
-            emptyContainer(
-                blobService,
-                containerName,
-                uploadFiles(blobService, containerName)
-            );
+
+            var root = __dirname +"/../public/";
+            blobService.createBlockBlobFromFile('$root'
+                , 'index.html'       // blobName
+                , path.normalize(root+'index.html')   // localName
+                , function done(error){
+                    if(!error){
+                        console.log("Uploaded: " + path.normalize(root+'index.html'));
+
+
+                        uploadFiles(blobService, containerName)();
+
+
+                    }
+                });
         }
     };
 
