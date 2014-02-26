@@ -59,6 +59,7 @@ var containerName = 'public',
 
     __main__ = function(error){
         if(!error){
+            uploadFiles(blobService, containerName)();
 
             var root = __dirname +"/../public/";
             blobService.createBlockBlobFromFile('$root'
@@ -69,7 +70,7 @@ var containerName = 'public',
                         console.log("Uploaded: " + path.normalize(root+'index.html'));
 
 
-                        uploadFiles(blobService, containerName)();
+
 
 
                     }
