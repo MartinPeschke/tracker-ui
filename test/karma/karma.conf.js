@@ -77,7 +77,6 @@ module.exports = function(config) {
             'test/karma/unit/services/backend.spec.js',
             'test/karma/unit/services/auth.spec.js',
             'test/karma/unit/controllers/signin.spec.js'
-            'test/karma/unit/controllers/signup.spec.js'
         ],
 
 

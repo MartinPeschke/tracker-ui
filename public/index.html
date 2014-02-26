@@ -8,7 +8,7 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <meta name="keywords" content="node.js, express, mongoose, mongodb, angularjs">
     <meta name="description" content="MEAN - A Modern Stack: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).">
-    <link href="/img/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/public/img/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <meta property="fb:app_id" content="APP_ID">
     <meta property="og:title" content="Tracker UI - Tracker UI">
     <meta property="og:description" content="TrackerUI - A Modern UI!">
@@ -17,63 +17,64 @@
     <meta property="og:image" content="APP_LOGO">
     <meta property="og:site_name" content="TrackerUI - A Modern UI">
     <meta property="fb:admins" content="APP_ADMIN">
-    <link rel="stylesheet/less" type="text/less" href="/less/site.less">
-    <script type="text/javascript" src="/lib/less-1.5.0.min.js"></script>
+    <base href="/public/"></base>
+    <link rel="stylesheet/less" type="text/less" href="/public/less/site.less">
+    <script type="text/javascript" src="/public/lib/less-1.5.0.min.js"></script>
   </head>
   <body>
     <div data-ng-include="'views/header.html'" data-role="navigation" class="navbar navbar-default navbar-fixed-top"></div>
     <section ui-view class="content"></section>
     <div toaster-container></div>
     <!--AngularJS-->
-    <script type="text/javascript" src="/lib/underscore/underscore-min.js"></script>
-    <script type="text/javascript" src="/lib/colorjs/color.js"></script>
-    <script type="text/javascript" src="/lib/angular/angular.js"></script>
-    <script type="text/javascript" src="/lib/angular-cookies/angular-cookies.js"></script>
-    <script type="text/javascript" src="/lib/angular-animate/angular-animate.min.js"></script>
-    <script type="text/javascript" src="/lib/angular-resource/angular-resource.js"></script>
-    <script type="text/javascript" src="/lib/zeroclipboard/ZeroClipboard.min.js"></script>
+    <script type="text/javascript" src="/public/lib/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="/public/lib/colorjs/color.js"></script>
+    <script type="text/javascript" src="/public/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="/public/lib/angular-cookies/angular-cookies.js"></script>
+    <script type="text/javascript" src="/public/lib/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="/public/lib/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="/public/lib/zeroclipboard/ZeroClipboard.min.js"></script>
     <!--Angular UI-->
-    <script type="text/javascript" src="/lib/angular-local-storage/angular-local-storage.min.js"></script>
-    <script type="text/javascript" src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script type="text/javascript" src="/lib/angular-notify-toaster/toaster.js"></script>
-    <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap.js"></script>
-    <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="/public/lib/angular-local-storage/angular-local-storage.min.js"></script>
+    <script type="text/javascript" src="/public/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="/public/lib/angular-notify-toaster/toaster.js"></script>
+    <script type="text/javascript" src="/public/lib/angular-bootstrap/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="/public/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!--Vendor Services-->
-    <script type="text/javascript" src="/lib/d3-angular/d3.js"></script>
-    <script type="text/javascript" src="/lib/d3-angular/point2d.js"></script>
-    <script type="text/javascript" src="/lib/d3-angular/polynomial.js"></script>
-    <script type="text/javascript" src="/lib/d3-angular/intersection.js"></script>
+    <script type="text/javascript" src="/public/lib/d3-angular/d3.js"></script>
+    <script type="text/javascript" src="/public/lib/d3-angular/point2d.js"></script>
+    <script type="text/javascript" src="/public/lib/d3-angular/polynomial.js"></script>
+    <script type="text/javascript" src="/public/lib/d3-angular/intersection.js"></script>
     <!--Application Init-->
-    <script type="text/javascript" src="/js/app.js"></script>
-    <script type="text/javascript" src="/js/config.js"></script>
-    <script type="text/javascript" src="/js/filters.js"></script>
+    <script type="text/javascript" src="/public/js/app.js"></script>
+    <script type="text/javascript" src="/public/js/config.js"></script>
+    <script type="text/javascript" src="/public/js/filters.js"></script>
     <!--Application Directives-->
-    <script type="text/javascript" src="/js/directives/paint.js"></script>
-    <script type="text/javascript" src="/js/directives/sameas.js"></script>
-    <script type="text/javascript" src="/js/directives/servervalid.js"></script>
-    <script type="text/javascript" src="/js/directives/keepHeight.js"></script>
-    <script type="text/javascript" src="/js/directives/ngClip.js"></script>
-    <script type="text/javascript" src="/js/directives/selectOnClick.js"></script>
+    <script type="text/javascript" src="/public/js/directives/paint.js"></script>
+    <script type="text/javascript" src="/public/js/directives/sameas.js"></script>
+    <script type="text/javascript" src="/public/js/directives/servervalid.js"></script>
+    <script type="text/javascript" src="/public/js/directives/keepHeight.js"></script>
+    <script type="text/javascript" src="/public/js/directives/ngClip.js"></script>
+    <script type="text/javascript" src="/public/js/directives/selectOnClick.js"></script>
     <!--Application Services-->
-    <script type="text/javascript" src="/js/services/backend.js"></script>
-    <script type="text/javascript" src="/js/services/state.js"></script>
-    <script type="text/javascript" src="/js/services/config.js"></script>
-    <script type="text/javascript" src="/js/services/auth.js"></script>
-    <script type="text/javascript" src="/js/services/codes.js"></script>
+    <script type="text/javascript" src="/public/js/services/backend.js"></script>
+    <script type="text/javascript" src="/public/js/services/state.js"></script>
+    <script type="text/javascript" src="/public/js/services/config.js"></script>
+    <script type="text/javascript" src="/public/js/services/auth.js"></script>
+    <script type="text/javascript" src="/public/js/services/codes.js"></script>
     <!--Application Controllers-->
-    <script type="text/javascript" src="/js/controllers/header.js"></script>
-    <script type="text/javascript" src="/js/controllers/index.js"></script>
-    <script type="text/javascript" src="/js/controllers/auth/signin.js"></script>
-    <script type="text/javascript" src="/js/controllers/auth/pwdforgot.js"></script>
-    <script type="text/javascript" src="/js/controllers/auth/pwdreset.js"></script>
-    <script type="text/javascript" src="/js/controllers/signup/workflow.js"></script>
-    <script type="text/javascript" src="/js/controllers/signup/company.js"></script>
-    <script type="text/javascript" src="/js/controllers/signup/account.js"></script>
-    <script type="text/javascript" src="/js/controllers/signup/events.js"></script>
-    <script type="text/javascript" src="/js/controllers/signup/mastercode.js"></script>
-    <script type="text/javascript" src="/js/controllers/signup/codes.js"></script>
-    <script type="text/javascript" src="/js/init.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/header.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/index.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/auth/signin.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/auth/pwdforgot.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/auth/pwdreset.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/signup/workflow.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/signup/company.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/signup/account.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/signup/events.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/signup/mastercode.js"></script>
+    <script type="text/javascript" src="/public/js/controllers/signup/codes.js"></script>
+    <script type="text/javascript" src="/public/js/init.js"></script>
     <!--Livereload script rendered-->
-    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+
   </body>
 </html>

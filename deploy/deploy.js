@@ -1,5 +1,7 @@
+process.env.AZURE_STORAGE_ACCOUNT='convins';
+process.env.AZURE_STORAGE_ACCESS_KEY ='PhuBeu47ELlvSkZQfPXcb+xro4/P0/vsL2KQMrUQ9S4eox4JaYFncHNP1pWCgGJu5pmpK+ArlKLg2jsbU5GFuQ==';
 
-var containerName = 'tracker-ui',
+var containerName = 'public',
     path = require('path'),
     async = require('async'),
     fs = require('fs'),

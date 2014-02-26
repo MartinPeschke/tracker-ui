@@ -25,7 +25,6 @@ angular.module('trackerui').run(['$rootScope', '$state', '$stateParams', 'StateS
                 $state.go(result.to, result.params, result.options);
             }
         });
-
     }
 ]);
 

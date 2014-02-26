@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38273dea-62f6-41e5-b11b-82f09ec3acb3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/backend.js" afterPath="$PROJECT_DIR$/public/js/services/backend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/config.js" afterPath="$PROJECT_DIR$/public/js/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/deploy.js" afterPath="$PROJECT_DIR$/deploy/deploy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/karma.conf.js" afterPath="$PROJECT_DIR$/test/karma/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/layout.less" afterPath="$PROJECT_DIR$/public/less/layout.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/site.less" afterPath="$PROJECT_DIR$/public/less/site.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/state.js" afterPath="$PROJECT_DIR$/public/js/services/state.js" />
     </list>
     <ignored path="tracker-ui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +33,26 @@
     <favorites_list name="tracker-ui" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="24" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-10.636364" vertical-offset="13" max-vertical-offset="1105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/less/layout.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="27" selection-start="98" selection-end="98" vertical-scroll-proportion="0.12871288" vertical-offset="0" max-vertical-offset="650">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -46,7 +74,6 @@
         <option value="$PROJECT_DIR$/../LarrysList/webapp/larryslist/reports/static/bootstrap/buttons.less" />
         <option value="$PROJECT_DIR$/public/less/bootstrap/buttons.less" />
         <option value="$PROJECT_DIR$/public/views/signup/company.html" />
-        <option value="$PROJECT_DIR$/public/less/site.less" />
         <option value="$PROJECT_DIR$/public/less/icons.less" />
         <option value="$PROJECT_DIR$/public/less/bootstrap/variables.less" />
         <option value="$PROJECT_DIR$/public/less/workflow.less" />
@@ -60,7 +87,6 @@
         <option value="$PROJECT_DIR$/public/js/services/codes.js" />
         <option value="$PROJECT_DIR$/public/js/directives/sameas.js" />
         <option value="$PROJECT_DIR$/public/js/directives/selectOnClick.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/views/signup/mastercode.html" />
         <option value="$PROJECT_DIR$/public/views/signup/codes.html" />
         <option value="$PROJECT_DIR$/public/views/signup/subscription.html" />
@@ -74,19 +100,23 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/public/views/header.html" />
         <option value="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" />
-        <option value="$PROJECT_DIR$/public/js/services/state.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/header.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/services/state.spec.js" />
-        <option value="$PROJECT_DIR$/public/js/config.js" />
-        <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/public/js/services/backend.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/services/backend.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/mocks/backendMock.js" />
         <option value="$PROJECT_DIR$/public/js/controllers/auth/signin.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/unit/services/auth.spec.js" />
         <option value="$PROJECT_DIR$/test/karma/karma.conf.js" />
+        <option value="$PROJECT_DIR$/public/js/services/backend.js" />
+        <option value="$PROJECT_DIR$/public/js/config.js" />
+        <option value="$PROJECT_DIR$/public/js/services/state.js" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/public/less/site.less" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/less/layout.less" />
       </list>
     </option>
   </component>
@@ -154,153 +184,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="karma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="karma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="karma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="karma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="karma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,63 +216,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tracker-ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trackerui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="signup" />
+              <option name="myItemId" value="deploy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,14 +449,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1553" height="916" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41111112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.24334398" sideWeight="0.6269006" order="0" side_tool="false" content_ui="combo" x="-451" y="-1" width="390" height="1075" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17859532" sideWeight="0.6269006" order="0" side_tool="false" content_ui="combo" x="-451" y="-1" width="390" height="1075" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3721619" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -637,7 +466,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41111112" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -682,36 +510,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/forms.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="37" selection-start="566" selection-end="566" vertical-scroll-proportion="-15.12" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="34" selection-start="465" selection-end="465" vertical-scroll-proportion="0.7021739" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/bootstrap/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/site.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="23" selection-start="1655" selection-end="1655" vertical-scroll-proportion="-15.44" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/workflow.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="353" selection-end="353" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/forms.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="3" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.6436059" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/static/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="14" selection-start="641" selection-end="641" vertical-scroll-proportion="0.15148304" vertical-offset="0" max-vertical-offset="944" />
@@ -757,11 +555,6 @@
         <state line="10" column="41" selection-start="304" selection-end="304" vertical-scroll-proportion="0.13485478" vertical-offset="0" max-vertical-offset="964" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/directives/ngClip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="26" selection-start="923" selection-end="923" vertical-scroll-proportion="0.44502074" vertical-offset="0" max-vertical-offset="964" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/signup/subscription.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="48" selection-start="536" selection-end="536" vertical-scroll-proportion="0.15180467" vertical-offset="0" max-vertical-offset="1001" />
@@ -780,11 +573,6 @@
     <entry file="file://$PROJECT_DIR$/public/js/services/codes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="44" selection-start="143" selection-end="151" vertical-scroll-proportion="0.06834911" vertical-offset="0" max-vertical-offset="951" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="65" selection-start="2034" selection-end="2080" vertical-scroll-proportion="0.66078836" vertical-offset="0" max-vertical-offset="964" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/events.js">
@@ -812,16 +600,6 @@
         <state line="42" column="14" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.16390042" vertical-offset="388" max-vertical-offset="1417" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="4" selection-start="2124" selection-end="2210" vertical-scroll-proportion="0.33295965" vertical-offset="132" max-vertical-offset="1092" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="396" selection-end="396" vertical-scroll-proportion="0.14834026" vertical-offset="0" max-vertical-offset="964" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="33" selection-start="646" selection-end="646" vertical-scroll-proportion="0.26970956" vertical-offset="0" max-vertical-offset="964" />
@@ -847,34 +625,14 @@
         <state line="60" column="41" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.39315352" vertical-offset="401" max-vertical-offset="1365" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="440" selection-end="440" vertical-scroll-proportion="0.17770767" vertical-offset="0" max-vertical-offset="1326" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="5" selection-start="259" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="325" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="47" selection-start="774" selection-end="774" vertical-scroll-proportion="0.16403785" vertical-offset="0" max-vertical-offset="951" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/angular-notify-toaster/toaster.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="54" selection-start="395" selection-end="395" vertical-scroll-proportion="0.16403785" vertical-offset="0" max-vertical-offset="1963" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/unit/services/backend.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="56" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0" vertical-offset="583" max-vertical-offset="1547" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="58" selection-start="97" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/karma/unit/services/state.spec.js">
@@ -890,11 +648,6 @@
     <entry file="file://$PROJECT_DIR$/test/karma/unit/services/auth.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="43" selection-start="388" selection-end="388" vertical-scroll-proportion="0.16182573" vertical-offset="0" max-vertical-offset="1482" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="47" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.82261413" vertical-offset="234" max-vertical-offset="1950" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/signin.spec.js">
@@ -916,20 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="72" selection-start="899" selection-end="903" vertical-scroll-proportion="0.3482143" vertical-offset="0" max-vertical-offset="784">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="659" selection-end="659" vertical-scroll-proportion="0.2984694" vertical-offset="0" max-vertical-offset="784">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/pwdreset.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="42" selection-start="365" selection-end="365" vertical-scroll-proportion="0.13265306" vertical-offset="0" max-vertical-offset="784">
@@ -944,9 +683,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="42" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.4229765" vertical-offset="365" max-vertical-offset="1937">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/signup/workflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="48" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.54469275" vertical-offset="0" max-vertical-offset="923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma/unit/services/backend.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="85" selection-end="93" vertical-scroll-proportion="0.067885116" vertical-offset="0" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="37" selection-start="362" selection-end="362" vertical-scroll-proportion="0.13265306" vertical-offset="0" max-vertical-offset="784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/auth/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="40" selection-start="383" selection-end="383" vertical-scroll-proportion="0.16581632" vertical-offset="0" max-vertical-offset="784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="64" selection-start="816" selection-end="816" vertical-scroll-proportion="0.2984694" vertical-offset="0" max-vertical-offset="784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="50" selection-start="195" selection-end="206" vertical-scroll-proportion="0.06632653" vertical-offset="0" max-vertical-offset="784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/services/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="281" selection-end="289" vertical-scroll-proportion="0.116071425" vertical-offset="0" max-vertical-offset="784">
+        <state line="10" column="34" selection-start="461" selection-end="461" vertical-scroll-proportion="0.16581632" vertical-offset="0" max-vertical-offset="784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/directives/ngClip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="16" selection-start="241" selection-end="241" vertical-scroll-proportion="0.13265306" vertical-offset="0" max-vertical-offset="784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/directives/paint.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="357" selection-end="357" vertical-scroll-proportion="0.1492347" vertical-offset="0" max-vertical-offset="2756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="198" selection-end="198" vertical-scroll-proportion="0.116071425" vertical-offset="0" max-vertical-offset="784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/site.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="1" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.15332429" vertical-offset="251" max-vertical-offset="988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.6053215" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="3" selection-start="4171" selection-end="4171" vertical-scroll-proportion="0.827051" vertical-offset="914" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="62" selection-start="501" selection-end="501" vertical-scroll-proportion="0.49002218" vertical-offset="0" max-vertical-offset="451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="24" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-10.636364" vertical-offset="13" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="27" selection-start="98" selection-end="98" vertical-scroll-proportion="0.12871288" vertical-offset="0" max-vertical-offset="650">
           <folding />
         </state>
       </provider>

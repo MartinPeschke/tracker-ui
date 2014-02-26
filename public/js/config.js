@@ -90,8 +90,11 @@ angular.module('trackerui').config(['$stateProvider', '$urlRouterProvider',
 ]);
 
 //Setting HTML5 Location Mode
-angular.module('trackerui').config(['$locationProvider',
-    function ($locationProvider) {
+angular.module('trackerui').config(['$httpProvider', '$locationProvider',
+    function ($httpProvider, $locationProvider) {
         $locationProvider.hashPrefix('!');
+        $httpProvider.defaults.useXDomain = true;
+        $httpProvider.defaults.headers.common['Client-Token'] = '1234asdf23t523f5ya';
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
     }
 ]);

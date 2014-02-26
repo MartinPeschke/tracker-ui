@@ -7,11 +7,11 @@ angular.module('trackerui.system').factory('StateService', ['localStorageService
                 user: localStorageService.get('State.User')||{},
                 account: localStorageService.get('State.Account')||{},
                 setUser: function(u){
-                    this.user = u;
+                    this.user = u||{};
                     localStorageService.set('State.User', u);
                 },
                 setAccount: function(a){
-                    this.account = a;
+                    this.account = a||{};
                     localStorageService.set('State.Account', a);
                 },
                 logout: function(){

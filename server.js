@@ -14,18 +14,15 @@ process.env.PORT = process.env.PORT || 3000;
 
 var app = express();
 
-app.use('/api', function(req, res) {
-    req.headers['Client-Token'] = config.apiClientToken;
-    apiProxy.web(req, res, { target: config.apiUrl });
-});
-app.use(express.static(__dirname + '/public'));
-app.use('/', function(req, res) {
-    fs.readFile(__dirname + '/public/index.html', 'utf8', function(err, text){
-        res.send(text);
+app.configure(function(){
+    app.use('/public', express.static(__dirname + '/public'));
+    app.use('/', function(req, res) {
+        fs.readFile(__dirname + '/public/index.html', 'utf8', function(err, text){
+            res.send(text);
+        });
     });
 });
 
 
 app.listen(process.env.PORT);
 console.log('Express app started on port ' + process.env.PORT);
-exports = module.exports = app;

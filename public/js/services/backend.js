@@ -16,7 +16,7 @@ angular.module('trackerui.system').factory('BackendService', ['$rootScope', '$ht
                     };
                 };
                 $rootScope._LOADING_ = true;
-                $http.post('/api/0.0.1' + path, data)
+                $http.post('http://bizintell.cloudapp.net:12345/0.0.1' + path, data)
                     .success(function (data, status, headers, config) {
                         if (data.Status === '0') {
                             if(success)success(data);
